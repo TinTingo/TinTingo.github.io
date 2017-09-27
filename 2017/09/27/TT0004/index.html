@@ -77,10 +77,10 @@
 <meta property="og:description" content="1.贝叶斯网络定义贝叶斯网络（Bayesian network, BN）又名信念网络和因果概率网络，由Pearl于1988年首次提出，是一种基于概率推理的数学网络模型。贝叶斯网络是图论和概率论的结合体，即图形化概率网络，是一种有向非循环图形模型。贝叶斯网络是将概率统计应用于复杂问题的工具，其在解决不确定性和不完整性问题上具有相当的优势，在数据挖掘、模式识别及人工智能等领域都有广泛研究。【百度百科">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://tintingo.github.io/images/05.jpg">
-<meta property="og:image" content="https://tintingo.github.io/images/first01.png">
-<meta property="og:image" content="https://tintingo.github.io/images/first02.png">
-<meta property="og:image" content="https://tintingo.github.io/images/first03.png">
-<meta property="og:updated_time" content="2017-09-27T09:28:51.231Z">
+<meta property="og:image" content="https://tintingo.github.io/images/F01.png">
+<meta property="og:image" content="https://tintingo.github.io/images/F02.png">
+<meta property="og:image" content="https://tintingo.github.io/images/F03.png">
+<meta property="og:updated_time" content="2017-09-27T09:30:19.160Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="贝叶斯网络学习（一）">
 <meta name="twitter:description" content="1.贝叶斯网络定义贝叶斯网络（Bayesian network, BN）又名信念网络和因果概率网络，由Pearl于1988年首次提出，是一种基于概率推理的数学网络模型。贝叶斯网络是图论和概率论的结合体，即图形化概率网络，是一种有向非循环图形模型。贝叶斯网络是将概率统计应用于复杂问题的工具，其在解决不确定性和不完整性问题上具有相当的优势，在数据挖掘、模式识别及人工智能等领域都有广泛研究。【百度百科">
@@ -376,9 +376,9 @@
 <h3 id="3-1结构学习"><a href="#3-1结构学习" class="headerlink" title="3.1结构学习"></a>3.1结构学习</h3><p>贝叶斯网络结构学习是贝叶斯网络研究的重点和难点，它是在观测数据和先验知识的基础上构建起来的网络。贝叶斯网络结构学习就是寻找与给定数据集拟合最优的网络，而贝叶斯网络结构学习算法中，最经典的两种就是K2算法和爬山算法(hill climbing, HC)。K2算法对先验知识要求比HC算法高，K2算法需预先知道搜索空间的节点序，这往往需要专家知识的帮助。随着研究不断深入，新算法也不断加入到结构学习，如模拟退火算法、遗传算法和群体算法等。群体算法包含蚁群算法(ant colony optimization，ACO)、粒子群算法(particle swarm optimization，PSO)、狼群算法(wolf pack algorithm, WPA)及灰狼算法(grey wolf optimizer，GWO)。</p>
 <h3 id="3-2参数学习"><a href="#3-2参数学习" class="headerlink" title="3.2参数学习"></a>3.2参数学习</h3><p>所谓BN分类器的参数学习就是在已知网络拓扑结构的情况下，通过给定文本数据，学习整个贝叶斯网络的概率分布情况。</p>
 <h3 id="3-3贝叶斯推理"><a href="#3-3贝叶斯推理" class="headerlink" title="3.3贝叶斯推理"></a>3.3贝叶斯推理</h3><p>贝叶斯推理是在已知贝叶斯网络结构的基础上进行推理的，它有效的结合了训练样本的先验知识和当前样本的后验概率，是概率论中贝叶斯定理的延伸。贝叶斯网络推理是在网络结构建立及数据参数学习之后，给定证据计算某节点出现概率的过程。换言之，贝叶斯网络推理就是通过计算后验概率回答查询的问题；它结合了拓扑节点之间的相互联系，通过参数信息的相互传递，从而进行有效的概率推理。常见的推理算法包括团树传播算法、联合树算法、随机抽样算法以及循环消息传递算法等。</p>
-<h2 id="4-研究现状"><a href="#4-研究现状" class="headerlink" title="4.研究现状"></a>4.研究现状</h2><h3 id="4-1结构学习"><a href="#4-1结构学习" class="headerlink" title="4.1结构学习"></a>4.1结构学习</h3><p><img src="/images/first01.png" alt="Image text"><br><a href="http://www.doc88.com/p-9807270627416.html" target="_blank" rel="external">【图片来源】</a></p>
-<h3 id="4-2参数学习"><a href="#4-2参数学习" class="headerlink" title="4.2参数学习"></a>4.2参数学习</h3><p><img src="/images/first02.png" alt="Image text"><br><a href="http://www.doc88.com/p-9807270627416.html" target="_blank" rel="external">【图片来源】</a></p>
-<h3 id="4-3贝叶斯推理"><a href="#4-3贝叶斯推理" class="headerlink" title="4.3贝叶斯推理"></a>4.3贝叶斯推理</h3><p><img src="/images/first03.png" alt="Image text"><br><a href="http://www.doc88.com/p-9807270627416.html" target="_blank" rel="external">【图片来源】</a></p>
+<h2 id="4-研究现状"><a href="#4-研究现状" class="headerlink" title="4.研究现状"></a>4.研究现状</h2><h3 id="4-1结构学习"><a href="#4-1结构学习" class="headerlink" title="4.1结构学习"></a>4.1结构学习</h3><p><img src="/images/F01.png" alt="Image text"><br><a href="http://www.doc88.com/p-9807270627416.html" target="_blank" rel="external">【图片来源】</a></p>
+<h3 id="4-2参数学习"><a href="#4-2参数学习" class="headerlink" title="4.2参数学习"></a>4.2参数学习</h3><p><img src="/images/F02.png" alt="Image text"><br><a href="http://www.doc88.com/p-9807270627416.html" target="_blank" rel="external">【图片来源】</a></p>
+<h3 id="4-3贝叶斯推理"><a href="#4-3贝叶斯推理" class="headerlink" title="4.3贝叶斯推理"></a>4.3贝叶斯推理</h3><p><img src="/images/F03.png" alt="Image text"><br><a href="http://www.doc88.com/p-9807270627416.html" target="_blank" rel="external">【图片来源】</a></p>
 
       
     </div>
