@@ -77,7 +77,8 @@
 <meta property="og:description" content="记忆力差？用过的代码老忘记？一次又一次的上网搜?好浪费时间！写在博客里方便随时查阅~~~~ 1.Excel读写（xlsread、xlswrite）123456%读mytxt = xlsread(&apos;C:/filename.xls&apos;)%写txt = [&apos;a&apos; &apos;s&apos; &apos;d&apos; &apos;f&apos; &apos;g&apos; &apos;h&apos;];mytxt = xlswrite(&apos;C:/filename.xls&apos;,txt) 2.txt读写123">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://tintingo.github.io/images/08.jpg">
-<meta property="og:updated_time" content="2017-09-27T06:34:58.192Z">
+<meta property="og:image" content="https://tintingo.github.io/images/06.jpg">
+<meta property="og:updated_time" content="2017-09-27T11:30:16.830Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一些常用Matlab代码记录">
 <meta name="twitter:description" content="记忆力差？用过的代码老忘记？一次又一次的上网搜?好浪费时间！写在博客里方便随时查阅~~~~ 1.Excel读写（xlsread、xlswrite）123456%读mytxt = xlsread(&apos;C:/filename.xls&apos;)%写txt = [&apos;a&apos; &apos;s&apos; &apos;d&apos; &apos;f&apos; &apos;g&apos; &apos;h&apos;];mytxt = xlswrite(&apos;C:/filename.xls&apos;,txt) 2.txt读写123">
@@ -383,6 +384,8 @@
 <h2 id="14-GUI获取可编辑文本框里的文字"><a href="#14-GUI获取可编辑文本框里的文字" class="headerlink" title="14.GUI获取可编辑文本框里的文字"></a>14.GUI获取可编辑文本框里的文字</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">txt = get(handles.edit1,<span class="string">'string'</span>);</div></pre></td></tr></table></figure>
 <h2 id="15-GUI可编辑文本框显示时间"><a href="#15-GUI可编辑文本框显示时间" class="headerlink" title="15.GUI可编辑文本框显示时间"></a>15.GUI可编辑文本框显示时间</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> timercallback(obj, event,handles)</div><div class="line">str = datestr(now, <span class="string">'HH:MM:SS'</span>);</div><div class="line"><span class="built_in">set</span>(handles.edit1, <span class="string">'String'</span>,str);</div></pre></td></tr></table></figure>
 <h2 id="16-画网络结构图自定义节点名"><a href="#16-画网络结构图自定义节点名" class="headerlink" title="16.画网络结构图自定义节点名"></a>16.画网络结构图自定义节点名</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">labels = &#123;<span class="string">'one'</span>,<span class="string">'two'</span>,<span class="string">'three'</span>,<span class="string">'four'</span>&#125;;</div><div class="line">draw_graph(dag,labels);</div></pre></td></tr></table></figure>
+<p><img src="/images/06.jpg" alt="Image text"></p>
+
       
     </div>
     
