@@ -84,7 +84,7 @@
 <meta property="og:image" content="https://tintingo.github.io/images/first05.png">
 <meta property="og:image" content="https://tintingo.github.io/images/first06.png">
 <meta property="og:image" content="https://tintingo.github.io/images/02.jpg">
-<meta property="og:updated_time" content="2017-09-28T00:52:12.498Z">
+<meta property="og:updated_time" content="2017-09-28T00:54:45.387Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何搭建个人博客？">
 <meta name="twitter:description" content="当你遇到一个似曾相识的知识却突然想不起来时：你需要一个个人博客！当你觉得一段经历难忘而值得分享却不知所措时：你需要一个个人博客！ 哎呦！不错哟！博主在网上搜索了多种方法，折腾了1天都没成功（都有坑），还一度想放弃搭建，但“柳暗花明又一村”的是，我综合了多篇博文，终于我成功了！在此：哈哈大笑！网络上的方法很多，您可以搜搜看，当然，您也可以往下看！ 现在开始步骤一：下载安装软件到官网下载：">
@@ -380,7 +380,7 @@
 <p>若返回版本信息则说明安装成功，否则就重新安装吧！</p>
 <p>安装Hexo<br>随便在电脑桌面或者任意盘内新建一个文件夹，命名为“Blog”，在该文件夹中“shift+右键”选用“Git Bash”打开命令窗口，并键入如下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo </div><div class="line">$ hexo</div></pre></td></tr></table></figure></p>
 <p>返回hexo信息则说明安装成功！<br>紧接着输入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo init hexo</div></pre></td></tr></table></figure></p>
-<h2 id="步骤二：新建仓库（New-repository）"><a href="#步骤二：新建仓库（New-repository）" class="headerlink" title="步骤二：新建仓库（New repository）"></a>步骤二：新建仓库（New repository）</h2><p>在你注册了GitHub账号后，点击“New repository”创建仓库，注意：命名时应命名为username.github.io，其中，username为你几己的GitHub用户名。<br>“win+R”打开“运行”键入“cmd”回车进入命令窗口，输入如下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> C:/Users/Administrator/.ssh</div></pre></td></tr></table></figure></p>
+<h2 id="步骤二：新建仓库（New-repository）"><a href="#步骤二：新建仓库（New-repository）" class="headerlink" title="步骤二：新建仓库（New repository）"></a>步骤二：新建仓库（New repository）</h2><p>在你注册了GitHub账号后，点击“New repository”创建仓库，注意：命名时应命名为username.github.io，其中，username为你几己的GitHub用户名。<br>“win+R”打开“运行”键入“cmd”回车进入命令窗口，输入如下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> .ssh</div></pre></td></tr></table></figure></p>
 <p>到之前新建的文件夹的“hexo”文件夹下“shift+右键”选用“Git Bash”打开命令窗口，并键入如下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa -C <span class="string">"####@163.com（注册GitHub时的邮箱）"</span></div></pre></td></tr></table></figure></p>
 <p>在你的GitHub找到“Settings”，打开左下角有个“SSH and GPG keys”，点击“New SSH key”输入标题后在地址：“C:\Users\Administrator.ssh”找到id_rsa.pub打开将里面的内容全部复制，并粘贴到“key”里，按下“Add SSH key”即可。</p>
 <p>现在，回到之前新建的文件夹的“hexo”文件夹下“shift+右键”选用“Git Bash”打开命令窗口，并键入如下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ npm install</div><div class="line">$ hexo generate</div><div class="line">$ hexo server</div></pre></td></tr></table></figure></p>
