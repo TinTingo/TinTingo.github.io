@@ -78,7 +78,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://tintingo.github.io/images/08.jpg">
 <meta property="og:image" content="https://tintingo.github.io/images/06.jpg">
-<meta property="og:updated_time" content="2017-11-10T08:46:53.903Z">
+<meta property="og:updated_time" content="2017-11-10T08:59:56.754Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一些常用Matlab代码记录">
 <meta name="twitter:description" content="记忆力差？用过的代码老忘记？一次又一次的上网搜?好浪费时间！写在博客里方便随时查阅~~~~ 1.Excel读写（xlsread、xlswrite）123456%读mytxt = xlsread(&apos;C:/filename.xls&apos;)%写txt = [&apos;a&apos; &apos;s&apos; &apos;d&apos; &apos;f&apos; &apos;g&apos; &apos;h&apos;];mytxt = xlswrite(&apos;C:/filename.xls&apos;,txt) 2.txt读写123">
@@ -361,22 +361,8 @@
 <h1 id="21-同一figure显示多个图"><a href="#21-同一figure显示多个图" class="headerlink" title="21.同一figure显示多个图"></a>21.同一figure显示多个图</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">subplot(n,m,i) %一个figure分为n行，m列。i表示第i个图。</div></pre></td></tr></table></figure>
 <h1 id="22-给一个数列（矩阵）里的数排序（从大到小）"><a href="#22-给一个数列（矩阵）里的数排序（从大到小）" class="headerlink" title="22.给一个数列（矩阵）里的数排序（从大到小）"></a>22.给一个数列（矩阵）里的数排序（从大到小）</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[a b]=sort(A(:)); %从小到大排序</div><div class="line">a = fliplr(a<span class="string">'); %取倒序</span></div><div class="line"><span class="string">b = fliplr(b'</span>);</div></pre></td></tr></table></figure>
 <h1 id="23-判断两字符是否匹配"><a href="#23-判断两字符是否匹配" class="headerlink" title="23.判断两字符是否匹配"></a>23.判断两字符是否匹配</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&gt;&gt; regexpi(<span class="string">'asdf'</span>,<span class="string">'asdf'</span>)</div><div class="line"></div><div class="line">ans =</div><div class="line"></div><div class="line">     1</div><div class="line"></div><div class="line">&gt;&gt; regexpi(<span class="string">'asdf'</span>,<span class="string">'agsdf'</span>)</div><div class="line"></div><div class="line">ans =</div><div class="line"></div><div class="line">     []</div></pre></td></tr></table></figure>
-<h1 id="24-判断字符Str中是否含有‘http’字符"><a href="#24-判断字符Str中是否含有‘http’字符" class="headerlink" title="24.判断字符Str中是否含有‘http’字符"></a>24.判断字符Str中是否含有‘http’字符</h1><p>``` bash</p>
-<blockquote>
-<blockquote>
-<p>Str=’httpthestartingindicesoft’;strfind(Str,’http’)</p>
-</blockquote>
-</blockquote>
-<p>ans =</p>
-<pre><code>1
-</code></pre><blockquote>
-<blockquote>
-<p>Str=’httpthestartingindicesofthttp’;strfind(Str,’http’)</p>
-</blockquote>
-</blockquote>
-<p>ans =</p>
-<pre><code>1    26
-</code></pre><p><img src="/images/06.jpg" alt="Image text"></p>
+<h1 id="24-判断字符Str中是否含有‘http’字符"><a href="#24-判断字符Str中是否含有‘http’字符" class="headerlink" title="24.判断字符Str中是否含有‘http’字符"></a>24.判断字符Str中是否含有‘http’字符</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&gt;&gt; Str=<span class="string">'httpthestartingindicesoft'</span>;strfind(Str,<span class="string">'http'</span>)</div><div class="line"></div><div class="line">ans =</div><div class="line"></div><div class="line">     1</div><div class="line"></div><div class="line">&gt;&gt; Str=<span class="string">'httpthestartingindicesofthttp'</span>;strfind(Str,<span class="string">'http'</span>)</div><div class="line"></div><div class="line">ans =</div><div class="line"></div><div class="line">     1    26</div></pre></td></tr></table></figure>
+<p><img src="/images/06.jpg" alt="Image text"></p>
 
       
     </div>
