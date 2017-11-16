@@ -69,19 +69,19 @@
 
 
 
-<meta name="description" content="嫁接和α-投资技术（Grafting and α-investing）Perkins和Theiler提出了嫁接（逐级梯度下降特征检验）的二元分类问题。嫁接技术涉及1个调节，非正则化参数和每个潜在特征的权重向量的定义。对于每个新的特征及其相关的权重矢量，执行梯度测试。如果没有重量通过测试，该功能将被丢弃。相反，如果至少有一个重量通过测试，则将该特征和最高重量添加到模型中。模型更新后，应用重新优化步">
+<meta name="description" content="Grafting and α-investingPerkins和Theiler提出了Grafting（逐级梯度下降特征检验）的二元分类问题。Grafting技术涉及1个调节，非正则化参数和每个潜在特征的权重向量的定义。对于每个新的特征及其相关的权重矢量，执行梯度测试。如果没有重量通过测试，该功能将被丢弃。相反，如果至少有一个重量通过测试，则将该特征和最高重量添加到模型中。模型更新后，应用重新优化">
 <meta property="og:type" content="article">
 <meta property="og:title" content="在线文本特征选择（onlinefeature selection，OFS）">
 <meta property="og:url" content="https://tintingo.github.io/2017/11/13/TT0008/index.html">
 <meta property="og:site_name" content="TinTin">
-<meta property="og:description" content="嫁接和α-投资技术（Grafting and α-investing）Perkins和Theiler提出了嫁接（逐级梯度下降特征检验）的二元分类问题。嫁接技术涉及1个调节，非正则化参数和每个潜在特征的权重向量的定义。对于每个新的特征及其相关的权重矢量，执行梯度测试。如果没有重量通过测试，该功能将被丢弃。相反，如果至少有一个重量通过测试，则将该特征和最高重量添加到模型中。模型更新后，应用重新优化步">
+<meta property="og:description" content="Grafting and α-investingPerkins和Theiler提出了Grafting（逐级梯度下降特征检验）的二元分类问题。Grafting技术涉及1个调节，非正则化参数和每个潜在特征的权重向量的定义。对于每个新的特征及其相关的权重矢量，执行梯度测试。如果没有重量通过测试，该功能将被丢弃。相反，如果至少有一个重量通过测试，则将该特征和最高重量添加到模型中。模型更新后，应用重新优化">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://tintingo.github.io/images/14.jpg">
 <meta property="og:image" content="https://tintingo.github.io/images/13.jpg">
-<meta property="og:updated_time" content="2017-11-13T03:28:14.372Z">
+<meta property="og:updated_time" content="2017-11-16T06:48:34.958Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在线文本特征选择（onlinefeature selection，OFS）">
-<meta name="twitter:description" content="嫁接和α-投资技术（Grafting and α-investing）Perkins和Theiler提出了嫁接（逐级梯度下降特征检验）的二元分类问题。嫁接技术涉及1个调节，非正则化参数和每个潜在特征的权重向量的定义。对于每个新的特征及其相关的权重矢量，执行梯度测试。如果没有重量通过测试，该功能将被丢弃。相反，如果至少有一个重量通过测试，则将该特征和最高重量添加到模型中。模型更新后，应用重新优化步">
+<meta name="twitter:description" content="Grafting and α-investingPerkins和Theiler提出了Grafting（逐级梯度下降特征检验）的二元分类问题。Grafting技术涉及1个调节，非正则化参数和每个潜在特征的权重向量的定义。对于每个新的特征及其相关的权重矢量，执行梯度测试。如果没有重量通过测试，该功能将被丢弃。相反，如果至少有一个重量通过测试，则将该特征和最高重量添加到模型中。模型更新后，应用重新优化">
 <meta name="twitter:image" content="https://tintingo.github.io/images/14.jpg">
 
 
@@ -337,7 +337,7 @@
 
       
         <p><img src="/images/14.jpg" alt="Image text"></p>
-<h1 id="嫁接和α-投资技术（Grafting-and-α-investing）"><a href="#嫁接和α-投资技术（Grafting-and-α-investing）" class="headerlink" title="嫁接和α-投资技术（Grafting and α-investing）"></a>嫁接和α-投资技术（Grafting and α-investing）</h1><p>Perkins和Theiler提出了嫁接（逐级梯度下降特征检验）的二元分类问题。嫁接技术涉及1个调节，非正则化参数和每个潜在特征的权重向量的定义。对于每个新的特征及其相关的权重矢量，执行梯度测试。如果没有重量通过测试，该功能将被丢弃。相反，如果至少有一个重量通过测试，则将该特征和最高重量添加到模型中。模型更新后，应用重新优化步骤并重复测试。α-投资[50]是基于自适应修改阈值α来添加新的特征。阈值定义了包含虚假特征的概率，并且通过定义要选择的不相关特征的可接受比率来调整。每当新功能没有添加到模型中，α就会减少，以避免选择超过预定比例的虚假特征。同样，当新的功能被添加到模型，α增加。请注意，添加新功能不会触发对已选功能的分析。因此，不能保证特征不是多余的。虽然这种技术被称为与字典（BOW）表示相结合的支持向量机（SVM），神经网络和决策树，它需要先验知识的特征空间来启发式地控制特征的选择[46]。由于这些信息可能难以从特征流中提取，因此该技术可能不适用于真正的在线环境。因此，需要更多的努力来有效地分析特征结构未知的真实世界的流。</p>
+<h1 id="Grafting-and-α-investing"><a href="#Grafting-and-α-investing" class="headerlink" title="Grafting and α-investing"></a>Grafting and α-investing</h1><p>Perkins和Theiler提出了Grafting（逐级梯度下降特征检验）的二元分类问题。Grafting技术涉及1个调节，非正则化参数和每个潜在特征的权重向量的定义。对于每个新的特征及其相关的权重矢量，执行梯度测试。如果没有重量通过测试，该功能将被丢弃。相反，如果至少有一个重量通过测试，则将该特征和最高重量添加到模型中。模型更新后，应用重新优化步骤并重复测试。α-investing是基于自适应修改阈值α来添加新的特征。阈值定义了包含虚假特征的概率，并且通过定义要选择的不相关特征的可接受比率来调整。每当新功能没有添加到模型中，α就会减少，以避免选择超过预定比例的虚假特征。同样，当新的功能被添加到模型，α增加。请注意，添加新功能不会触发对已选功能的分析。因此，不能保证特征不是多余的。虽然这种技术被称为与字典（BOW）表示相结合的支持向量机（SVM），神经网络和决策树，它需要先验知识的特征空间来启发式地控制特征的选择。由于这些信息可能难以从特征流中提取，因此该技术可能不适用于真正的在线环境。因此，需要更多的努力来有效地分析特征结构未知的真实世界的流。</p>
 <p><img src="/images/13.jpg" alt="Image text"></p>
 
       
@@ -585,7 +585,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#嫁接和α-投资技术（Grafting-and-α-investing）"><span class="nav-number">1.</span> <span class="nav-text">嫁接和α-投资技术（Grafting and α-investing）</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Grafting-and-α-investing"><span class="nav-number">1.</span> <span class="nav-text">Grafting and α-investing</span></a></li></ol></div>
             
 
           </div>
