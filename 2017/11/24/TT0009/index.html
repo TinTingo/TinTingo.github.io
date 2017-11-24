@@ -69,20 +69,20 @@
 
 
 
-<meta name="description" content="声明：以下内容为学习范立锋等《Java Web程序设计教程》的笔记，所有内容均出自原文！ 一、XMLXML-可拓展标记语言，是一种数据存储语言，用简单的标记来描述数据，其中，XML文件以.xml结尾。1234567&amp;lt;?xml version=&quot;1.0&quot; enconding=&quot;GB2312&quot;?&amp;gt; %声明：版本号1.0；字符编码格式中文&amp;lt;person&amp;gt;">
+<meta name="description" content="声明：以下内容为学习范立锋等《Java Web程序设计教程》的笔记，大部分内容均出自原文！ 一、XMLXML-可拓展标记语言，是一种数据存储语言，用简单的标记来描述数据，其中，XML文件以.xml结尾。1234567&amp;lt;?xml version=&quot;1.0&quot; enconding=&quot;GB2312&quot;?&amp;gt; %声明：版本号1.0；字符编码格式中文&amp;lt;person&amp;gt;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JAVA Web学习笔记">
 <meta property="og:url" content="https://tintingo.github.io/2017/11/24/TT0009/index.html">
 <meta property="og:site_name" content="TinTin">
-<meta property="og:description" content="声明：以下内容为学习范立锋等《Java Web程序设计教程》的笔记，所有内容均出自原文！ 一、XMLXML-可拓展标记语言，是一种数据存储语言，用简单的标记来描述数据，其中，XML文件以.xml结尾。1234567&amp;lt;?xml version=&quot;1.0&quot; enconding=&quot;GB2312&quot;?&amp;gt; %声明：版本号1.0；字符编码格式中文&amp;lt;person&amp;gt;">
+<meta property="og:description" content="声明：以下内容为学习范立锋等《Java Web程序设计教程》的笔记，大部分内容均出自原文！ 一、XMLXML-可拓展标记语言，是一种数据存储语言，用简单的标记来描述数据，其中，XML文件以.xml结尾。1234567&amp;lt;?xml version=&quot;1.0&quot; enconding=&quot;GB2312&quot;?&amp;gt; %声明：版本号1.0；字符编码格式中文&amp;lt;person&amp;gt;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://tintingo.github.io/images/14.jpg">
-<meta property="og:image" content="https://tintingo.github.io/images/13.jpg">
-<meta property="og:updated_time" content="2017-11-24T08:43:09.855Z">
+<meta property="og:image" content="https://tintingo.github.io/images/top.jpg">
+<meta property="og:image" content="https://tintingo.github.io/images/bottom.jpg">
+<meta property="og:updated_time" content="2017-11-24T09:07:46.301Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JAVA Web学习笔记">
-<meta name="twitter:description" content="声明：以下内容为学习范立锋等《Java Web程序设计教程》的笔记，所有内容均出自原文！ 一、XMLXML-可拓展标记语言，是一种数据存储语言，用简单的标记来描述数据，其中，XML文件以.xml结尾。1234567&amp;lt;?xml version=&quot;1.0&quot; enconding=&quot;GB2312&quot;?&amp;gt; %声明：版本号1.0；字符编码格式中文&amp;lt;person&amp;gt;">
-<meta name="twitter:image" content="https://tintingo.github.io/images/14.jpg">
+<meta name="twitter:description" content="声明：以下内容为学习范立锋等《Java Web程序设计教程》的笔记，大部分内容均出自原文！ 一、XMLXML-可拓展标记语言，是一种数据存储语言，用简单的标记来描述数据，其中，XML文件以.xml结尾。1234567&amp;lt;?xml version=&quot;1.0&quot; enconding=&quot;GB2312&quot;?&amp;gt; %声明：版本号1.0；字符编码格式中文&amp;lt;person&amp;gt;">
+<meta name="twitter:image" content="https://tintingo.github.io/images/top.jpg">
 
 
 
@@ -336,14 +336,15 @@
       
 
       
-        <p><img src="/images/14.jpg" alt="Image text"></p>
-<p><font color="red" face="黑体">声明：以下内容为学习范立锋等《Java Web程序设计教程》的笔记，所有内容均出自原文！</font></p>
+        <p><img src="/images/top.jpg" alt="Image text"></p>
+<p><font color="red" face="黑体">声明：以下内容为学习范立锋等《Java Web程序设计教程》的笔记，大部分内容均出自原文！</font></p>
 <h1 id="一、XML"><a href="#一、XML" class="headerlink" title="一、XML"></a>一、XML</h1><p>XML-可拓展标记语言，是一种数据存储语言，用简单的标记来描述数据，其中，XML文件以.xml结尾。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version=<span class="string">"1.0"</span> enconding=<span class="string">"GB2312"</span>?&gt; %声明：版本号1.0；字符编码格式中文</div><div class="line">&lt;person&gt;                                 %根元素，一个xml中只能有一个根元素，其他元素都包含在其中；</div><div class="line">    &lt;!--姓名--!&gt;                         %注释</div><div class="line">    &lt;name&gt;TINTIN&lt;/name&gt;                  %元素</div><div class="line">    &lt;!--性别--!&gt;</div><div class="line">    &lt;sex&gt;男&lt;/sex&gt;</div><div class="line">&lt;/person&gt;</div></pre></td></tr></table></figure></p>
 <p>xml常见用途：<br>1.不同应用程序间数据交互：xml提供一种不同应用程序间数据交互的公共标准；<br>2.一种是数据多种样式：xml将信息的数据和显示样式分离开来（样式需用其他语言来定义，如CSS），这样同一份数据可添加多种式样；<br>3.数据的分布式处理：xml可在Internet上自由传送，客户可从xml中提取到数据，因此，数据处理可在客户端完成，无需返回Web服务器，节省了Internet上的数据宽带。</p>
 <h1 id="二、CSS"><a href="#二、CSS" class="headerlink" title="二、CSS"></a>二、CSS</h1><p>CSS-层叠样式表单，是一种表现HTML或XML等文件式样的语言（浏览器解释语言）。<br>CSS语法包括：CSS选择符、CSS属性。（每个CSS选择符可包含一或多个CSS属性）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">格式：选择符&#123;属性&#125;</div><div class="line">body&#123;color:blue&#125; %在&lt;body&gt;标记内，文本颜色为蓝色</div></pre></td></tr></table></figure></p>
 <p>XML中选择符可为标记名称或标记名称的id/class属性值。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version=<span class="string">"1.0"</span> enconding=<span class="string">"GB2312"</span>?&gt;</div><div class="line">&lt;?xml-stylesheet <span class="built_in">type</span>=<span class="string">"text/css"</span> href=<span class="string">"game.css"</span>?&gt; %XML引用CSS文件格式，href值为.CSS的地址</div><div class="line">&lt;person&gt;                                     </div><div class="line">    &lt;name id=<span class="string">"myNAME"</span>&gt;TINTIN&lt;/name&gt;                  </div><div class="line">    &lt;sex class=<span class="string">"yourSEX"</span>&gt;男&lt;/sex&gt;</div><div class="line">&lt;/person&gt;</div></pre></td></tr></table></figure></p>
 <p>id属性的值是唯一的，唯一标记一个标记，而class属性可标记一组标记<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">id格式：<span class="comment">#id名&#123;属性1;属性2&#125;</span></div><div class="line"><span class="comment">#myNAME&#123;color：black;size:10px&#125;</span></div><div class="line">class格式：.class名&#123;属性;属性2&#125;</div><div class="line">.yourSEX&#123;color：blue;size:10px&#125;</div></pre></td></tr></table></figure></p>
-<p>CSS代码也可直接写到XML代码中，但不方便维护，故不推荐使用。<br><img src="/images/13.jpg" alt="Image text"></p>
+<p>CSS代码也可直接写到XML代码中，但不方便维护，故不推荐使用。</p>
+<h1 id="三、JavaScript"><a href="#三、JavaScript" class="headerlink" title="三、JavaScript"></a>三、JavaScript</h1><p><img src="/images/bottom.jpg" alt="Image text"></p>
 
       
     </div>
@@ -598,7 +599,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、XML"><span class="nav-number">1.</span> <span class="nav-text">一、XML</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、CSS"><span class="nav-number">2.</span> <span class="nav-text">二、CSS</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、XML"><span class="nav-number">1.</span> <span class="nav-text">一、XML</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、CSS"><span class="nav-number">2.</span> <span class="nav-text">二、CSS</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、JavaScript"><span class="nav-number">3.</span> <span class="nav-text">三、JavaScript</span></a></li></ol></div>
             
 
           </div>
