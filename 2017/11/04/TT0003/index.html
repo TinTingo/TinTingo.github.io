@@ -76,13 +76,13 @@
 <meta property="og:site_name" content="TinTin">
 <meta property="og:description" content="记忆力差？用过的代码老忘记？一次又一次的上网搜?好浪费时间！写在博客里方便随时查阅~~~~ Excel读写（xlsread、xlswrite）123456%读mytxt = xlsread(&apos;C:/filename.xls&apos;)%写txt = [&apos;a&apos; &apos;s&apos; &apos;d&apos; &apos;f&apos; &apos;g&apos; &apos;h&apos;];mytxt = xlswrite(&apos;C:/filename.xls&apos;,txt) txt读写1234567">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://tintingo.github.io/images/08.jpg">
-<meta property="og:image" content="https://tintingo.github.io/images/06.jpg">
-<meta property="og:updated_time" content="2017-11-16T12:42:14.287Z">
+<meta property="og:image" content="https://tintingo.github.io/images/top.jpg">
+<meta property="og:image" content="https://tintingo.github.io/images/bottom.jpg">
+<meta property="og:updated_time" content="2017-11-24T13:26:15.236Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一些常用Matlab代码记录">
 <meta name="twitter:description" content="记忆力差？用过的代码老忘记？一次又一次的上网搜?好浪费时间！写在博客里方便随时查阅~~~~ Excel读写（xlsread、xlswrite）123456%读mytxt = xlsread(&apos;C:/filename.xls&apos;)%写txt = [&apos;a&apos; &apos;s&apos; &apos;d&apos; &apos;f&apos; &apos;g&apos; &apos;h&apos;];mytxt = xlswrite(&apos;C:/filename.xls&apos;,txt) txt读写1234567">
-<meta name="twitter:image" content="https://tintingo.github.io/images/08.jpg">
+<meta name="twitter:image" content="https://tintingo.github.io/images/top.jpg">
 
 
 
@@ -336,7 +336,7 @@
       
 
       
-        <p><img src="/images/08.jpg" alt="Image text"></p>
+        <p><img src="/images/top.jpg" alt="Image text"></p>
 <p>记忆力差？<br>用过的代码老忘记？<br>一次又一次的上网搜?<br>好浪费时间！<br>写在博客里方便随时查阅~~~~</p>
 <h1 id="Excel读写（xlsread、xlswrite）"><a href="#Excel读写（xlsread、xlswrite）" class="headerlink" title="Excel读写（xlsread、xlswrite）"></a>Excel读写（xlsread、xlswrite）</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">%读</div><div class="line">mytxt = xlsread(<span class="string">'C:/filename.xls'</span>)</div><div class="line"></div><div class="line">%写</div><div class="line">txt = [<span class="string">'a'</span> <span class="string">'s'</span> <span class="string">'d'</span> <span class="string">'f'</span> <span class="string">'g'</span> <span class="string">'h'</span>];</div><div class="line">mytxt = xlswrite(<span class="string">'C:/filename.xls'</span>,txt)</div></pre></td></tr></table></figure>
 <h1 id="txt读写"><a href="#txt读写" class="headerlink" title="txt读写"></a>txt读写</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">%读</div><div class="line">fid = fopen(<span class="string">'C:/words.txt'</span>,<span class="string">'r'</span>);</div><div class="line">txt = textscan(fid,<span class="string">'%s'</span>);</div><div class="line">fclose(fid);</div><div class="line"></div><div class="line">%写</div><div class="line">txt = [<span class="string">'a'</span> <span class="string">'s'</span> <span class="string">'d'</span> <span class="string">'f'</span> <span class="string">'g'</span> <span class="string">'h'</span>];</div><div class="line">dlmwrite(<span class="string">'C:/myfile.txt'</span>, txt, <span class="string">'delimiter'</span>, <span class="string">'\t'</span>)</div></pre></td></tr></table></figure>
@@ -366,7 +366,7 @@
 <h1 id="删除cell中的空元素"><a href="#删除cell中的空元素" class="headerlink" title="删除cell中的空元素"></a>删除cell中的空元素</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">A(cellfun(@isempty,A)) = [];</div></pre></td></tr></table></figure>
 <h1 id="matlab添加工具箱"><a href="#matlab添加工具箱" class="headerlink" title="matlab添加工具箱"></a>matlab添加工具箱</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">步骤1：</div><div class="line">将工具箱文件夹放到matlab安装目录下的toolbox下；</div><div class="line">步骤2：</div><div class="line">addpath(genpath(<span class="string">'C:\MATLAB\toolbox\BNT'</span>));   </div><div class="line">savepath;  </div><div class="line">步骤3：</div><div class="line"><span class="built_in">which</span> test_BNT.m %test_BNT.m为工具箱任意中的一个函数，若返回路径，则添加成功</div></pre></td></tr></table></figure>
 <h1 id="matlab关联-m文件"><a href="#matlab关联-m文件" class="headerlink" title="matlab关联.m文件"></a>matlab关联.m文件</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">步骤1：</div><div class="line">下载文件  链接：https://pan.baidu.com/s/1boKMur9 密码：x4ui</div><div class="line">步骤2：</div><div class="line">（1）运行matlab软件 -&gt; 打开 -&gt; associateFiles.m -&gt; F5运行 </div><div class="line">（2）运行完毕后文件夹中会生成一个.reg文件，双击该文件，完成即可</div><div class="line">（3）找一个.m文件,右键 -&gt; 打开方式，若有matlab选项，说明关联成功</div></pre></td></tr></table></figure>
-<p><img src="/images/06.jpg" alt="Image text"></p>
+<p><img src="/images/bottom.jpg" alt="Image text"></p>
 
       
     </div>
