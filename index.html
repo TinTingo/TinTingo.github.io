@@ -1,17 +1,24 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
-<!--[if !IE]><!-->
-<html lang="en">
-<!--<![endif]-->
+<html>
 <head>
   <meta charset="utf-8">
+
+  <!-- PACE Progress Bar START -->
+  
+    <script src="/js/pace.min.js"></script>
+    <link rel="stylesheet" href="https://github.com/HubSpot/pace/raw/master/themes/orange/pace-theme-flash.css">
+  
+  
+
+  <!-- PACE Progress Bar START -->
+
   
   <title>TinTin</title>
-
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  
   <meta name="description" content="学习matlab/python/HTML5/c/c++/机器学习/贝叶斯网络中~~~">
 <meta property="og:type" content="website">
 <meta property="og:title" content="TinTin">
@@ -23,162 +30,160 @@
 <meta name="twitter:title" content="TinTin">
 <meta name="twitter:description" content="学习matlab/python/HTML5/c/c++/机器学习/贝叶斯网络中~~~">
   
-    <link rel="alternative" href="/atom.xml" title="TinTin" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="TinTin" type="application/atom+xml">
   
+  <link rel="icon" href="/css/images/favicon.ico">
   
-    <link rel="icon" href="/favicon.ico">
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
     
-  <meta content="{{ title }}" name="description">
-  <meta content="{{ title }}" name="keywords">
-  <meta content="{{ title }}" name="author">
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  <link rel="stylesheet" href="/css/style.css">
 
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
+  <script src="/js/jquery-3.1.1.min.js"></script>
 
-  <!-- Global styles START -->   
-  <link rel="stylesheet" href="/metronic/assets/plugins/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css">
-  <!-- Global styles END --> 
-   
-  <!-- Page level plugin styles START -->
-  <link rel="stylesheet" href="/metronic/assets/pages/css/animate.css">
-  <link rel="stylesheet" href="/metronic/assets/plugins/owl.carousel/assets/owl.carousel.css">
-  <!-- Page level plugin styles END -->
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+  <link rel="stylesheet" href="/css/hiero.css" >
+  <link rel="stylesheet" href="/css/glyphs.css" >
+  
+    <link rel="stylesheet" href="/css/vdonate.css" >
+  
 
-  <!-- Theme styles START -->
-  <link rel="stylesheet" href="/metronic/assets/pages/css/components.css">
-  <link rel="stylesheet" href="/metronic/assets/pages/css/slider.css">
-  <link rel="stylesheet" href="/metronic/assets/corporate/css/style.css">
-  <link rel="stylesheet" href="/metronic/assets/pages/css/portfolio.css">
-  <link rel="stylesheet" href="/metronic/assets/corporate/css/style-responsive.css">
-  <link rel="stylesheet" href="/metronic/assets/corporate/css/themes/blue.css">
-  <link rel="stylesheet" href="/css/theme-styles.css">
-  <!-- Theme styles END -->
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/my.css">
+
 </head>
 
-<body class="corporate">
-  <!-- BEGIN TOP BAR -->
-<div class="pre-header">
-  <div class="container">
-    <div class="row">
-      <!-- BEGIN TOP BAR LEFT PART -->
-      <div class="col-md-6 col-sm-6 col-xs-9 additional-shop-info">
-	<ul class="list-unstyled list-inline">
-	  <li><i class="fa fa-phone"></i><span>11111111111</span></li>
-	  <li><i class="fa fa-envelope-o"></i><span>dingpanys@163.com</span></li>
-	</ul>
+<script>
+var themeMenus = {};
+
+  themeMenus["/"] = "Home"; 
+
+  themeMenus["/archives"] = "Archives"; 
+
+  themeMenus["/categories"] = "Kategorien"; 
+
+  themeMenus["/tags"] = "Tags"; 
+
+  themeMenus["/about"] = "About"; 
+
+</script>
+
+
+  <body>
+
+
+  <header id="allheader" class="site-header" role="banner">
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/" title="TinTin" rel="home"> TinTin </a>
+            
+          </h1>
+
+          
+            <div class="site-description">学习matlab/python/HTML5/c/c++/机器学习/贝叶斯网络中~~~</div>
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+            <div class="clearfix sf-menu">
+
+              <ul id="main-nav" class="nmenu sf-js-enabled">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">Home</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">Archives</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/categories">Kategorien</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/tags">Tags</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">About</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+
       </div>
-      <!-- END TOP BAR LEFT PART -->
-      <!-- BEGIN TOP BAR MENU -->
-      <div class="col-md-6 col-sm-6 col-xs-3 additional-nav">
-	<ul class="list-unstyled list-inline pull-right">
-	  <li><a href="/login">Log In</a></li>
-	</ul>
+  </div>
+</header>
+
+
+  <div id="originBgDiv" style="background: #fff; width: 100%;">
+
+      <div style="max-height:600px; overflow: hidden;  display: flex; display: -webkit-flex; align-items: center;">
+        <img id="originBg" width="100%" alt="" src="">
       </div>
-      <!-- END TOP BAR MENU -->
-    </div>
-  </div>        
-</div>
-<!-- END TOP BAR -->
-<!-- BEGIN HEADER -->
-<div class="header">
-  <div class="container">
-    <!--<a class="site-logo" href="/" id="logo">TinTin</a>-->
 
-    <a class="site-logo" href="/">
-      <img src="/metronic/assets/corporate/img/logos/logo-corp-blue.png" alt="Metronic FrontEnd">
-    </a>
-
-    <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
-
-    <!-- BEGIN NAVIGATION -->
-    <div class="header-navigation pull-right font-transform-inherit">
-      <ul>
-	
-	<li class="active">
-	  <a  href="/">Home</a>
-	</li>
-	
-	<li class="">
-	  <a  href="/archives/">Blog</a>
-	</li>
-	
-	<li class="">
-	  <a  href="/contact/">Contact</a>
-	</li>
-	
-	<li class="">
-	  <a  href="/about/">About</a>
-	</li>
-	
-	<!-- BEGIN TOP SEARCH -->
-	<li class="menu-search">
-	  <span class="sep"></span>
-	  <i class="fa fa-search search-btn"></i>
-	  <div class="search-box">
-	    <form action="#">
-	      <div class="input-group">
-		<input type="text" placeholder="Search" class="form-control st-default-search-input">
-		<span class="input-group-btn">
-		  <button class="btn btn-primary" type="submit">Search</button>
-		</span>
-	      </div>
-	    </form>
-	  </div> 
-	</li>
-	<!-- END TOP SEARCH -->
-      </ul>
-    </div>
-    <!-- END NAVIGATION -->
   </div>
-</div>
-<!-- Header END -->
 
+  <script>
+  function setAboutIMG(){
+      var imgUrls = "css/images/pose.jpg,https://source.unsplash.com/collection/954550/1920x1080".split(",");
+      var random = Math.floor((Math.random() * imgUrls.length ));
+      if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+        document.getElementById("originBg").src=imgUrls[random];
+      } else {
+        document.getElementById("originBg").src='/' + imgUrls[random];
+      }
+  }
+  bgDiv=document.getElementById("originBgDiv");
+  if(location.pathname.match('about')){
+    setAboutIMG();
+    bgDiv.style.display='block';
+  }else{
+    bgDiv.style.display='none';
+  }
+  </script>
+
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer">
+        
+          <section id="main">
   
-  <div class="container">
-    <ul class="breadcrumb">
-      <li class="active">Home</li>
-    </ul>
-  <div id="main">
-    <div class="row">
-
-<div class="col-xs-12 blog-posts">
-
-
-  <section class="archives-wrap">
-    <div class="archives">
-      
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
+    <article id="post-TT0008"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
-  </div>
-  
-    <div class="col-xs-12">
-  
     
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/11/TT0008/">第一个MFC</a>
-    </h2>
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2017/12/11/TT0008/">第一个MFC</a>
+    </h1>
+  
 
-
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-12-11T08:57:18.313Z" itemprop="datePublished">2017/12/11</time>
-
-      </li>
-      <li><i class="fa fa-comments"></i>
-        <a href="https://tintingo.github.io/2017/12/11/TT0008/#disqus_thread" class="article-comment-link">Comments</a>
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-
-      </li>
-    </ul>
-    <div class="blog-item">
+      </header>
+    
+    <div class="article-meta">
       
-	<p><img src="/images/top.jpg" alt="Image text"></p>
+	Posted on <a href="/2017/12/11/TT0008/" class="article-date">
+	  <time datetime="2017-12-11T08:57:18.313Z" itemprop="datePublished">December 11, 2017</time>
+	</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/images/top.jpg" alt="Image text"></p>
 <p>万事开头难！</p>
 <h2 id="步骤一：新建MFC项目"><a href="#步骤一：新建MFC项目" class="headerlink" title="步骤一：新建MFC项目"></a>步骤一：新建MFC项目</h2><p>打开Visual Studio，文件–&gt;新建–&gt;项目，如图1所示：</p>
 <p>图1<br><img src="/images/MFC001.png" alt="Image text"><br>进入新建项目窗口后，左侧选择已安装–&gt;模板–&gt;Visual C++–&gt;MFC，中间选择MFC应用程序，下方自由命名名称和选择新建项目位置，最后点击确定，如图2所示：</p>
@@ -197,45 +202,45 @@
 
       
     </div>
-    <br>
-    <br>
-    <a href="https://tintingo.github.io/2017/12/11/TT0008/" class="more">Read more <i class="icon-angle-right"></i></a>
-  </div>
-</div>
-<hr class="blog-post-sep">
-
+    <footer class="entry-meta entry-footer">
       
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
-    
+      
+      
+            
+      
+    </footer>
   </div>
   
-    <div class="col-xs-12">
+</article>
+
+<!-- Table of Contents -->
+
   
+    <article id="post-TT0007"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/11/TT0007/">JAVA Web学习笔记</a>
-    </h2>
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2017/12/11/TT0007/">JAVA Web学习笔记</a>
+    </h1>
+  
 
-
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-12-11T08:57:18.312Z" itemprop="datePublished">2017/12/11</time>
-
-      </li>
-      <li><i class="fa fa-comments"></i>
-        <a href="https://tintingo.github.io/2017/12/11/TT0007/#disqus_thread" class="article-comment-link">Comments</a>
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-
-      </li>
-    </ul>
-    <div class="blog-item">
+      </header>
+    
+    <div class="article-meta">
       
-	<p><img src="/images/top.jpg" alt="Image text"></p>
+	Posted on <a href="/2017/12/11/TT0007/" class="article-date">
+	  <time datetime="2017-12-11T08:57:18.312Z" itemprop="datePublished">December 11, 2017</time>
+	</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/images/top.jpg" alt="Image text"></p>
 <p><font color="red" face="黑体">声明：以下内容为学习范立锋等《Java Web程序设计教程》的笔记，大部分内容均出自原文！</font></p>
 <h1 id="一、XML"><a href="#一、XML" class="headerlink" title="一、XML"></a>一、XML</h1><p>XML-可拓展标记语言，是一种数据存储语言，用简单的标记来描述数据，其中，XML文件以.xml结尾。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version=<span class="string">"1.0"</span> enconding=<span class="string">"GB2312"</span>?&gt; %声明：版本号1.0；字符编码格式中文</div><div class="line">&lt;person&gt;                                 %根元素，一个xml中只能有一个根元素，其他元素都包含在其中；</div><div class="line">    &lt;!--姓名--!&gt;                         %注释</div><div class="line">    &lt;name&gt;TINTIN&lt;/name&gt;                  %元素</div><div class="line">    &lt;!--性别--!&gt;</div><div class="line">    &lt;sex&gt;男&lt;/sex&gt;</div><div class="line">&lt;/person&gt;</div></pre></td></tr></table></figure></p>
 <p>xml常见用途：<br>1.不同应用程序间数据交互：xml提供一种不同应用程序间数据交互的公共标准；<br>2.一种是数据多种样式：xml将信息的数据和显示样式分离开来（样式需用其他语言来定义，如CSS），这样同一份数据可添加多种式样；<br>3.数据的分布式处理：xml可在Internet上自由传送，客户可从xml中提取到数据，因此，数据处理可在客户端完成，无需返回Web服务器，节省了Internet上的数据宽带。</p>
@@ -251,45 +256,45 @@
 
       
     </div>
-    <br>
-    <br>
-    <a href="https://tintingo.github.io/2017/12/11/TT0007/" class="more">Read more <i class="icon-angle-right"></i></a>
-  </div>
-</div>
-<hr class="blog-post-sep">
-
+    <footer class="entry-meta entry-footer">
       
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
-    
+      
+      
+            
+      
+    </footer>
   </div>
   
-    <div class="col-xs-12">
+</article>
+
+<!-- Table of Contents -->
+
   
+    <article id="post-TT0006"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/11/TT0006/">HTML5基础代码</a>
-    </h2>
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2017/12/11/TT0006/">HTML5基础代码</a>
+    </h1>
+  
 
-
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-12-11T08:57:18.311Z" itemprop="datePublished">2017/12/11</time>
-
-      </li>
-      <li><i class="fa fa-comments"></i>
-        <a href="https://tintingo.github.io/2017/12/11/TT0006/#disqus_thread" class="article-comment-link">Comments</a>
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-
-      </li>
-    </ul>
-    <div class="blog-item">
+      </header>
+    
+    <div class="article-meta">
       
-	<p><img src="/images/top.jpg" alt="Image text"></p>
+	Posted on <a href="/2017/12/11/TT0006/" class="article-date">
+	  <time datetime="2017-12-11T08:57:18.311Z" itemprop="datePublished">December 11, 2017</time>
+	</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/images/top.jpg" alt="Image text"></p>
 <h1 id="设置标签页logo"><a href="#设置标签页logo" class="headerlink" title="设置标签页logo"></a>设置标签页logo</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;link rel=<span class="string">"icon"</span> href=<span class="string">"images/log.png"</span>/&gt;</div></pre></td></tr></table></figure>
 <h1 id="设置背景图片"><a href="#设置背景图片" class="headerlink" title="设置背景图片"></a>设置背景图片</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;body background=<span class="string">"images/BG3.jpg"</span>&gt;</div></pre></td></tr></table></figure>
 <h1 id="设置段落格式"><a href="#设置段落格式" class="headerlink" title="设置段落格式"></a>设置段落格式</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;p style=<span class="string">"font-family:arial;color:black;font-size:35px;text-align:center;"</span>&gt;</div></pre></td></tr></table></figure>
@@ -301,45 +306,45 @@
 
       
     </div>
-    <br>
-    <br>
-    <a href="https://tintingo.github.io/2017/12/11/TT0006/" class="more">Read more <i class="icon-angle-right"></i></a>
-  </div>
-</div>
-<hr class="blog-post-sep">
-
+    <footer class="entry-meta entry-footer">
       
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
-    
+      
+      
+            
+      
+    </footer>
   </div>
   
-    <div class="col-xs-12">
+</article>
+
+<!-- Table of Contents -->
+
   
+    <article id="post-TT0005"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/11/TT0005/">音乐|视频更新</a>
-    </h2>
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2017/12/11/TT0005/">音乐|视频更新</a>
+    </h1>
+  
 
-
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-12-11T08:57:18.310Z" itemprop="datePublished">2017/12/11</time>
-
-      </li>
-      <li><i class="fa fa-comments"></i>
-        <a href="https://tintingo.github.io/2017/12/11/TT0005/#disqus_thread" class="article-comment-link">Comments</a>
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-
-      </li>
-    </ul>
-    <div class="blog-item">
+      </header>
+    
+    <div class="article-meta">
       
-	<p><img src="/images/top.jpg" alt="Image text"></p>
+	Posted on <a href="/2017/12/11/TT0005/" class="article-date">
+	  <time datetime="2017-12-11T08:57:18.310Z" itemprop="datePublished">December 11, 2017</time>
+	</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/images/top.jpg" alt="Image text"></p>
 <h1 id="插入视频"><a href="#插入视频" class="headerlink" title="插入视频"></a>插入视频</h1><h2 id="法（一）"><a href="#法（一）" class="headerlink" title="法（一）"></a>法（一）</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;iframe  align=center </div><div class="line">	width=<span class="string">"736"</span> height=<span class="string">"400"</span> </div><div class="line">    src=<span class="string">"/movies/M01.mp4"</span>   </div><div class="line">    frameborder=0 allowfullscreen&gt;  </div><div class="line">&lt;/iframe&gt;</div></pre></td></tr></table></figure>
 <p>src=”/movies/M01.mp4”为视频地址。</p>
 <iframe align="center" width="736" height="400" src="/movies/M01.mp4" frameborder="0" allowfullscreen><br></iframe> 
@@ -356,45 +361,98 @@
 
       
     </div>
-    <br>
-    <br>
-    <a href="https://tintingo.github.io/2017/12/11/TT0005/" class="more">Read more <i class="icon-angle-right"></i></a>
-  </div>
-</div>
-<hr class="blog-post-sep">
-
+    <footer class="entry-meta entry-footer">
       
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
-    
+      
+      
+            
+      
+    </footer>
   </div>
   
-    <div class="col-xs-12">
+</article>
+
+<!-- Table of Contents -->
+
   
+    <article id="post-TT0004"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/11/TT0003/">一些常用Matlab代码记录</a>
-    </h2>
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2017/12/11/TT0004/">贝叶斯网络学习（一）</a>
+    </h1>
+  
 
-
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-12-11T08:57:18.309Z" itemprop="datePublished">2017/12/11</time>
-
-      </li>
-      <li><i class="fa fa-comments"></i>
-        <a href="https://tintingo.github.io/2017/12/11/TT0003/#disqus_thread" class="article-comment-link">Comments</a>
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-
-      </li>
-    </ul>
-    <div class="blog-item">
+      </header>
+    
+    <div class="article-meta">
       
-	<p><img src="/images/top.jpg" alt="Image text"></p>
+	Posted on <a href="/2017/12/11/TT0004/" class="article-date">
+	  <time datetime="2017-12-11T08:57:18.309Z" itemprop="datePublished">December 11, 2017</time>
+	</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/images/top.jpg" alt="Image text"></p>
+<h1 id="贝叶斯网络"><a href="#贝叶斯网络" class="headerlink" title="贝叶斯网络"></a>贝叶斯网络</h1><p>贝叶斯网络（Bayesian network, BN）又名信念网络和因果概率网络，由Pearl于1988年首次提出，是一种基于概率推理的数学网络模型。贝叶斯网络是图论和概率论的结合体，即图形化概率网络，是一种有向非循环图形模型。贝叶斯网络是将概率统计应用于复杂问题的工具，其在解决不确定性和不完整性问题上具有相当的优势，在数据挖掘、模式识别及人工智能等领域都有广泛研究。<br><a href="https://baike.baidu.com/item/%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%BD%91%E7%BB%9C/4102921?fr=aladdin" target="_blank" rel="external">【百度百科】</a></p>
+<h2 id="常见用途1-诊断；2-预测；3-分类；4-决策。"><a href="#常见用途1-诊断；2-预测；3-分类；4-决策。" class="headerlink" title="常见用途1.诊断；2.预测；3.分类；4.决策。"></a>常见用途1.诊断；2.预测；3.分类；4.决策。</h2><h2 id="三大过程"><a href="#三大过程" class="headerlink" title="三大过程"></a>三大过程</h2><p>贝叶斯网络是目前解决不确定性和不完整性问题最有效的模型之一，结构学习和参数学习是贝叶斯网络研究的基础，而贝叶斯推理则是贝叶斯网络研究的上层建筑。</p>
+<h3 id="结构学习：贝叶斯网络结构学习是贝叶斯网络研究的重点和难点，它是在观测数据和先验知识的基础上构建起来的网络。贝叶斯网络结构学习就是寻找与给定数据集拟合最优的网络，而贝叶斯网络结构学习算法中，最经典的两种就是K2算法和爬山算法-hill-climbing-HC-。K2算法对先验知识要求比HC算法高，K2算法需预先知道搜索空间的节点序，这往往需要专家知识的帮助。随着研究不断深入，新算法也不断加入到结构学习，如模拟退火算法、遗传算法和群体算法等。"><a href="#结构学习：贝叶斯网络结构学习是贝叶斯网络研究的重点和难点，它是在观测数据和先验知识的基础上构建起来的网络。贝叶斯网络结构学习就是寻找与给定数据集拟合最优的网络，而贝叶斯网络结构学习算法中，最经典的两种就是K2算法和爬山算法-hill-climbing-HC-。K2算法对先验知识要求比HC算法高，K2算法需预先知道搜索空间的节点序，这往往需要专家知识的帮助。随着研究不断深入，新算法也不断加入到结构学习，如模拟退火算法、遗传算法和群体算法等。" class="headerlink" title="结构学习：贝叶斯网络结构学习是贝叶斯网络研究的重点和难点，它是在观测数据和先验知识的基础上构建起来的网络。贝叶斯网络结构学习就是寻找与给定数据集拟合最优的网络，而贝叶斯网络结构学习算法中，最经典的两种就是K2算法和爬山算法(hill climbing, HC)。K2算法对先验知识要求比HC算法高，K2算法需预先知道搜索空间的节点序，这往往需要专家知识的帮助。随着研究不断深入，新算法也不断加入到结构学习，如模拟退火算法、遗传算法和群体算法等。"></a>结构学习：贝叶斯网络结构学习是贝叶斯网络研究的重点和难点，它是在观测数据和先验知识的基础上构建起来的网络。贝叶斯网络结构学习就是寻找与给定数据集拟合最优的网络，而贝叶斯网络结构学习算法中，最经典的两种就是K2算法和爬山算法(hill climbing, HC)。K2算法对先验知识要求比HC算法高，K2算法需预先知道搜索空间的节点序，这往往需要专家知识的帮助。随着研究不断深入，新算法也不断加入到结构学习，如模拟退火算法、遗传算法和群体算法等。</h3><h3 id="参数学习：所谓参数学习就是在已知网络拓扑结构的情况下，通过给定样本数据，学习整个贝叶斯网络的概率分布情况。"><a href="#参数学习：所谓参数学习就是在已知网络拓扑结构的情况下，通过给定样本数据，学习整个贝叶斯网络的概率分布情况。" class="headerlink" title="参数学习：所谓参数学习就是在已知网络拓扑结构的情况下，通过给定样本数据，学习整个贝叶斯网络的概率分布情况。"></a>参数学习：所谓参数学习就是在已知网络拓扑结构的情况下，通过给定样本数据，学习整个贝叶斯网络的概率分布情况。</h3><h3 id="推理：贝叶斯推理是在已知贝叶斯网络结构的基础上进行推理的，它有效的结合了训练样本的先验知识和当前样本的后验概率，是概率论中贝叶斯定理的延伸。贝叶斯网络推理是在网络结构建立及数据参数学习之后，给定证据计算某节点出现概率的过程。换言之，贝叶斯网络推理就是通过计算后验概率回答查询的问题；它结合了拓扑节点之间的相互联系，通过参数信息的相互传递，从而进行有效的概率推理。常见的推理算法包括团树传播算法、联合树算法、随机抽样算法以及循环消息传递算法等。"><a href="#推理：贝叶斯推理是在已知贝叶斯网络结构的基础上进行推理的，它有效的结合了训练样本的先验知识和当前样本的后验概率，是概率论中贝叶斯定理的延伸。贝叶斯网络推理是在网络结构建立及数据参数学习之后，给定证据计算某节点出现概率的过程。换言之，贝叶斯网络推理就是通过计算后验概率回答查询的问题；它结合了拓扑节点之间的相互联系，通过参数信息的相互传递，从而进行有效的概率推理。常见的推理算法包括团树传播算法、联合树算法、随机抽样算法以及循环消息传递算法等。" class="headerlink" title="推理：贝叶斯推理是在已知贝叶斯网络结构的基础上进行推理的，它有效的结合了训练样本的先验知识和当前样本的后验概率，是概率论中贝叶斯定理的延伸。贝叶斯网络推理是在网络结构建立及数据参数学习之后，给定证据计算某节点出现概率的过程。换言之，贝叶斯网络推理就是通过计算后验概率回答查询的问题；它结合了拓扑节点之间的相互联系，通过参数信息的相互传递，从而进行有效的概率推理。常见的推理算法包括团树传播算法、联合树算法、随机抽样算法以及循环消息传递算法等。"></a>推理：贝叶斯推理是在已知贝叶斯网络结构的基础上进行推理的，它有效的结合了训练样本的先验知识和当前样本的后验概率，是概率论中贝叶斯定理的延伸。贝叶斯网络推理是在网络结构建立及数据参数学习之后，给定证据计算某节点出现概率的过程。换言之，贝叶斯网络推理就是通过计算后验概率回答查询的问题；它结合了拓扑节点之间的相互联系，通过参数信息的相互传递，从而进行有效的概率推理。常见的推理算法包括团树传播算法、联合树算法、随机抽样算法以及循环消息传递算法等。</h3><h2 id="研究现状"><a href="#研究现状" class="headerlink" title="研究现状"></a>研究现状</h2><h3 id="结构学习"><a href="#结构学习" class="headerlink" title="结构学习"></a>结构学习</h3><p><img src="/images/F01.png" alt="Image text"></p>
+<h3 id="参数学习"><a href="#参数学习" class="headerlink" title="参数学习"></a>参数学习</h3><p><img src="/images/F02.png" alt="Image text"></p>
+<h3 id="贝叶斯推理"><a href="#贝叶斯推理" class="headerlink" title="贝叶斯推理"></a>贝叶斯推理</h3><p><img src="/images/F03.png" alt="Image text"></p>
+<h1 id="结构学习1"><a href="#结构学习1" class="headerlink" title="结构学习1"></a>结构学习1</h1><h2 id="声明：以下内容为学习论文【郭童-基于改进鱼群蜂群算法的贝叶斯网络结构学习-D-浙江大学-2014-】的笔记，所有内容均出自原文！"><a href="#声明：以下内容为学习论文【郭童-基于改进鱼群蜂群算法的贝叶斯网络结构学习-D-浙江大学-2014-】的笔记，所有内容均出自原文！" class="headerlink" title="声明：以下内容为学习论文【郭童. 基于改进鱼群蜂群算法的贝叶斯网络结构学习[D]. 浙江大学, 2014.】的笔记，所有内容均出自原文！"></a><font color="red" face="黑体">声明：以下内容为学习论文【郭童. 基于改进鱼群蜂群算法的贝叶斯网络结构学习[D]. 浙江大学, 2014.】的笔记，所有内容均出自原文！</font></h2><h2 id="贝叶斯网络是一种图形化模型，网络结构是贝叶斯网络研究的基础，结构学习是贝叶斯网络研究的重中之重！"><a href="#贝叶斯网络是一种图形化模型，网络结构是贝叶斯网络研究的基础，结构学习是贝叶斯网络研究的重中之重！" class="headerlink" title="贝叶斯网络是一种图形化模型，网络结构是贝叶斯网络研究的基础，结构学习是贝叶斯网络研究的重中之重！"></a>贝叶斯网络是一种图形化模型，网络结构是贝叶斯网络研究的基础，结构学习是贝叶斯网络研究的重中之重！</h2><p>贝叶斯网络结构有效的描述了随机变量（节点）间的因果关系，利用节点间的条件独立关系可有效的计算出联合概率。<br>优点：<br>1、贝叶斯网络可以快速对问题的因果关系进行学习建模。<br>2、贝叶斯网络可以方便的处理不确定性和概率性的事物。<br>3、贝叶斯网络可以将专家先验知识和数据有效的结合进行分析。<br>4、贝叶斯网络可以有效地处理较小的甚至是部分数据丢失的数据集。<br>贝叶斯网络的学习就是通过大量的数据分析并且结合专家的经验，对给定的样本生成对此样本的因果关系网络，其实就一个有向无环图，以及与此因果关系网络之中节点相对应的条件概率分布表。</p>
+<h2 id="概率论"><a href="#概率论" class="headerlink" title="概率论"></a>概率论</h2><h3 id="条件概率"><a href="#条件概率" class="headerlink" title="条件概率"></a>条件概率</h3><h3 id="P-B-A-P-AB-P-A"><a href="#P-B-A-P-AB-P-A" class="headerlink" title="P(B|A) = P(AB)/P(A)"></a>P(B|A) = P(AB)/P(A)</h3><p>（概率其实就是信度，或者说信度可用概率表示。）</p>
+<h3 id="全概率"><a href="#全概率" class="headerlink" title="全概率"></a>全概率</h3><p>设B1、B2，…，Bn是样本空间S中两两不相容的事件，对于样本空间中的任意事件有如下概率公式：</p>
+<h3 id="P-A-E-P-A-Bi-P-Bi"><a href="#P-A-E-P-A-Bi-P-Bi" class="headerlink" title="P(A) = E(P(A|Bi)*P(Bi))"></a>P(A) = E(P(A|Bi)*P(Bi))</h3><h3 id="贝叶斯公式"><a href="#贝叶斯公式" class="headerlink" title="贝叶斯公式"></a>贝叶斯公式</h3><p><img src="/images/16.jpg" alt="Image text"></p>
+<h2 id="图论"><a href="#图论" class="headerlink" title="图论"></a>图论</h2><h3 id="贝叶斯网络是一个有向无环图。图论体现的是节点之间连通或者分离的相互关系，而从概率论的角度定量的刻画了变量之间依赖或者独立的相互关系。"><a href="#贝叶斯网络是一个有向无环图。图论体现的是节点之间连通或者分离的相互关系，而从概率论的角度定量的刻画了变量之间依赖或者独立的相互关系。" class="headerlink" title="贝叶斯网络是一个有向无环图。图论体现的是节点之间连通或者分离的相互关系，而从概率论的角度定量的刻画了变量之间依赖或者独立的相互关系。"></a>贝叶斯网络是一个有向无环图。图论体现的是节点之间连通或者分离的相互关系，而从概率论的角度定量的刻画了变量之间依赖或者独立的相互关系。</h3><p><img src="/images/17.jpg" alt="Image text"><br>如果X与Y之间的所有通道都被Z阻塞，那么就称Z有向分离X和Y，简称d-分离X和Y。如果Zd-分离X和Y，那么当Z中的变量全部被观测时，信息就不能在X和Y之间相互传递，因而X与Y保持相互独立。<br><img src="/images/18.jpg" alt="Image text"></p>
+<p><img src="/images/bottom.jpg" alt="Image text"></p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+      
+            
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-TT0003"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2017/12/11/TT0003/">一些常用Matlab代码记录</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/2017/12/11/TT0003/" class="article-date">
+	  <time datetime="2017-12-11T08:57:18.309Z" itemprop="datePublished">December 11, 2017</time>
+	</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/images/top.jpg" alt="Image text"></p>
 <p>记忆力差？<br>用过的代码老忘记？<br>一次又一次的上网搜?<br>好浪费时间！<br>写在博客里方便随时查阅~~~~</p>
 <h1 id="Excel读写（xlsread、xlswrite）"><a href="#Excel读写（xlsread、xlswrite）" class="headerlink" title="Excel读写（xlsread、xlswrite）"></a>Excel读写（xlsread、xlswrite）</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">%读</div><div class="line">mytxt = xlsread(<span class="string">'C:/filename.xls'</span>)</div><div class="line"></div><div class="line">%写</div><div class="line">txt = [<span class="string">'a'</span> <span class="string">'s'</span> <span class="string">'d'</span> <span class="string">'f'</span> <span class="string">'g'</span> <span class="string">'h'</span>];</div><div class="line">mytxt = xlswrite(<span class="string">'C:/filename.xls'</span>,txt)</div></pre></td></tr></table></figure>
 <h1 id="txt读写"><a href="#txt读写" class="headerlink" title="txt读写"></a>txt读写</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">%读</div><div class="line">fid = fopen(<span class="string">'C:/words.txt'</span>,<span class="string">'r'</span>);</div><div class="line">txt = textscan(fid,<span class="string">'%s'</span>);</div><div class="line">fclose(fid);</div><div class="line"></div><div class="line">%写</div><div class="line">txt = [<span class="string">'a'</span> <span class="string">'s'</span> <span class="string">'d'</span> <span class="string">'f'</span> <span class="string">'g'</span> <span class="string">'h'</span>];</div><div class="line">dlmwrite(<span class="string">'C:/myfile.txt'</span>, txt, <span class="string">'delimiter'</span>, <span class="string">'\t'</span>)</div></pre></td></tr></table></figure>
@@ -428,98 +486,45 @@
 
       
     </div>
-    <br>
-    <br>
-    <a href="https://tintingo.github.io/2017/12/11/TT0003/" class="more">Read more <i class="icon-angle-right"></i></a>
-  </div>
-</div>
-<hr class="blog-post-sep">
-
+    <footer class="entry-meta entry-footer">
       
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
-    
+      
+      
+            
+      
+    </footer>
   </div>
   
-    <div class="col-xs-12">
+</article>
+
+<!-- Table of Contents -->
+
   
+    <article id="post-TT0002"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/11/TT0004/">贝叶斯网络学习（一）</a>
-    </h2>
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2017/12/11/TT0002/">如何用Matlab设计GUI？</a>
+    </h1>
+  
 
-
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-12-11T08:57:18.309Z" itemprop="datePublished">2017/12/11</time>
-
-      </li>
-      <li><i class="fa fa-comments"></i>
-        <a href="https://tintingo.github.io/2017/12/11/TT0004/#disqus_thread" class="article-comment-link">Comments</a>
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-
-      </li>
-    </ul>
-    <div class="blog-item">
+      </header>
+    
+    <div class="article-meta">
       
-	<p><img src="/images/top.jpg" alt="Image text"></p>
-<h1 id="贝叶斯网络"><a href="#贝叶斯网络" class="headerlink" title="贝叶斯网络"></a>贝叶斯网络</h1><p>贝叶斯网络（Bayesian network, BN）又名信念网络和因果概率网络，由Pearl于1988年首次提出，是一种基于概率推理的数学网络模型。贝叶斯网络是图论和概率论的结合体，即图形化概率网络，是一种有向非循环图形模型。贝叶斯网络是将概率统计应用于复杂问题的工具，其在解决不确定性和不完整性问题上具有相当的优势，在数据挖掘、模式识别及人工智能等领域都有广泛研究。<br><a href="https://baike.baidu.com/item/%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%BD%91%E7%BB%9C/4102921?fr=aladdin" target="_blank" rel="external">【百度百科】</a></p>
-<h2 id="常见用途1-诊断；2-预测；3-分类；4-决策。"><a href="#常见用途1-诊断；2-预测；3-分类；4-决策。" class="headerlink" title="常见用途1.诊断；2.预测；3.分类；4.决策。"></a>常见用途1.诊断；2.预测；3.分类；4.决策。</h2><h2 id="三大过程"><a href="#三大过程" class="headerlink" title="三大过程"></a>三大过程</h2><p>贝叶斯网络是目前解决不确定性和不完整性问题最有效的模型之一，结构学习和参数学习是贝叶斯网络研究的基础，而贝叶斯推理则是贝叶斯网络研究的上层建筑。</p>
-<h3 id="结构学习：贝叶斯网络结构学习是贝叶斯网络研究的重点和难点，它是在观测数据和先验知识的基础上构建起来的网络。贝叶斯网络结构学习就是寻找与给定数据集拟合最优的网络，而贝叶斯网络结构学习算法中，最经典的两种就是K2算法和爬山算法-hill-climbing-HC-。K2算法对先验知识要求比HC算法高，K2算法需预先知道搜索空间的节点序，这往往需要专家知识的帮助。随着研究不断深入，新算法也不断加入到结构学习，如模拟退火算法、遗传算法和群体算法等。"><a href="#结构学习：贝叶斯网络结构学习是贝叶斯网络研究的重点和难点，它是在观测数据和先验知识的基础上构建起来的网络。贝叶斯网络结构学习就是寻找与给定数据集拟合最优的网络，而贝叶斯网络结构学习算法中，最经典的两种就是K2算法和爬山算法-hill-climbing-HC-。K2算法对先验知识要求比HC算法高，K2算法需预先知道搜索空间的节点序，这往往需要专家知识的帮助。随着研究不断深入，新算法也不断加入到结构学习，如模拟退火算法、遗传算法和群体算法等。" class="headerlink" title="结构学习：贝叶斯网络结构学习是贝叶斯网络研究的重点和难点，它是在观测数据和先验知识的基础上构建起来的网络。贝叶斯网络结构学习就是寻找与给定数据集拟合最优的网络，而贝叶斯网络结构学习算法中，最经典的两种就是K2算法和爬山算法(hill climbing, HC)。K2算法对先验知识要求比HC算法高，K2算法需预先知道搜索空间的节点序，这往往需要专家知识的帮助。随着研究不断深入，新算法也不断加入到结构学习，如模拟退火算法、遗传算法和群体算法等。"></a>结构学习：贝叶斯网络结构学习是贝叶斯网络研究的重点和难点，它是在观测数据和先验知识的基础上构建起来的网络。贝叶斯网络结构学习就是寻找与给定数据集拟合最优的网络，而贝叶斯网络结构学习算法中，最经典的两种就是K2算法和爬山算法(hill climbing, HC)。K2算法对先验知识要求比HC算法高，K2算法需预先知道搜索空间的节点序，这往往需要专家知识的帮助。随着研究不断深入，新算法也不断加入到结构学习，如模拟退火算法、遗传算法和群体算法等。</h3><h3 id="参数学习：所谓参数学习就是在已知网络拓扑结构的情况下，通过给定样本数据，学习整个贝叶斯网络的概率分布情况。"><a href="#参数学习：所谓参数学习就是在已知网络拓扑结构的情况下，通过给定样本数据，学习整个贝叶斯网络的概率分布情况。" class="headerlink" title="参数学习：所谓参数学习就是在已知网络拓扑结构的情况下，通过给定样本数据，学习整个贝叶斯网络的概率分布情况。"></a>参数学习：所谓参数学习就是在已知网络拓扑结构的情况下，通过给定样本数据，学习整个贝叶斯网络的概率分布情况。</h3><h3 id="推理：贝叶斯推理是在已知贝叶斯网络结构的基础上进行推理的，它有效的结合了训练样本的先验知识和当前样本的后验概率，是概率论中贝叶斯定理的延伸。贝叶斯网络推理是在网络结构建立及数据参数学习之后，给定证据计算某节点出现概率的过程。换言之，贝叶斯网络推理就是通过计算后验概率回答查询的问题；它结合了拓扑节点之间的相互联系，通过参数信息的相互传递，从而进行有效的概率推理。常见的推理算法包括团树传播算法、联合树算法、随机抽样算法以及循环消息传递算法等。"><a href="#推理：贝叶斯推理是在已知贝叶斯网络结构的基础上进行推理的，它有效的结合了训练样本的先验知识和当前样本的后验概率，是概率论中贝叶斯定理的延伸。贝叶斯网络推理是在网络结构建立及数据参数学习之后，给定证据计算某节点出现概率的过程。换言之，贝叶斯网络推理就是通过计算后验概率回答查询的问题；它结合了拓扑节点之间的相互联系，通过参数信息的相互传递，从而进行有效的概率推理。常见的推理算法包括团树传播算法、联合树算法、随机抽样算法以及循环消息传递算法等。" class="headerlink" title="推理：贝叶斯推理是在已知贝叶斯网络结构的基础上进行推理的，它有效的结合了训练样本的先验知识和当前样本的后验概率，是概率论中贝叶斯定理的延伸。贝叶斯网络推理是在网络结构建立及数据参数学习之后，给定证据计算某节点出现概率的过程。换言之，贝叶斯网络推理就是通过计算后验概率回答查询的问题；它结合了拓扑节点之间的相互联系，通过参数信息的相互传递，从而进行有效的概率推理。常见的推理算法包括团树传播算法、联合树算法、随机抽样算法以及循环消息传递算法等。"></a>推理：贝叶斯推理是在已知贝叶斯网络结构的基础上进行推理的，它有效的结合了训练样本的先验知识和当前样本的后验概率，是概率论中贝叶斯定理的延伸。贝叶斯网络推理是在网络结构建立及数据参数学习之后，给定证据计算某节点出现概率的过程。换言之，贝叶斯网络推理就是通过计算后验概率回答查询的问题；它结合了拓扑节点之间的相互联系，通过参数信息的相互传递，从而进行有效的概率推理。常见的推理算法包括团树传播算法、联合树算法、随机抽样算法以及循环消息传递算法等。</h3><h2 id="研究现状"><a href="#研究现状" class="headerlink" title="研究现状"></a>研究现状</h2><h3 id="结构学习"><a href="#结构学习" class="headerlink" title="结构学习"></a>结构学习</h3><p><img src="/images/F01.png" alt="Image text"></p>
-<h3 id="参数学习"><a href="#参数学习" class="headerlink" title="参数学习"></a>参数学习</h3><p><img src="/images/F02.png" alt="Image text"></p>
-<h3 id="贝叶斯推理"><a href="#贝叶斯推理" class="headerlink" title="贝叶斯推理"></a>贝叶斯推理</h3><p><img src="/images/F03.png" alt="Image text"></p>
-<h1 id="结构学习1"><a href="#结构学习1" class="headerlink" title="结构学习1"></a>结构学习1</h1><h2 id="声明：以下内容为学习论文【郭童-基于改进鱼群蜂群算法的贝叶斯网络结构学习-D-浙江大学-2014-】的笔记，所有内容均出自原文！"><a href="#声明：以下内容为学习论文【郭童-基于改进鱼群蜂群算法的贝叶斯网络结构学习-D-浙江大学-2014-】的笔记，所有内容均出自原文！" class="headerlink" title="声明：以下内容为学习论文【郭童. 基于改进鱼群蜂群算法的贝叶斯网络结构学习[D]. 浙江大学, 2014.】的笔记，所有内容均出自原文！"></a><font color="red" face="黑体">声明：以下内容为学习论文【郭童. 基于改进鱼群蜂群算法的贝叶斯网络结构学习[D]. 浙江大学, 2014.】的笔记，所有内容均出自原文！</font></h2><h2 id="贝叶斯网络是一种图形化模型，网络结构是贝叶斯网络研究的基础，结构学习是贝叶斯网络研究的重中之重！"><a href="#贝叶斯网络是一种图形化模型，网络结构是贝叶斯网络研究的基础，结构学习是贝叶斯网络研究的重中之重！" class="headerlink" title="贝叶斯网络是一种图形化模型，网络结构是贝叶斯网络研究的基础，结构学习是贝叶斯网络研究的重中之重！"></a>贝叶斯网络是一种图形化模型，网络结构是贝叶斯网络研究的基础，结构学习是贝叶斯网络研究的重中之重！</h2><p>贝叶斯网络结构有效的描述了随机变量（节点）间的因果关系，利用节点间的条件独立关系可有效的计算出联合概率。<br>优点：<br>1、贝叶斯网络可以快速对问题的因果关系进行学习建模。<br>2、贝叶斯网络可以方便的处理不确定性和概率性的事物。<br>3、贝叶斯网络可以将专家先验知识和数据有效的结合进行分析。<br>4、贝叶斯网络可以有效地处理较小的甚至是部分数据丢失的数据集。<br>贝叶斯网络的学习就是通过大量的数据分析并且结合专家的经验，对给定的样本生成对此样本的因果关系网络，其实就一个有向无环图，以及与此因果关系网络之中节点相对应的条件概率分布表。</p>
-<h2 id="概率论"><a href="#概率论" class="headerlink" title="概率论"></a>概率论</h2><h3 id="条件概率"><a href="#条件概率" class="headerlink" title="条件概率"></a>条件概率</h3><h3 id="P-B-A-P-AB-P-A"><a href="#P-B-A-P-AB-P-A" class="headerlink" title="P(B|A) = P(AB)/P(A)"></a>P(B|A) = P(AB)/P(A)</h3><p>（概率其实就是信度，或者说信度可用概率表示。）</p>
-<h3 id="全概率"><a href="#全概率" class="headerlink" title="全概率"></a>全概率</h3><p>设B1、B2，…，Bn是样本空间S中两两不相容的事件，对于样本空间中的任意事件有如下概率公式：</p>
-<h3 id="P-A-E-P-A-Bi-P-Bi"><a href="#P-A-E-P-A-Bi-P-Bi" class="headerlink" title="P(A) = E(P(A|Bi)*P(Bi))"></a>P(A) = E(P(A|Bi)*P(Bi))</h3><h3 id="贝叶斯公式"><a href="#贝叶斯公式" class="headerlink" title="贝叶斯公式"></a>贝叶斯公式</h3><p><img src="/images/16.jpg" alt="Image text"></p>
-<h2 id="图论"><a href="#图论" class="headerlink" title="图论"></a>图论</h2><h3 id="贝叶斯网络是一个有向无环图。图论体现的是节点之间连通或者分离的相互关系，而从概率论的角度定量的刻画了变量之间依赖或者独立的相互关系。"><a href="#贝叶斯网络是一个有向无环图。图论体现的是节点之间连通或者分离的相互关系，而从概率论的角度定量的刻画了变量之间依赖或者独立的相互关系。" class="headerlink" title="贝叶斯网络是一个有向无环图。图论体现的是节点之间连通或者分离的相互关系，而从概率论的角度定量的刻画了变量之间依赖或者独立的相互关系。"></a>贝叶斯网络是一个有向无环图。图论体现的是节点之间连通或者分离的相互关系，而从概率论的角度定量的刻画了变量之间依赖或者独立的相互关系。</h3><p><img src="/images/17.jpg" alt="Image text"><br>如果X与Y之间的所有通道都被Z阻塞，那么就称Z有向分离X和Y，简称d-分离X和Y。如果Zd-分离X和Y，那么当Z中的变量全部被观测时，信息就不能在X和Y之间相互传递，因而X与Y保持相互独立。<br><img src="/images/18.jpg" alt="Image text"></p>
-<p><img src="/images/bottom.jpg" alt="Image text"></p>
+	Posted on <a href="/2017/12/11/TT0002/" class="article-date">
+	  <time datetime="2017-12-11T08:57:18.308Z" itemprop="datePublished">December 11, 2017</time>
+	</a>
 
       
     </div>
-    <br>
-    <br>
-    <a href="https://tintingo.github.io/2017/12/11/TT0004/" class="more">Read more <i class="icon-angle-right"></i></a>
-  </div>
-</div>
-<hr class="blog-post-sep">
-
+    <div class="article-entry" itemprop="articleBody">
       
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
-    
-  </div>
-  
-    <div class="col-xs-12">
-  
-    
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/11/TT0002/">如何用Matlab设计GUI？</a>
-    </h2>
-
-
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-12-11T08:57:18.308Z" itemprop="datePublished">2017/12/11</time>
-
-      </li>
-      <li><i class="fa fa-comments"></i>
-        <a href="https://tintingo.github.io/2017/12/11/TT0002/#disqus_thread" class="article-comment-link">Comments</a>
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-
-      </li>
-    </ul>
-    <div class="blog-item">
-      
-	<p><img src="/images/top.jpg" alt="Image text"></p>
+        <p><img src="/images/top.jpg" alt="Image text"></p>
 <h2 id="什么是GUI？matlab编程可以设计GUI吗？"><a href="#什么是GUI？matlab编程可以设计GUI吗？" class="headerlink" title="什么是GUI？matlab编程可以设计GUI吗？"></a>什么是GUI？matlab编程可以设计GUI吗？</h2><p>GUI定义:GUI指的是图形用户界面（Graphical User Interface，GUI），也称之为图形用户接口，GUI是用图形化方式显示的计算机操作用户界面（可视化）。<br>我们通常都是使用matlab来做计算，matlab还可以设计GUI？matlab编当然可以设计GUI！<br>那么，使用matlab到底如何设计GUI呢？往下看喽！</p>
 <h2 id="步骤一：新建GUI"><a href="#步骤一：新建GUI" class="headerlink" title="步骤一：新建GUI"></a>步骤一：新建GUI</h2><p>打开Matlab，在Command Window输入命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">guide</div></pre></td></tr></table></figure></p>
 <p>回车后打开窗口如下</p>
@@ -532,45 +537,45 @@
 
       
     </div>
-    <br>
-    <br>
-    <a href="https://tintingo.github.io/2017/12/11/TT0002/" class="more">Read more <i class="icon-angle-right"></i></a>
-  </div>
-</div>
-<hr class="blog-post-sep">
-
+    <footer class="entry-meta entry-footer">
       
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
-    
+      
+      
+            
+      
+    </footer>
   </div>
   
-    <div class="col-xs-12">
+</article>
+
+<!-- Table of Contents -->
+
   
+    <article id="post-TT0001"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/04/TT0001/">如何搭建个人博客？</a>
-    </h2>
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2017/11/04/TT0001/">如何搭建个人博客？</a>
+    </h1>
+  
 
-
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-11-04T03:03:44.397Z" itemprop="datePublished">2017/11/04</time>
-
-      </li>
-      <li><i class="fa fa-comments"></i>
-        <a href="https://tintingo.github.io/2017/11/04/TT0001/#disqus_thread" class="article-comment-link">Comments</a>
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-
-      </li>
-    </ul>
-    <div class="blog-item">
+      </header>
+    
+    <div class="article-meta">
       
-	<p><img src="/images/top.jpg" alt="Image text"></p>
+	Posted on <a href="/2017/11/04/TT0001/" class="article-date">
+	  <time datetime="2017-11-04T03:03:44.397Z" itemprop="datePublished">November 4, 2017</time>
+	</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/images/top.jpg" alt="Image text"></p>
 <p>当你遇到一个似曾相识的知识却突然想不起来时：你需要一个个人博客！<br>当你觉得一段经历难忘而值得分享却不知所措时：你需要一个个人博客！</p>
 <h2 id="哎呦！不错哟！"><a href="#哎呦！不错哟！" class="headerlink" title="哎呦！不错哟！"></a>哎呦！不错哟！</h2><h3 id="博主在网上搜索了多种方法，折腾了1天都没成功（都有坑），还一度想放弃搭建，但“柳暗花明又一村”的是，我综合了多篇博文，终于我成功了！在此：哈哈大笑！"><a href="#博主在网上搜索了多种方法，折腾了1天都没成功（都有坑），还一度想放弃搭建，但“柳暗花明又一村”的是，我综合了多篇博文，终于我成功了！在此：哈哈大笑！" class="headerlink" title="博主在网上搜索了多种方法，折腾了1天都没成功（都有坑），还一度想放弃搭建，但“柳暗花明又一村”的是，我综合了多篇博文，终于我成功了！在此：哈哈大笑！"></a>博主在网上搜索了多种方法，折腾了1天都没成功（都有坑），还一度想放弃搭建，但“柳暗花明又一村”的是，我综合了多篇博文，终于我成功了！在此：哈哈大笑！</h3><p>网络上的方法很多，您可以搜搜看，当然，您也可以往下看！</p>
 <h2 id="现在开始"><a href="#现在开始" class="headerlink" title="现在开始"></a>现在开始</h2><h2 id="步骤一：下载安装软件"><a href="#步骤一：下载安装软件" class="headerlink" title="步骤一：下载安装软件"></a>步骤一：下载安装软件</h2><p>到官网下载：<br>            <a href="https://nodejs.org/en/" target="_blank" rel="external">NodeJs</a><br>            <a href="https://git-scm.com/" target="_blank" rel="external">Git</a><br>            (在官网上无法下载的话，可以到“白杜云”上搜索下载)<br>安装NodeJs时按正常步骤就行，安装Git时需要注意如下：<br><img src="/images/first01.png" alt="Image text"><br><img src="/images/first02.png" alt="Image text"><br><img src="/images/first03.png" alt="Image text"><br><img src="/images/first04.png" alt="Image text"><br><img src="/images/first05.png" alt="Image text"><br><img src="/images/first06.png" alt="Image text"></p>
@@ -596,126 +601,321 @@
 
       
     </div>
-    <br>
-    <br>
-    <a href="https://tintingo.github.io/2017/11/04/TT0001/" class="more">Read more <i class="icon-angle-right"></i></a>
-  </div>
-</div>
-<hr class="blog-post-sep">
-
+    <footer class="entry-meta entry-footer">
       
-    </div>
-    
-      <div id="page-nav" class="pagination">
-	<span class="page-number current">1</span>
-      </div>
-    
-  </section>
-
-</div>
-
-</div>
-
+      
+      
+            
+      
+    </footer>
   </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+
+
+</section>
+          <aside id="sidebar">
+  
+    <div class="widget-wrap" style="margin: 20px 0;">
+	<div id="search-form-wrap">
+
+    <form class="search-form">
+        <label style="width: 75%;">
+            <span class="screen-reader-text">Search for:</span>
+            <input type="search" class="search-field" style="height: 42px;" placeholder=" Suche…" value="" name="s" title="Search for:">
+        </label>
+        <input type="submit" class="search-form-submit" value="Suche">
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..."/>
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+</div>
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Connect With Us</h3>
+    <div class="widget widget_athemes_social_icons">
+
+    	<ul class="clearfix widget-social-icons">   
+    	
+          
+     			  <li><a href="https://github.com/iTimeTraveler" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a></li> 
+          
+   		
+          
+     			  <li><a href="http://www.yoursite.com" title="Weibo"><i class="fa fa-weibo" aria-hidden="true"></i></a></li> 
+          
+   		
+          
+     			  <li><a href="" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> 
+          
+   		
+          
+     			  <li><a href="" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li> 
+          
+   		
+          
+     			  <li><a href="" title="Google-plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li> 
+          
+   		
+          
+     			  <li><a href="" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li> 
+          
+   		
+          
+     			  <li><a href="" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li> 
+          
+   		
+          
+     			  <li><a href="" title="Flickr"><i class="fa fa-flickr" aria-hidden="true"></i></a></li> 
+          
+   		
+          
+            <li><a href="mailto:?subject=请联系我&body=我能帮你什么" title="email"><i class="fa fa-envelope" aria-hidden="true"></i></a></li> 
+          
+   		
+   		</ul>
+
+
+   		<!--
+   		<ul class="clearfix widget-social-icons">   		
+   		<li class="widget-si-twitter"><a href="http://twitter.com" title="Twitter"><i class="ico-twitter"></i></a></li> 
+		<li class="widget-si-facebook"><a href="http://facebook.com" title="Facebook"><i class="ico-facebook"></i></a></li>
+			<li class="widget-si-gplus"><a href="http://plus.google.com" title="Google+"><i class="ico-gplus"></i></a></li>
+			<li class="widget-si-pinterest"><a href="http://pinterest.com" title="Pinterest"><i class="ico-pinterest"></i></a></li>
+			<li class="widget-si-flickr"><a href="http://flickr.com" title="Flickr"><i class="ico-flickr"></i></a></li>
+			<li class="widget-si-instagram"><a href="http://instagram.com" title="Instagram"><i class="ico-instagram"></i></a></li>
+		</ul> -->
+
+    </div>
   </div>
 
 
+  
+    
+  <div class="widget_athemes_tabs">
+    <ul id="widget-tab" class="clearfix widget-tab-nav">
+      <li class="active"><a>letzter Beitrag</a></li>
+    </ul>
+    <div class="widget">
+      <ul>
+        
+          <li class="clearfix">
 
-    <!-- BEGIN PRE-FOOTER -->
-    <div class="pre-footer">
-      <div class="container">
-        <div class="row">
-          <!-- BEGIN BOTTOM ABOUT BLOCK -->
-          <div class="col-md-4 col-sm-6 pre-footer-col">
-            <h2>About Us</h2>
-            <p>本站用于分享知识，快乐学习，不涉及任何商业用途。</p>
-          </div>
-          <!-- END BOTTOM ABOUT BLOCK -->
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
 
-          <!-- BEGIN BOTTOM CONTACTS -->
-          <div class="col-md-4 col-sm-6 pre-footer-col">
-            <h2>Contact</h2>
-            <address class="margin-bottom-40">
-              河北省秦皇岛市河北大街西段438号<br>
-              <br>
-              <br>
-              Phone: 11111111111<br>
-              Email: <a href="mailto:dingpanys@163.com">dingpanys@163.com</a><br>
-            </address>
-          </div>
-          <!-- END BOTTOM CONTACTS -->
+              <h6 style="margin: 0;"><a href="/2017/12/11/TT0008/">第一个MFC</a></h6>
+              <span>December 11, 2017</span>
+            </div>
 
-	
-        </div>
-      </div>
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/2017/12/11/TT0007/">JAVA Web学习笔记</a></h6>
+              <span>December 11, 2017</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/2017/12/11/TT0006/">HTML5基础代码</a></h6>
+              <span>December 11, 2017</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/2017/12/11/TT0005/">音乐|视频更新</a></h6>
+              <span>December 11, 2017</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/2017/12/11/TT0004/">贝叶斯网络学习（一）</a></h6>
+              <span>December 11, 2017</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/2017/12/11/TT0003/">一些常用Matlab代码记录</a></h6>
+              <span>December 11, 2017</span>
+            </div>
+
+          </li>
+        
+      </ul>
     </div>
-    <!-- END PRE-FOOTER -->
+  </div>
 
-    <!-- BEGIN FOOTER -->
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <!-- BEGIN COPYRIGHT -->
-          <div class="col-md-6 col-sm-6 padding-top-10">
-                  &copy; 2017 TinTin<br>
- <a href="javascript:;">Privacy Policy</a> | <a href="javascript:;">Terms of Service</a>
-          </div>
-          <!-- END COPYRIGHT -->
-	  <!-- BEGIN SOCIAL -->
-<div class="col-md-6 col-sm-6">
-  <ul class="social-footer list-unstyled list-inline pull-right">
+  
     
-      <li><a href="https://github.com/ptsteadman"><i class="fa fa-github"></i></a></li>
-    
-      <li><a href="https://twitter.com/ptsteadman"><i class="fa fa-twitter"></i></a></li>
-    
-      <li><a href="https://www.facebook.com/ptsteadman"><i class="fa fa-facebook"></i></a></li>
-    
-      <li><a href="/atom.xml"><i class="fa fa-rss"></i></a></li>
-    
-      <li><a href="https://linkedin.com/in/ptsteadman"><i class="fa fa-linkedin"></i></a></li>
-    
-      <li><a href="http://stackoverflow.com/users/2480493/patrick-steadman"><i class="fa fa-stackoverflow"></i></a></li>
-    
-  </ul>  
-</div>
-<!-- END SOCIAL -->
 
-        </div>
-      </div>
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archiv</h3>
+
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">November 2017</a><span class="archive-list-count">1</span></li></ul>
     </div>
-    <!-- END FOOTER -->
+  </div>
 
-  <!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
-<!--[if lt IE 9]>
-<script src="/metronic/assets/plugins/respond.min.js"></script>
-<![endif]--> 
-<script src="/metronic/assets/plugins/jquery.min.js"></script>
-<script src="/metronic/assets/plugins/jquery-migrate.min.js"></script>
-<script src="/metronic/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-<script src="/metronic/assets/corporate/scripts/back-to-top.js"></script>
-<script src="/metronic/assets/plugins/owl.carousel/owl.carousel.min.js"></script>
-<script src="/metronic/assets/corporate/scripts/layout.js"></script>
-<script src="/js/wow.min.js"></script>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer" class="site-footer">
+  
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2017 TinTin All Rights Reserved.
+          
+            <span id="busuanzi_container_site_uv">
+              本站访客数<span id="busuanzi_value_site_uv"></span>人次  
+              本站总访问量<span id="busuanzi_value_site_pv"></span>次
+            </span>
+          
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hiero" target="_blank">hiero</a>
+      </div>
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var contentdiv = document.getElementById("content");
+
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+</script>
+
+<!-- Custome JS -->
+<script src="/js/my.js"></script>
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
   <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
   <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
-<script type="text/javascript">
-    jQuery(document).ready(function() {
-        Layout.init();    
-        Layout.initOWL();
-        Layout.initTwitter();
-        Layout.initFixHeaderWithPreHeader(); /* Switch On Header Fixing (only if you have pre-header) */
-        Layout.initNavScrolling(); 
-	new WOW().init();
-    });
-</script>
-<!-- END CORE PLUGINS -->
-
-<!-- BEGIN PAGE-SPECIFIC PLUGINS --> 
+<script src="/js/scripts.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/main.js"></script>
 
 
 
@@ -723,15 +923,23 @@
 
 
 
-<!-- END PAGE-SPECIFIC PLUGINS --> 
-
-<!-- BEGIN INTEGRATIONS -->
-
-
+  <div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
 
 
 
-<!-- END INTEGRATIONS -->
+	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+	</script>
 
+
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
 </body>
 </html>
