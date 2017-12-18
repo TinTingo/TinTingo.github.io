@@ -33,7 +33,7 @@
 <meta property="og:image" content="https://tintingo.github.io/images/17.jpg">
 <meta property="og:image" content="https://tintingo.github.io/images/18.jpg">
 <meta property="og:image" content="https://tintingo.github.io/images/bottom.jpg">
-<meta property="og:updated_time" content="2017-12-15T01:40:00.924Z">
+<meta property="og:updated_time" content="2017-12-18T12:45:05.240Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="贝叶斯网络学习（一）">
 <meta name="twitter:description" content="贝叶斯网络贝叶斯网络（Bayesian network, BN）又名信念网络和因果概率网络，由Pearl于1988年首次提出，是一种基于概率推理的数学网络模型。贝叶斯网络是图论和概率论的结合体，即图形化概率网络，是一种有向非循环图形模型。贝叶斯网络是将概率统计应用于复杂问题的工具，其在解决不确定性和不完整性问题上具有相当的优势，在数据挖掘、模式识别及人工智能等领域都有广泛研究。【百度百科】 常见">
@@ -202,7 +202,21 @@ var themeMenus = {};
 <h3 id="P-A-E-P-A-Bi-P-Bi"><a href="#P-A-E-P-A-Bi-P-Bi" class="headerlink" title="P(A) = E(P(A|Bi)*P(Bi))"></a>P(A) = E(P(A|Bi)*P(Bi))</h3><h3 id="贝叶斯公式"><a href="#贝叶斯公式" class="headerlink" title="贝叶斯公式"></a>贝叶斯公式</h3><p><img src="/images/16.jpg" alt=""></p>
 <h2 id="图论"><a href="#图论" class="headerlink" title="图论"></a>图论</h2><h3 id="贝叶斯网络是一个有向无环图。图论体现的是节点之间连通或者分离的相互关系，而从概率论的角度定量的刻画了变量之间依赖或者独立的相互关系。"><a href="#贝叶斯网络是一个有向无环图。图论体现的是节点之间连通或者分离的相互关系，而从概率论的角度定量的刻画了变量之间依赖或者独立的相互关系。" class="headerlink" title="贝叶斯网络是一个有向无环图。图论体现的是节点之间连通或者分离的相互关系，而从概率论的角度定量的刻画了变量之间依赖或者独立的相互关系。"></a>贝叶斯网络是一个有向无环图。图论体现的是节点之间连通或者分离的相互关系，而从概率论的角度定量的刻画了变量之间依赖或者独立的相互关系。</h3><p><img src="/images/17.jpg" alt=""><br>如果X与Y之间的所有通道都被Z阻塞，那么就称Z有向分离X和Y，简称d-分离X和Y。如果Zd-分离X和Y，那么当Z中的变量全部被观测时，信息就不能在X和Y之间相互传递，因而X与Y保持相互独立。<br><img src="/images/18.jpg" alt=""></p>
 <p><img src="/images/bottom.jpg" alt=""></p>
-
+<p><div id="container"></div></p>
+<p><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"></p>
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id:  '页面 ID', 可选。默认为 location.href
+  owner: 'TINTIN',  //改你自己的名字
+  repo: 'Comments',  //专门储存评论一个GitHub仓库
+  oauth: {
+    client_id: '2bb77611d9b725aa6214', //改为你自己的，下同
+    client_secret: '68fc6071b21bf4420142c3835f1eeb457765481a', 
+  },
+})
+gitment.render('container')
+</script>
       
     </div>
     <footer class="entry-meta entry-footer">

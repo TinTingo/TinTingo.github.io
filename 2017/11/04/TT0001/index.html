@@ -33,7 +33,7 @@
 <meta property="og:image" content="https://tintingo.github.io/images/first05.png">
 <meta property="og:image" content="https://tintingo.github.io/images/first06.png">
 <meta property="og:image" content="https://tintingo.github.io/images/bottom.jpg">
-<meta property="og:updated_time" content="2017-12-15T01:39:27.567Z">
+<meta property="og:updated_time" content="2017-12-18T12:44:28.374Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何搭建个人博客？">
 <meta name="twitter:description" content="当你遇到一个似曾相识的知识却突然想不起来时：你需要一个个人博客！当你觉得一段经历难忘而值得分享却不知所措时：你需要一个个人博客！ 哎呦！不错哟！博主在网上搜索了多种方法，折腾了1天都没成功（都有坑），还一度想放弃搭建，但“柳暗花明又一村”的是，我综合了多篇博文，终于我成功了！在此：哈哈大笑！网络上的方法很多，您可以搜搜看，当然，您也可以往下看！ 现在开始步骤一：下载安装软件到官网下载：">
@@ -213,7 +213,21 @@ var themeMenus = {};
 <p>然后，同样在你建博客的文件夹目录下“shift+右键”选用“Git Bash”打开命令窗口，并键入如下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$ hexo clean</div><div class="line"></div><div class="line">$ hexo g</div><div class="line"></div><div class="line">$ npm install hexo-deployer-git --save</div><div class="line"></div><div class="line">$ hexo d</div></pre></td></tr></table></figure></p>
 <p>好了，访问<a href="https://username.github.io看看吧！" target="_blank" rel="external">https://username.github.io看看吧！</a><br>（注意：如果没有显示不用担心，多刷新几遍就出来了。如果实在还是没有的话，以上操作重新来过！）</p>
 <h3 id="就写到这吧！怎么更改主题再学习吧！"><a href="#就写到这吧！怎么更改主题再学习吧！" class="headerlink" title="就写到这吧！怎么更改主题再学习吧！"></a>就写到这吧！怎么更改主题再学习吧！</h3><p><img src="/images/bottom.jpg" alt=""></p>
-
+<p><div id="container"></div></p>
+<p><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"></p>
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id:  '页面 ID', 可选。默认为 location.href
+  owner: 'TINTIN',  //改你自己的名字
+  repo: 'Comments',  //专门储存评论一个GitHub仓库
+  oauth: {
+    client_id: '2bb77611d9b725aa6214', //改为你自己的，下同
+    client_secret: '68fc6071b21bf4420142c3835f1eeb457765481a', 
+  },
+})
+gitment.render('container')
+</script>
       
     </div>
     <footer class="entry-meta entry-footer">

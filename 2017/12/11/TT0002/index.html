@@ -35,7 +35,7 @@
 <meta property="og:image" content="https://tintingo.github.io/images/second07.png">
 <meta property="og:image" content="https://tintingo.github.io/images/second08.png">
 <meta property="og:image" content="https://tintingo.github.io/images/bottom.jpg">
-<meta property="og:updated_time" content="2017-12-15T01:39:39.795Z">
+<meta property="og:updated_time" content="2017-12-18T12:45:18.615Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何用Matlab设计GUI？">
 <meta name="twitter:description" content="什么是GUI？matlab编程可以设计GUI吗？GUI定义:GUI指的是图形用户界面（Graphical User Interface，GUI），也称之为图形用户接口，GUI是用图形化方式显示的计算机操作用户界面（可视化）。我们通常都是使用matlab来做计算，matlab还可以设计GUI？matlab编当然可以设计GUI！那么，使用matlab到底如何设计GUI呢？往下看喽！ 步骤一：新建GU">
@@ -202,7 +202,21 @@ var themeMenus = {};
 <h2 id="步骤三：程序编辑"><a href="#步骤三：程序编辑" class="headerlink" title="步骤三：程序编辑"></a>步骤三：程序编辑</h2><p>双击打开上面生成的.m文件，在pushbutton1_Callback(hObject, eventdata, handles)函数处编写如下代码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">% --- Executes on button press <span class="keyword">in</span> pushbutton1.</div><div class="line"><span class="keyword">function</span> pushbutton1_Callback(hObject, eventdata, handles)</div><div class="line">% hObject    handle to pushbutton1 (see GCBO)</div><div class="line">% eventdata  reserved - to be defined <span class="keyword">in</span> a future version of MATLAB</div><div class="line">% handles    structure with handles and user data (see GUIDATA)</div><div class="line">[filename,filepath] = uigetfile(&#123;<span class="string">'*.bmp;*.jpg;*.png;*.jpeg;*.tif'</span>,...</div><div class="line">    <span class="string">'文件类型 (*.bmp,*.jpg,*.png,*.jpeg,*.tif)'</span>;<span class="string">'*.*'</span>, <span class="string">'所有文件(*.*)'</span>&#125;,...</div><div class="line">    <span class="string">'Pick an image'</span>);</div><div class="line">file = strcat(filepath,filename);</div><div class="line"><span class="keyword">in</span> = imread(file);</div><div class="line">axes(handles.axes1);</div><div class="line">imshow(<span class="keyword">in</span>);</div></pre></td></tr></table></figure></p>
 <p>F5运行后就可看到如下效果：<br>图6<br><img src="/images/second06.png" alt=""><br>点击“选择图片”按钮进入图7选择图片文件窗口：<br>图7<br><img src="/images/second07.png" alt=""><br>选择图片后就可显示出来，如图8所示：<br>图8<br><img src="/images/second08.png" alt=""></p>
 <h2 id="怎么样！开心吧！我的第一个GUI完成了！"><a href="#怎么样！开心吧！我的第一个GUI完成了！" class="headerlink" title="怎么样！开心吧！我的第一个GUI完成了！"></a>怎么样！开心吧！我的第一个GUI完成了！</h2><h3 id="后续还将会进一步学习！"><a href="#后续还将会进一步学习！" class="headerlink" title="后续还将会进一步学习！"></a>后续还将会进一步学习！</h3><p><img src="/images/bottom.jpg" alt=""></p>
-
+<p><div id="container"></div></p>
+<p><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"></p>
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id:  '页面 ID', 可选。默认为 location.href
+  owner: 'TINTIN',  //改你自己的名字
+  repo: 'Comments',  //专门储存评论一个GitHub仓库
+  oauth: {
+    client_id: '2bb77611d9b725aa6214', //改为你自己的，下同
+    client_secret: '68fc6071b21bf4420142c3835f1eeb457765481a', 
+  },
+})
+gitment.render('container')
+</script>
       
     </div>
     <footer class="entry-meta entry-footer">

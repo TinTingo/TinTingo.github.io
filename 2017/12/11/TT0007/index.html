@@ -27,7 +27,7 @@
 <meta property="og:description" content="声明：以下内容为学习范立锋等《Java Web程序设计教程》的笔记，大部分内容均出自原文！ 一、XMLXML-可拓展标记语言，是一种数据存储语言，用简单的标记来描述数据，其中，XML文件以.xml结尾。1234567&amp;lt;?xml version=&quot;1.0&quot; enconding=&quot;GB2312&quot;?&amp;gt; %声明：版本号1.0；字符编码格式中文&amp;lt;person&amp;gt;">
 <meta property="og:image" content="https://tintingo.github.io/images/top.jpg">
 <meta property="og:image" content="https://tintingo.github.io/images/bottom.jpg">
-<meta property="og:updated_time" content="2017-12-15T01:40:25.839Z">
+<meta property="og:updated_time" content="2017-12-18T12:44:45.486Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JAVA Web学习笔记">
 <meta name="twitter:description" content="声明：以下内容为学习范立锋等《Java Web程序设计教程》的笔记，大部分内容均出自原文！ 一、XMLXML-可拓展标记语言，是一种数据存储语言，用简单的标记来描述数据，其中，XML文件以.xml结尾。1234567&amp;lt;?xml version=&quot;1.0&quot; enconding=&quot;GB2312&quot;?&amp;gt; %声明：版本号1.0；字符编码格式中文&amp;lt;person&amp;gt;">
@@ -197,7 +197,21 @@ var themeMenus = {};
 <p>2.内部调用：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">&lt;html&gt;</div><div class="line">    &lt;body&gt;</div><div class="line">        &lt;p id=<span class="string">"hello"</span>&gt;你好！&lt;/p&gt;</div><div class="line">        &lt;button <span class="built_in">type</span>=<span class="string">"button"</span> onclick=<span class="string">"myFunction()"</span>&gt;打招呼&lt;/button&gt;</div><div class="line">        &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</div><div class="line">        &lt;!-- %加注释是为了防止浏览器不支持javascript时出现源码</div><div class="line">        <span class="keyword">function</span> myFunction()</div><div class="line">        &#123;</div><div class="line">        document.getElementById(<span class="string">"hello"</span>).innerHTML=<span class="string">"Hello!"</span>;</div><div class="line">        &#125;</div><div class="line">        //--&gt;</div><div class="line">        &lt;/script&gt;</div><div class="line">    &lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
 <h1 id="四、Ajax"><a href="#四、Ajax" class="headerlink" title="四、Ajax"></a>四、Ajax</h1><p>当用户填写完信息提交表单时，会向服务器发送请求，服务器收到请求并处理表单数据后才会给用户新页面。但当大量用户同时发出请求时，由于服务器需要处理大量请求会导致用户刷新页面变慢，此时，Ajax就至关重要了。<br>Ajax是一种结合了XML和JavaScript等技术建立交互式网页应用的技术。<br>Ajax包含技术：XML、CSS、JavaScript、XMLHttpRequest、DOM、XHTML、XSLT。</p>
 <p><img src="/images/bottom.jpg" alt=""></p>
-
+<p><div id="container"></div></p>
+<p><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"></p>
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id:  '页面 ID', 可选。默认为 location.href
+  owner: 'TINTIN',  //改你自己的名字
+  repo: 'Comments',  //专门储存评论一个GitHub仓库
+  oauth: {
+    client_id: '2bb77611d9b725aa6214', //改为你自己的，下同
+    client_secret: '68fc6071b21bf4420142c3835f1eeb457765481a', 
+  },
+})
+gitment.render('container')
+</script>
       
     </div>
     <footer class="entry-meta entry-footer">

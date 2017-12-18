@@ -194,7 +194,21 @@ var themeMenus = {};
 <p>打开刚刚的新建项目目录：MFCone/Debug里就有个MFCone.exe，点击运行就成功了，如图13</p>
 <p><img src="/images/MFC013.png" alt="图13"><br>完成喽！</p>
 <p><img src="/images/bottom.jpg" alt=""></p>
-
+<p><div id="container"></div></p>
+<p><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"></p>
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id:  '页面 ID', 可选。默认为 location.href
+  owner: 'TINTIN',  //改你自己的名字
+  repo: 'Comments',  //专门储存评论一个GitHub仓库
+  oauth: {
+    client_id: '2bb77611d9b725aa6214', //改为你自己的，下同
+    client_secret: '68fc6071b21bf4420142c3835f1eeb457765481a', 
+  },
+})
+gitment.render('container')
+</script>
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -248,7 +262,21 @@ var themeMenus = {};
 <p>2.内部调用：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">&lt;html&gt;</div><div class="line">    &lt;body&gt;</div><div class="line">        &lt;p id=<span class="string">"hello"</span>&gt;你好！&lt;/p&gt;</div><div class="line">        &lt;button <span class="built_in">type</span>=<span class="string">"button"</span> onclick=<span class="string">"myFunction()"</span>&gt;打招呼&lt;/button&gt;</div><div class="line">        &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</div><div class="line">        &lt;!-- %加注释是为了防止浏览器不支持javascript时出现源码</div><div class="line">        <span class="keyword">function</span> myFunction()</div><div class="line">        &#123;</div><div class="line">        document.getElementById(<span class="string">"hello"</span>).innerHTML=<span class="string">"Hello!"</span>;</div><div class="line">        &#125;</div><div class="line">        //--&gt;</div><div class="line">        &lt;/script&gt;</div><div class="line">    &lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
 <h1 id="四、Ajax"><a href="#四、Ajax" class="headerlink" title="四、Ajax"></a>四、Ajax</h1><p>当用户填写完信息提交表单时，会向服务器发送请求，服务器收到请求并处理表单数据后才会给用户新页面。但当大量用户同时发出请求时，由于服务器需要处理大量请求会导致用户刷新页面变慢，此时，Ajax就至关重要了。<br>Ajax是一种结合了XML和JavaScript等技术建立交互式网页应用的技术。<br>Ajax包含技术：XML、CSS、JavaScript、XMLHttpRequest、DOM、XHTML、XSLT。</p>
 <p><img src="/images/bottom.jpg" alt=""></p>
-
+<p><div id="container"></div></p>
+<p><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"></p>
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id:  '页面 ID', 可选。默认为 location.href
+  owner: 'TINTIN',  //改你自己的名字
+  repo: 'Comments',  //专门储存评论一个GitHub仓库
+  oauth: {
+    client_id: '2bb77611d9b725aa6214', //改为你自己的，下同
+    client_secret: '68fc6071b21bf4420142c3835f1eeb457765481a', 
+  },
+})
+gitment.render('container')
+</script>
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -298,7 +326,21 @@ var themeMenus = {};
 <h1 id="画横线"><a href="#画横线" class="headerlink" title="画横线"></a>画横线</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">1.虚线（dashed）</div><div class="line">&lt;hr style=<span class="string">"height:10px;border:none;border-top:10px dashed black;"</span> /&gt;</div><div class="line">2.实线（solid）</div><div class="line">&lt;hr style=<span class="string">"height:10px;border:none;border-top:10px solid black;"</span> /&gt;</div><div class="line">3.双实线（上颜色：black；下颜色：blue）</div><div class="line">&lt;hr style=<span class="string">"height:10px;border:none;border-top:10px black blue;"</span> /&gt;</div></pre></td></tr></table></figure>
 <h1 id="正文图片"><a href="#正文图片" class="headerlink" title="正文图片"></a>正文图片</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;div align=<span class="string">"center"</span> style=<span class="string">"background-color:honeydew"</span>&gt;&lt;img src=<span class="string">"images/f001.jpg"</span> style=<span class="string">"width:100%;"</span>/&gt;&lt;/div&gt;</div></pre></td></tr></table></figure>
 <p><img src="/images/bottom.jpg" alt=""></p>
-
+<p><div id="container"></div></p>
+<p><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"></p>
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id:  '页面 ID', 可选。默认为 location.href
+  owner: 'TINTIN',  //改你自己的名字
+  repo: 'Comments',  //专门储存评论一个GitHub仓库
+  oauth: {
+    client_id: '2bb77611d9b725aa6214', //改为你自己的，下同
+    client_secret: '68fc6071b21bf4420142c3835f1eeb457765481a', 
+  },
+})
+gitment.render('container')
+</script>
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -353,7 +395,21 @@ var themeMenus = {};
 
 
 <p><img src="/images/bottom.jpg" alt=""></p>
-
+<p><div id="container"></div></p>
+<p><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"></p>
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id:  '页面 ID', 可选。默认为 location.href
+  owner: 'TINTIN',  //改你自己的名字
+  repo: 'Comments',  //专门储存评论一个GitHub仓库
+  oauth: {
+    client_id: '2bb77611d9b725aa6214', //改为你自己的，下同
+    client_secret: '68fc6071b21bf4420142c3835f1eeb457765481a', 
+  },
+})
+gitment.render('container')
+</script>
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -425,7 +481,21 @@ var themeMenus = {};
 <h1 id="matlab添加工具箱"><a href="#matlab添加工具箱" class="headerlink" title="matlab添加工具箱"></a>matlab添加工具箱</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">步骤1：</div><div class="line">将工具箱文件夹放到matlab安装目录下的toolbox下；</div><div class="line">步骤2：</div><div class="line">addpath(genpath(<span class="string">'C:\MATLAB\toolbox\BNT'</span>));   </div><div class="line">savepath;  </div><div class="line">步骤3：</div><div class="line"><span class="built_in">which</span> test_BNT.m %test_BNT.m为工具箱任意中的一个函数，若返回路径，则添加成功</div></pre></td></tr></table></figure>
 <h1 id="matlab关联-m文件"><a href="#matlab关联-m文件" class="headerlink" title="matlab关联.m文件"></a>matlab关联.m文件</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">步骤1：</div><div class="line">下载文件  链接：https://pan.baidu.com/s/1boKMur9 密码：x4ui</div><div class="line">步骤2：</div><div class="line">（1）运行matlab软件 -&gt; 打开 -&gt; associateFiles.m -&gt; F5运行 </div><div class="line">（2）运行完毕后文件夹中会生成一个.reg文件，双击该文件，完成即可</div><div class="line">（3）找一个.m文件,右键 -&gt; 打开方式，若有matlab选项，说明关联成功</div></pre></td></tr></table></figure>
 <p><img src="/images/bottom.jpg" alt=""></p>
-
+<p><div id="container"></div></p>
+<p><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"></p>
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id:  '页面 ID', 可选。默认为 location.href
+  owner: 'TINTIN',  //改你自己的名字
+  repo: 'Comments',  //专门储存评论一个GitHub仓库
+  oauth: {
+    client_id: '2bb77611d9b725aa6214', //改为你自己的，下同
+    client_secret: '68fc6071b21bf4420142c3835f1eeb457765481a', 
+  },
+})
+gitment.render('container')
+</script>
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -478,7 +548,21 @@ var themeMenus = {};
 <h3 id="P-A-E-P-A-Bi-P-Bi"><a href="#P-A-E-P-A-Bi-P-Bi" class="headerlink" title="P(A) = E(P(A|Bi)*P(Bi))"></a>P(A) = E(P(A|Bi)*P(Bi))</h3><h3 id="贝叶斯公式"><a href="#贝叶斯公式" class="headerlink" title="贝叶斯公式"></a>贝叶斯公式</h3><p><img src="/images/16.jpg" alt=""></p>
 <h2 id="图论"><a href="#图论" class="headerlink" title="图论"></a>图论</h2><h3 id="贝叶斯网络是一个有向无环图。图论体现的是节点之间连通或者分离的相互关系，而从概率论的角度定量的刻画了变量之间依赖或者独立的相互关系。"><a href="#贝叶斯网络是一个有向无环图。图论体现的是节点之间连通或者分离的相互关系，而从概率论的角度定量的刻画了变量之间依赖或者独立的相互关系。" class="headerlink" title="贝叶斯网络是一个有向无环图。图论体现的是节点之间连通或者分离的相互关系，而从概率论的角度定量的刻画了变量之间依赖或者独立的相互关系。"></a>贝叶斯网络是一个有向无环图。图论体现的是节点之间连通或者分离的相互关系，而从概率论的角度定量的刻画了变量之间依赖或者独立的相互关系。</h3><p><img src="/images/17.jpg" alt=""><br>如果X与Y之间的所有通道都被Z阻塞，那么就称Z有向分离X和Y，简称d-分离X和Y。如果Zd-分离X和Y，那么当Z中的变量全部被观测时，信息就不能在X和Y之间相互传递，因而X与Y保持相互独立。<br><img src="/images/18.jpg" alt=""></p>
 <p><img src="/images/bottom.jpg" alt=""></p>
-
+<p><div id="container"></div></p>
+<p><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"></p>
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id:  '页面 ID', 可选。默认为 location.href
+  owner: 'TINTIN',  //改你自己的名字
+  repo: 'Comments',  //专门储存评论一个GitHub仓库
+  oauth: {
+    client_id: '2bb77611d9b725aa6214', //改为你自己的，下同
+    client_secret: '68fc6071b21bf4420142c3835f1eeb457765481a', 
+  },
+})
+gitment.render('container')
+</script>
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -529,7 +613,21 @@ var themeMenus = {};
 <h2 id="步骤三：程序编辑"><a href="#步骤三：程序编辑" class="headerlink" title="步骤三：程序编辑"></a>步骤三：程序编辑</h2><p>双击打开上面生成的.m文件，在pushbutton1_Callback(hObject, eventdata, handles)函数处编写如下代码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">% --- Executes on button press <span class="keyword">in</span> pushbutton1.</div><div class="line"><span class="keyword">function</span> pushbutton1_Callback(hObject, eventdata, handles)</div><div class="line">% hObject    handle to pushbutton1 (see GCBO)</div><div class="line">% eventdata  reserved - to be defined <span class="keyword">in</span> a future version of MATLAB</div><div class="line">% handles    structure with handles and user data (see GUIDATA)</div><div class="line">[filename,filepath] = uigetfile(&#123;<span class="string">'*.bmp;*.jpg;*.png;*.jpeg;*.tif'</span>,...</div><div class="line">    <span class="string">'文件类型 (*.bmp,*.jpg,*.png,*.jpeg,*.tif)'</span>;<span class="string">'*.*'</span>, <span class="string">'所有文件(*.*)'</span>&#125;,...</div><div class="line">    <span class="string">'Pick an image'</span>);</div><div class="line">file = strcat(filepath,filename);</div><div class="line"><span class="keyword">in</span> = imread(file);</div><div class="line">axes(handles.axes1);</div><div class="line">imshow(<span class="keyword">in</span>);</div></pre></td></tr></table></figure></p>
 <p>F5运行后就可看到如下效果：<br>图6<br><img src="/images/second06.png" alt=""><br>点击“选择图片”按钮进入图7选择图片文件窗口：<br>图7<br><img src="/images/second07.png" alt=""><br>选择图片后就可显示出来，如图8所示：<br>图8<br><img src="/images/second08.png" alt=""></p>
 <h2 id="怎么样！开心吧！我的第一个GUI完成了！"><a href="#怎么样！开心吧！我的第一个GUI完成了！" class="headerlink" title="怎么样！开心吧！我的第一个GUI完成了！"></a>怎么样！开心吧！我的第一个GUI完成了！</h2><h3 id="后续还将会进一步学习！"><a href="#后续还将会进一步学习！" class="headerlink" title="后续还将会进一步学习！"></a>后续还将会进一步学习！</h3><p><img src="/images/bottom.jpg" alt=""></p>
-
+<p><div id="container"></div></p>
+<p><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"></p>
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id:  '页面 ID', 可选。默认为 location.href
+  owner: 'TINTIN',  //改你自己的名字
+  repo: 'Comments',  //专门储存评论一个GitHub仓库
+  oauth: {
+    client_id: '2bb77611d9b725aa6214', //改为你自己的，下同
+    client_secret: '68fc6071b21bf4420142c3835f1eeb457765481a', 
+  },
+})
+gitment.render('container')
+</script>
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -593,7 +691,21 @@ var themeMenus = {};
 <p>然后，同样在你建博客的文件夹目录下“shift+右键”选用“Git Bash”打开命令窗口，并键入如下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$ hexo clean</div><div class="line"></div><div class="line">$ hexo g</div><div class="line"></div><div class="line">$ npm install hexo-deployer-git --save</div><div class="line"></div><div class="line">$ hexo d</div></pre></td></tr></table></figure></p>
 <p>好了，访问<a href="https://username.github.io看看吧！" target="_blank" rel="external">https://username.github.io看看吧！</a><br>（注意：如果没有显示不用担心，多刷新几遍就出来了。如果实在还是没有的话，以上操作重新来过！）</p>
 <h3 id="就写到这吧！怎么更改主题再学习吧！"><a href="#就写到这吧！怎么更改主题再学习吧！" class="headerlink" title="就写到这吧！怎么更改主题再学习吧！"></a>就写到这吧！怎么更改主题再学习吧！</h3><p><img src="/images/bottom.jpg" alt=""></p>
-
+<p><div id="container"></div></p>
+<p><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"></p>
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id:  '页面 ID', 可选。默认为 location.href
+  owner: 'TINTIN',  //改你自己的名字
+  repo: 'Comments',  //专门储存评论一个GitHub仓库
+  oauth: {
+    client_id: '2bb77611d9b725aa6214', //改为你自己的，下同
+    client_secret: '68fc6071b21bf4420142c3835f1eeb457765481a', 
+  },
+})
+gitment.render('container')
+</script>
       
     </div>
     <footer class="entry-meta entry-footer">
