@@ -26,8 +26,7 @@
 <meta property="og:site_name" content="TinTin">
 <meta property="og:description" content="记忆力差？用过的代码老忘记？一次又一次的上网搜?好浪费时间！写在博客里方便随时查阅~~~~ Excel读写（xlsread、xlswrite）123456%读mytxt = xlsread(&apos;C:/filename.xls&apos;)%写txt = [&apos;a&apos; &apos;s&apos; &apos;d&apos; &apos;f&apos; &apos;g&apos; &apos;h&apos;];mytxt = xlswrite(&apos;C:/filename.xls&apos;,txt) txt读写1234567">
 <meta property="og:image" content="https://tintingo.github.io/images/top.jpg">
-<meta property="og:image" content="https://tintingo.github.io/images/bottom.jpg">
-<meta property="og:updated_time" content="2017-12-18T13:33:46.183Z">
+<meta property="og:updated_time" content="2017-12-19T02:07:17.808Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一些常用Matlab代码记录">
 <meta name="twitter:description" content="记忆力差？用过的代码老忘记？一次又一次的上网搜?好浪费时间！写在博客里方便随时查阅~~~~ Excel读写（xlsread、xlswrite）123456%读mytxt = xlsread(&apos;C:/filename.xls&apos;)%写txt = [&apos;a&apos; &apos;s&apos; &apos;d&apos; &apos;f&apos; &apos;g&apos; &apos;h&apos;];mytxt = xlswrite(&apos;C:/filename.xls&apos;,txt) txt读写1234567">
@@ -210,9 +209,15 @@ var themeMenus = {};
 <h1 id="删除cell中的空元素"><a href="#删除cell中的空元素" class="headerlink" title="删除cell中的空元素"></a>删除cell中的空元素</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">A(cellfun(@isempty,A)) = [];</div></pre></td></tr></table></figure>
 <h1 id="matlab添加工具箱"><a href="#matlab添加工具箱" class="headerlink" title="matlab添加工具箱"></a>matlab添加工具箱</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">步骤1：</div><div class="line">将工具箱文件夹放到matlab安装目录下的toolbox下；</div><div class="line">步骤2：</div><div class="line">addpath(genpath(<span class="string">'C:\MATLAB\toolbox\BNT'</span>));   </div><div class="line">savepath;  </div><div class="line">步骤3：</div><div class="line"><span class="built_in">which</span> test_BNT.m %test_BNT.m为工具箱任意中的一个函数，若返回路径，则添加成功</div></pre></td></tr></table></figure>
 <h1 id="matlab关联-m文件"><a href="#matlab关联-m文件" class="headerlink" title="matlab关联.m文件"></a>matlab关联.m文件</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">步骤1：</div><div class="line">下载文件  链接：https://pan.baidu.com/s/1boKMur9 密码：x4ui</div><div class="line">步骤2：</div><div class="line">（1）运行matlab软件 -&gt; 打开 -&gt; associateFiles.m -&gt; F5运行 </div><div class="line">（2）运行完毕后文件夹中会生成一个.reg文件，双击该文件，完成即可</div><div class="line">（3）找一个.m文件,右键 -&gt; 打开方式，若有matlab选项，说明关联成功</div></pre></td></tr></table></figure>
-<p><img src="/images/bottom.jpg" alt=""></p>
-<p><div id="container"></div></p>
-<p><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"></p>
+<!-- UY BEGIN -->
+<p><div id="uyan_frame"></div></p>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2152040"></script>
+<!-- UY END -->
+
+![](/images/bottom.jpg)
+
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
@@ -253,19 +258,19 @@ var a = new Donate({
     
 <nav id="article-nav">
   
-    <a href="/2017/12/11/TT0004/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/12/11/TT0005/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">上一篇</strong>
       <div class="article-nav-title">
         
-          贝叶斯网络学习（一）
+          音乐|视频更新
         
       </div>
     </a>
   
   
-    <a href="/2017/12/11/TT0002/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2017/12/11/TT0004/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">下一篇</strong>
-      <div class="article-nav-title">如何用Matlab设计GUI？</div>
+      <div class="article-nav-title">贝叶斯网络学习（一）</div>
     </a>
   
 </nav>
