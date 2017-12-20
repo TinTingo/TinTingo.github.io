@@ -71,7 +71,7 @@ var themeMenus = {};
 
   themeMenus["https://tintingo.github.io/images/about.html"] = "关于"; 
 
-  themeMenus["/comments"] = "Kommentare"; 
+  themeMenus["/comments"] = "留言"; 
 
 </script>
 
@@ -106,7 +106,7 @@ var themeMenus = {};
                     
                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="https://tintingo.github.io/images/about.html">关于</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/comments">Kommentare</a> </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/comments">留言</a> </li>
                     
               </ul>
             </div>
@@ -368,59 +368,6 @@ var themeMenus = {};
 <!-- Table of Contents -->
 
   
-    <article id="post-TT0004"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2017/12/11/TT0004/">贝叶斯网络学习（一）</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	Posted on <a href="/2017/12/11/TT0004/" class="article-date">
-	  <time datetime="2017-12-11T08:57:18.309Z" itemprop="datePublished">December 11, 2017</time>
-	</a>
-
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="/images/top.jpg" alt=""></p>
-<h1 id="贝叶斯网络"><a href="#贝叶斯网络" class="headerlink" title="贝叶斯网络"></a>贝叶斯网络</h1><p>贝叶斯网络（Bayesian network, BN）又名信念网络和因果概率网络，由Pearl于1988年首次提出，是一种基于概率推理的数学网络模型。贝叶斯网络是图论和概率论的结合体，即图形化概率网络，是一种有向非循环图形模型。贝叶斯网络是将概率统计应用于复杂问题的工具，其在解决不确定性和不完整性问题上具有相当的优势，在数据挖掘、模式识别及人工智能等领域都有广泛研究。<br><a href="https://baike.baidu.com/item/%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%BD%91%E7%BB%9C/4102921?fr=aladdin" target="_blank" rel="external">【百度百科】</a></p>
-<h2 id="常见用途1-诊断；2-预测；3-分类；4-决策。"><a href="#常见用途1-诊断；2-预测；3-分类；4-决策。" class="headerlink" title="常见用途1.诊断；2.预测；3.分类；4.决策。"></a>常见用途1.诊断；2.预测；3.分类；4.决策。</h2><h2 id="三大过程"><a href="#三大过程" class="headerlink" title="三大过程"></a>三大过程</h2><p>贝叶斯网络是目前解决不确定性和不完整性问题最有效的模型之一，结构学习和参数学习是贝叶斯网络研究的基础，而贝叶斯推理则是贝叶斯网络研究的上层建筑。</p>
-<h3 id="结构学习：贝叶斯网络结构学习是贝叶斯网络研究的重点和难点，它是在观测数据和先验知识的基础上构建起来的网络。贝叶斯网络结构学习就是寻找与给定数据集拟合最优的网络，而贝叶斯网络结构学习算法中，最经典的两种就是K2算法和爬山算法-hill-climbing-HC-。K2算法对先验知识要求比HC算法高，K2算法需预先知道搜索空间的节点序，这往往需要专家知识的帮助。随着研究不断深入，新算法也不断加入到结构学习，如模拟退火算法、遗传算法和群体算法等。"><a href="#结构学习：贝叶斯网络结构学习是贝叶斯网络研究的重点和难点，它是在观测数据和先验知识的基础上构建起来的网络。贝叶斯网络结构学习就是寻找与给定数据集拟合最优的网络，而贝叶斯网络结构学习算法中，最经典的两种就是K2算法和爬山算法-hill-climbing-HC-。K2算法对先验知识要求比HC算法高，K2算法需预先知道搜索空间的节点序，这往往需要专家知识的帮助。随着研究不断深入，新算法也不断加入到结构学习，如模拟退火算法、遗传算法和群体算法等。" class="headerlink" title="结构学习：贝叶斯网络结构学习是贝叶斯网络研究的重点和难点，它是在观测数据和先验知识的基础上构建起来的网络。贝叶斯网络结构学习就是寻找与给定数据集拟合最优的网络，而贝叶斯网络结构学习算法中，最经典的两种就是K2算法和爬山算法(hill climbing, HC)。K2算法对先验知识要求比HC算法高，K2算法需预先知道搜索空间的节点序，这往往需要专家知识的帮助。随着研究不断深入，新算法也不断加入到结构学习，如模拟退火算法、遗传算法和群体算法等。"></a>结构学习：贝叶斯网络结构学习是贝叶斯网络研究的重点和难点，它是在观测数据和先验知识的基础上构建起来的网络。贝叶斯网络结构学习就是寻找与给定数据集拟合最优的网络，而贝叶斯网络结构学习算法中，最经典的两种就是K2算法和爬山算法(hill climbing, HC)。K2算法对先验知识要求比HC算法高，K2算法需预先知道搜索空间的节点序，这往往需要专家知识的帮助。随着研究不断深入，新算法也不断加入到结构学习，如模拟退火算法、遗传算法和群体算法等。</h3><h3 id="参数学习：所谓参数学习就是在已知网络拓扑结构的情况下，通过给定样本数据，学习整个贝叶斯网络的概率分布情况。"><a href="#参数学习：所谓参数学习就是在已知网络拓扑结构的情况下，通过给定样本数据，学习整个贝叶斯网络的概率分布情况。" class="headerlink" title="参数学习：所谓参数学习就是在已知网络拓扑结构的情况下，通过给定样本数据，学习整个贝叶斯网络的概率分布情况。"></a>参数学习：所谓参数学习就是在已知网络拓扑结构的情况下，通过给定样本数据，学习整个贝叶斯网络的概率分布情况。</h3><h3 id="推理：贝叶斯推理是在已知贝叶斯网络结构的基础上进行推理的，它有效的结合了训练样本的先验知识和当前样本的后验概率，是概率论中贝叶斯定理的延伸。贝叶斯网络推理是在网络结构建立及数据参数学习之后，给定证据计算某节点出现概率的过程。换言之，贝叶斯网络推理就是通过计算后验概率回答查询的问题；它结合了拓扑节点之间的相互联系，通过参数信息的相互传递，从而进行有效的概率推理。常见的推理算法包括团树传播算法、联合树算法、随机抽样算法以及循环消息传递算法等。"><a href="#推理：贝叶斯推理是在已知贝叶斯网络结构的基础上进行推理的，它有效的结合了训练样本的先验知识和当前样本的后验概率，是概率论中贝叶斯定理的延伸。贝叶斯网络推理是在网络结构建立及数据参数学习之后，给定证据计算某节点出现概率的过程。换言之，贝叶斯网络推理就是通过计算后验概率回答查询的问题；它结合了拓扑节点之间的相互联系，通过参数信息的相互传递，从而进行有效的概率推理。常见的推理算法包括团树传播算法、联合树算法、随机抽样算法以及循环消息传递算法等。" class="headerlink" title="推理：贝叶斯推理是在已知贝叶斯网络结构的基础上进行推理的，它有效的结合了训练样本的先验知识和当前样本的后验概率，是概率论中贝叶斯定理的延伸。贝叶斯网络推理是在网络结构建立及数据参数学习之后，给定证据计算某节点出现概率的过程。换言之，贝叶斯网络推理就是通过计算后验概率回答查询的问题；它结合了拓扑节点之间的相互联系，通过参数信息的相互传递，从而进行有效的概率推理。常见的推理算法包括团树传播算法、联合树算法、随机抽样算法以及循环消息传递算法等。"></a>推理：贝叶斯推理是在已知贝叶斯网络结构的基础上进行推理的，它有效的结合了训练样本的先验知识和当前样本的后验概率，是概率论中贝叶斯定理的延伸。贝叶斯网络推理是在网络结构建立及数据参数学习之后，给定证据计算某节点出现概率的过程。换言之，贝叶斯网络推理就是通过计算后验概率回答查询的问题；它结合了拓扑节点之间的相互联系，通过参数信息的相互传递，从而进行有效的概率推理。常见的推理算法包括团树传播算法、联合树算法、随机抽样算法以及循环消息传递算法等。</h3><h2 id="研究现状"><a href="#研究现状" class="headerlink" title="研究现状"></a>研究现状</h2><h3 id="结构学习"><a href="#结构学习" class="headerlink" title="结构学习"></a>结构学习</h3><p><img src="/images/F01.png" alt=""></p>
-<h3 id="参数学习"><a href="#参数学习" class="headerlink" title="参数学习"></a>参数学习</h3><p><img src="/images/F02.png" alt=""></p>
-<h3 id="贝叶斯推理"><a href="#贝叶斯推理" class="headerlink" title="贝叶斯推理"></a>贝叶斯推理</h3><p><img src="/images/F03.png" alt=""></p>
-<h1 id="结构学习1"><a href="#结构学习1" class="headerlink" title="结构学习1"></a>结构学习1</h1><h2 id="声明：以下内容为学习论文【郭童-基于改进鱼群蜂群算法的贝叶斯网络结构学习-D-浙江大学-2014-】的笔记，所有内容均出自原文！"><a href="#声明：以下内容为学习论文【郭童-基于改进鱼群蜂群算法的贝叶斯网络结构学习-D-浙江大学-2014-】的笔记，所有内容均出自原文！" class="headerlink" title="声明：以下内容为学习论文【郭童. 基于改进鱼群蜂群算法的贝叶斯网络结构学习[D]. 浙江大学, 2014.】的笔记，所有内容均出自原文！"></a><font color="red" face="黑体">声明：以下内容为学习论文【郭童. 基于改进鱼群蜂群算法的贝叶斯网络结构学习[D]. 浙江大学, 2014.】的笔记，所有内容均出自原文！</font></h2><h2 id="贝叶斯网络是一种图形化模型，网络结构是贝叶斯网络研究的基础，结构学习是贝叶斯网络研究的重中之重！"><a href="#贝叶斯网络是一种图形化模型，网络结构是贝叶斯网络研究的基础，结构学习是贝叶斯网络研究的重中之重！" class="headerlink" title="贝叶斯网络是一种图形化模型，网络结构是贝叶斯网络研究的基础，结构学习是贝叶斯网络研究的重中之重！"></a>贝叶斯网络是一种图形化模型，网络结构是贝叶斯网络研究的基础，结构学习是贝叶斯网络研究的重中之重！</h2><p>贝叶斯网络结构有效的描述了随机变量（节点）间的因果关系，利用节点间的条件独立关系可有效的计算出联合概率。<br>优点：<br>1、贝叶斯网络可以快速对问题的因果关系进行学习建模。<br>2、贝叶斯网络可以方便的处理不确定性和概率性的事物。<br>3、贝叶斯网络可以将专家先验知识和数据有效的结合进行分析。<br>4、贝叶斯网络可以有效地处理较小的甚至是部分数据丢失的数据集。<br>贝叶斯网络的学习就是通过大量的数据分析并且结合专家的经验，对给定的样本生成对此样本的因果关系网络，其实就一个有向无环图，以及与此因果关系网络之中节点相对应的条件概率分布表。</p>
-<h2 id="概率论"><a href="#概率论" class="headerlink" title="概率论"></a>概率论</h2><h3 id="条件概率"><a href="#条件概率" class="headerlink" title="条件概率"></a>条件概率</h3><h3 id="P-B-A-P-AB-P-A"><a href="#P-B-A-P-AB-P-A" class="headerlink" title="P(B|A) = P(AB)/P(A)"></a>P(B|A) = P(AB)/P(A)</h3><p>（概率其实就是信度，或者说信度可用概率表示。）</p>
-<h3 id="全概率"><a href="#全概率" class="headerlink" title="全概率"></a>全概率</h3><p>设B1、B2，…，Bn是样本空间S中两两不相容的事件，对于样本空间中的任意事件有如下概率公式：</p>
-<h3 id="P-A-E-P-A-Bi-P-Bi"><a href="#P-A-E-P-A-Bi-P-Bi" class="headerlink" title="P(A) = E(P(A|Bi)*P(Bi))"></a>P(A) = E(P(A|Bi)*P(Bi))</h3><h3 id="贝叶斯公式"><a href="#贝叶斯公式" class="headerlink" title="贝叶斯公式"></a>贝叶斯公式</h3><p><img src="/images/16.jpg" alt=""></p>
-<h2 id="图论"><a href="#图论" class="headerlink" title="图论"></a>图论</h2><h3 id="贝叶斯网络是一个有向无环图。图论体现的是节点之间连通或者分离的相互关系，而从概率论的角度定量的刻画了变量之间依赖或者独立的相互关系。"><a href="#贝叶斯网络是一个有向无环图。图论体现的是节点之间连通或者分离的相互关系，而从概率论的角度定量的刻画了变量之间依赖或者独立的相互关系。" class="headerlink" title="贝叶斯网络是一个有向无环图。图论体现的是节点之间连通或者分离的相互关系，而从概率论的角度定量的刻画了变量之间依赖或者独立的相互关系。"></a>贝叶斯网络是一个有向无环图。图论体现的是节点之间连通或者分离的相互关系，而从概率论的角度定量的刻画了变量之间依赖或者独立的相互关系。</h3><p><img src="/images/17.jpg" alt=""><br>如果X与Y之间的所有通道都被Z阻塞，那么就称Z有向分离X和Y，简称d-分离X和Y。如果Zd-分离X和Y，那么当Z中的变量全部被观测时，信息就不能在X和Y之间相互传递，因而X与Y保持相互独立。<br><img src="/images/18.jpg" alt=""></p>
-<p><img src="/images/bottom.jpg" alt=""></p>
-
-      
-    </div>
-    <footer class="entry-meta entry-footer">
-      
-      
-      
-            
-      
-    </footer>
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-  
     <article id="post-TT0003"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
@@ -475,6 +422,59 @@ var themeMenus = {};
 <h1 id="删除cell中的空元素"><a href="#删除cell中的空元素" class="headerlink" title="删除cell中的空元素"></a>删除cell中的空元素</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">A(cellfun(@isempty,A)) = [];</div></pre></td></tr></table></figure>
 <h1 id="matlab添加工具箱"><a href="#matlab添加工具箱" class="headerlink" title="matlab添加工具箱"></a>matlab添加工具箱</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">步骤1：</div><div class="line">将工具箱文件夹放到matlab安装目录下的toolbox下；</div><div class="line">步骤2：</div><div class="line">addpath(genpath(<span class="string">'C:\MATLAB\toolbox\BNT'</span>));   </div><div class="line">savepath;  </div><div class="line">步骤3：</div><div class="line"><span class="built_in">which</span> test_BNT.m %test_BNT.m为工具箱任意中的一个函数，若返回路径，则添加成功</div></pre></td></tr></table></figure>
 <h1 id="matlab关联-m文件"><a href="#matlab关联-m文件" class="headerlink" title="matlab关联.m文件"></a>matlab关联.m文件</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">步骤1：</div><div class="line">下载文件  链接：https://pan.baidu.com/s/1boKMur9 密码：x4ui</div><div class="line">步骤2：</div><div class="line">（1）运行matlab软件 -&gt; 打开 -&gt; associateFiles.m -&gt; F5运行 </div><div class="line">（2）运行完毕后文件夹中会生成一个.reg文件，双击该文件，完成即可</div><div class="line">（3）找一个.m文件,右键 -&gt; 打开方式，若有matlab选项，说明关联成功</div></pre></td></tr></table></figure>
+<p><img src="/images/bottom.jpg" alt=""></p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+      
+            
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-TT0004"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2017/12/11/TT0004/">贝叶斯网络学习（一）</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/2017/12/11/TT0004/" class="article-date">
+	  <time datetime="2017-12-11T08:57:18.309Z" itemprop="datePublished">December 11, 2017</time>
+	</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/images/top.jpg" alt=""></p>
+<h1 id="贝叶斯网络"><a href="#贝叶斯网络" class="headerlink" title="贝叶斯网络"></a>贝叶斯网络</h1><p>贝叶斯网络（Bayesian network, BN）又名信念网络和因果概率网络，由Pearl于1988年首次提出，是一种基于概率推理的数学网络模型。贝叶斯网络是图论和概率论的结合体，即图形化概率网络，是一种有向非循环图形模型。贝叶斯网络是将概率统计应用于复杂问题的工具，其在解决不确定性和不完整性问题上具有相当的优势，在数据挖掘、模式识别及人工智能等领域都有广泛研究。<br><a href="https://baike.baidu.com/item/%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%BD%91%E7%BB%9C/4102921?fr=aladdin" target="_blank" rel="external">【百度百科】</a></p>
+<h2 id="常见用途1-诊断；2-预测；3-分类；4-决策。"><a href="#常见用途1-诊断；2-预测；3-分类；4-决策。" class="headerlink" title="常见用途1.诊断；2.预测；3.分类；4.决策。"></a>常见用途1.诊断；2.预测；3.分类；4.决策。</h2><h2 id="三大过程"><a href="#三大过程" class="headerlink" title="三大过程"></a>三大过程</h2><p>贝叶斯网络是目前解决不确定性和不完整性问题最有效的模型之一，结构学习和参数学习是贝叶斯网络研究的基础，而贝叶斯推理则是贝叶斯网络研究的上层建筑。</p>
+<h3 id="结构学习：贝叶斯网络结构学习是贝叶斯网络研究的重点和难点，它是在观测数据和先验知识的基础上构建起来的网络。贝叶斯网络结构学习就是寻找与给定数据集拟合最优的网络，而贝叶斯网络结构学习算法中，最经典的两种就是K2算法和爬山算法-hill-climbing-HC-。K2算法对先验知识要求比HC算法高，K2算法需预先知道搜索空间的节点序，这往往需要专家知识的帮助。随着研究不断深入，新算法也不断加入到结构学习，如模拟退火算法、遗传算法和群体算法等。"><a href="#结构学习：贝叶斯网络结构学习是贝叶斯网络研究的重点和难点，它是在观测数据和先验知识的基础上构建起来的网络。贝叶斯网络结构学习就是寻找与给定数据集拟合最优的网络，而贝叶斯网络结构学习算法中，最经典的两种就是K2算法和爬山算法-hill-climbing-HC-。K2算法对先验知识要求比HC算法高，K2算法需预先知道搜索空间的节点序，这往往需要专家知识的帮助。随着研究不断深入，新算法也不断加入到结构学习，如模拟退火算法、遗传算法和群体算法等。" class="headerlink" title="结构学习：贝叶斯网络结构学习是贝叶斯网络研究的重点和难点，它是在观测数据和先验知识的基础上构建起来的网络。贝叶斯网络结构学习就是寻找与给定数据集拟合最优的网络，而贝叶斯网络结构学习算法中，最经典的两种就是K2算法和爬山算法(hill climbing, HC)。K2算法对先验知识要求比HC算法高，K2算法需预先知道搜索空间的节点序，这往往需要专家知识的帮助。随着研究不断深入，新算法也不断加入到结构学习，如模拟退火算法、遗传算法和群体算法等。"></a>结构学习：贝叶斯网络结构学习是贝叶斯网络研究的重点和难点，它是在观测数据和先验知识的基础上构建起来的网络。贝叶斯网络结构学习就是寻找与给定数据集拟合最优的网络，而贝叶斯网络结构学习算法中，最经典的两种就是K2算法和爬山算法(hill climbing, HC)。K2算法对先验知识要求比HC算法高，K2算法需预先知道搜索空间的节点序，这往往需要专家知识的帮助。随着研究不断深入，新算法也不断加入到结构学习，如模拟退火算法、遗传算法和群体算法等。</h3><h3 id="参数学习：所谓参数学习就是在已知网络拓扑结构的情况下，通过给定样本数据，学习整个贝叶斯网络的概率分布情况。"><a href="#参数学习：所谓参数学习就是在已知网络拓扑结构的情况下，通过给定样本数据，学习整个贝叶斯网络的概率分布情况。" class="headerlink" title="参数学习：所谓参数学习就是在已知网络拓扑结构的情况下，通过给定样本数据，学习整个贝叶斯网络的概率分布情况。"></a>参数学习：所谓参数学习就是在已知网络拓扑结构的情况下，通过给定样本数据，学习整个贝叶斯网络的概率分布情况。</h3><h3 id="推理：贝叶斯推理是在已知贝叶斯网络结构的基础上进行推理的，它有效的结合了训练样本的先验知识和当前样本的后验概率，是概率论中贝叶斯定理的延伸。贝叶斯网络推理是在网络结构建立及数据参数学习之后，给定证据计算某节点出现概率的过程。换言之，贝叶斯网络推理就是通过计算后验概率回答查询的问题；它结合了拓扑节点之间的相互联系，通过参数信息的相互传递，从而进行有效的概率推理。常见的推理算法包括团树传播算法、联合树算法、随机抽样算法以及循环消息传递算法等。"><a href="#推理：贝叶斯推理是在已知贝叶斯网络结构的基础上进行推理的，它有效的结合了训练样本的先验知识和当前样本的后验概率，是概率论中贝叶斯定理的延伸。贝叶斯网络推理是在网络结构建立及数据参数学习之后，给定证据计算某节点出现概率的过程。换言之，贝叶斯网络推理就是通过计算后验概率回答查询的问题；它结合了拓扑节点之间的相互联系，通过参数信息的相互传递，从而进行有效的概率推理。常见的推理算法包括团树传播算法、联合树算法、随机抽样算法以及循环消息传递算法等。" class="headerlink" title="推理：贝叶斯推理是在已知贝叶斯网络结构的基础上进行推理的，它有效的结合了训练样本的先验知识和当前样本的后验概率，是概率论中贝叶斯定理的延伸。贝叶斯网络推理是在网络结构建立及数据参数学习之后，给定证据计算某节点出现概率的过程。换言之，贝叶斯网络推理就是通过计算后验概率回答查询的问题；它结合了拓扑节点之间的相互联系，通过参数信息的相互传递，从而进行有效的概率推理。常见的推理算法包括团树传播算法、联合树算法、随机抽样算法以及循环消息传递算法等。"></a>推理：贝叶斯推理是在已知贝叶斯网络结构的基础上进行推理的，它有效的结合了训练样本的先验知识和当前样本的后验概率，是概率论中贝叶斯定理的延伸。贝叶斯网络推理是在网络结构建立及数据参数学习之后，给定证据计算某节点出现概率的过程。换言之，贝叶斯网络推理就是通过计算后验概率回答查询的问题；它结合了拓扑节点之间的相互联系，通过参数信息的相互传递，从而进行有效的概率推理。常见的推理算法包括团树传播算法、联合树算法、随机抽样算法以及循环消息传递算法等。</h3><h2 id="研究现状"><a href="#研究现状" class="headerlink" title="研究现状"></a>研究现状</h2><h3 id="结构学习"><a href="#结构学习" class="headerlink" title="结构学习"></a>结构学习</h3><p><img src="/images/F01.png" alt=""></p>
+<h3 id="参数学习"><a href="#参数学习" class="headerlink" title="参数学习"></a>参数学习</h3><p><img src="/images/F02.png" alt=""></p>
+<h3 id="贝叶斯推理"><a href="#贝叶斯推理" class="headerlink" title="贝叶斯推理"></a>贝叶斯推理</h3><p><img src="/images/F03.png" alt=""></p>
+<h1 id="结构学习1"><a href="#结构学习1" class="headerlink" title="结构学习1"></a>结构学习1</h1><h2 id="声明：以下内容为学习论文【郭童-基于改进鱼群蜂群算法的贝叶斯网络结构学习-D-浙江大学-2014-】的笔记，所有内容均出自原文！"><a href="#声明：以下内容为学习论文【郭童-基于改进鱼群蜂群算法的贝叶斯网络结构学习-D-浙江大学-2014-】的笔记，所有内容均出自原文！" class="headerlink" title="声明：以下内容为学习论文【郭童. 基于改进鱼群蜂群算法的贝叶斯网络结构学习[D]. 浙江大学, 2014.】的笔记，所有内容均出自原文！"></a><font color="red" face="黑体">声明：以下内容为学习论文【郭童. 基于改进鱼群蜂群算法的贝叶斯网络结构学习[D]. 浙江大学, 2014.】的笔记，所有内容均出自原文！</font></h2><h2 id="贝叶斯网络是一种图形化模型，网络结构是贝叶斯网络研究的基础，结构学习是贝叶斯网络研究的重中之重！"><a href="#贝叶斯网络是一种图形化模型，网络结构是贝叶斯网络研究的基础，结构学习是贝叶斯网络研究的重中之重！" class="headerlink" title="贝叶斯网络是一种图形化模型，网络结构是贝叶斯网络研究的基础，结构学习是贝叶斯网络研究的重中之重！"></a>贝叶斯网络是一种图形化模型，网络结构是贝叶斯网络研究的基础，结构学习是贝叶斯网络研究的重中之重！</h2><p>贝叶斯网络结构有效的描述了随机变量（节点）间的因果关系，利用节点间的条件独立关系可有效的计算出联合概率。<br>优点：<br>1、贝叶斯网络可以快速对问题的因果关系进行学习建模。<br>2、贝叶斯网络可以方便的处理不确定性和概率性的事物。<br>3、贝叶斯网络可以将专家先验知识和数据有效的结合进行分析。<br>4、贝叶斯网络可以有效地处理较小的甚至是部分数据丢失的数据集。<br>贝叶斯网络的学习就是通过大量的数据分析并且结合专家的经验，对给定的样本生成对此样本的因果关系网络，其实就一个有向无环图，以及与此因果关系网络之中节点相对应的条件概率分布表。</p>
+<h2 id="概率论"><a href="#概率论" class="headerlink" title="概率论"></a>概率论</h2><h3 id="条件概率"><a href="#条件概率" class="headerlink" title="条件概率"></a>条件概率</h3><h3 id="P-B-A-P-AB-P-A"><a href="#P-B-A-P-AB-P-A" class="headerlink" title="P(B|A) = P(AB)/P(A)"></a>P(B|A) = P(AB)/P(A)</h3><p>（概率其实就是信度，或者说信度可用概率表示。）</p>
+<h3 id="全概率"><a href="#全概率" class="headerlink" title="全概率"></a>全概率</h3><p>设B1、B2，…，Bn是样本空间S中两两不相容的事件，对于样本空间中的任意事件有如下概率公式：</p>
+<h3 id="P-A-E-P-A-Bi-P-Bi"><a href="#P-A-E-P-A-Bi-P-Bi" class="headerlink" title="P(A) = E(P(A|Bi)*P(Bi))"></a>P(A) = E(P(A|Bi)*P(Bi))</h3><h3 id="贝叶斯公式"><a href="#贝叶斯公式" class="headerlink" title="贝叶斯公式"></a>贝叶斯公式</h3><p><img src="/images/16.jpg" alt=""></p>
+<h2 id="图论"><a href="#图论" class="headerlink" title="图论"></a>图论</h2><h3 id="贝叶斯网络是一个有向无环图。图论体现的是节点之间连通或者分离的相互关系，而从概率论的角度定量的刻画了变量之间依赖或者独立的相互关系。"><a href="#贝叶斯网络是一个有向无环图。图论体现的是节点之间连通或者分离的相互关系，而从概率论的角度定量的刻画了变量之间依赖或者独立的相互关系。" class="headerlink" title="贝叶斯网络是一个有向无环图。图论体现的是节点之间连通或者分离的相互关系，而从概率论的角度定量的刻画了变量之间依赖或者独立的相互关系。"></a>贝叶斯网络是一个有向无环图。图论体现的是节点之间连通或者分离的相互关系，而从概率论的角度定量的刻画了变量之间依赖或者独立的相互关系。</h3><p><img src="/images/17.jpg" alt=""><br>如果X与Y之间的所有通道都被Z阻塞，那么就称Z有向分离X和Y，简称d-分离X和Y。如果Zd-分离X和Y，那么当Z中的变量全部被观测时，信息就不能在X和Y之间相互传递，因而X与Y保持相互独立。<br><img src="/images/18.jpg" alt=""></p>
 <p><img src="/images/bottom.jpg" alt=""></p>
 
       
@@ -619,9 +619,9 @@ var themeMenus = {};
     <form class="search-form">
         <label style="width: 75%;">
             <span class="screen-reader-text">Search for:</span>
-            <input type="search" class="search-field" style="height: 42px;" placeholder=" Suche…" value="" name="s" title="Search for:">
+            <input type="search" class="search-field" style="height: 42px;" placeholder=" 搜索…" value="" name="s" title="Search for:">
         </label>
-        <input type="submit" class="search-form-submit" value="Suche">
+        <input type="submit" class="search-form-submit" value="搜索">
     </form>
     <div class="ins-search">
     <div class="ins-search-mask"></div>
@@ -704,7 +704,7 @@ var themeMenus = {};
     
   <div class="widget_athemes_tabs">
     <ul id="widget-tab" class="clearfix widget-tab-nav">
-      <li class="active"><a>letzter Beitrag</a></li>
+      <li class="active"><a>最新文章</a></li>
     </ul>
     <div class="widget">
       <ul>
@@ -763,7 +763,7 @@ var themeMenus = {};
               <div class="widget-entry-summary" style="margin: 0;">
             
 
-              <h6 style="margin: 0;"><a href="/2017/12/11/TT0004/">贝叶斯网络学习（一）</a></h6>
+              <h6 style="margin: 0;"><a href="/2017/12/11/TT0003/">一些常用Matlab代码记录</a></h6>
               <span>December 11, 2017</span>
             </div>
 
@@ -775,7 +775,7 @@ var themeMenus = {};
               <div class="widget-entry-summary" style="margin: 0;">
             
 
-              <h6 style="margin: 0;"><a href="/2017/12/11/TT0003/">一些常用Matlab代码记录</a></h6>
+              <h6 style="margin: 0;"><a href="/2017/12/11/TT0004/">贝叶斯网络学习（一）</a></h6>
               <span>December 11, 2017</span>
             </div>
 
@@ -796,7 +796,7 @@ var themeMenus = {};
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archiv</h3>
+    <h3 class="widget-title">归档</h3>
 
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">November 2017</a><span class="archive-list-count">1</span></li></ul>
