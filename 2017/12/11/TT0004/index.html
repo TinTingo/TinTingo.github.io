@@ -19,12 +19,12 @@
   
   
   
-  <meta name="description" content="贝叶斯网络贝叶斯网络（Bayesian network, BN）又名信念网络和因果概率网络，由Pearl于1988年首次提出，是一种基于概率推理的数学网络模型。贝叶斯网络是图论和概率论的结合体，即图形化概率网络，是一种有向非循环图形模型。贝叶斯网络是将概率统计应用于复杂问题的工具，其在解决不确定性和不完整性问题上具有相当的优势，在数据挖掘、模式识别及人工智能等领域都有广泛研究。【百度百科】 常">
+  <meta name="description" content="贝叶斯网络贝叶斯网络（Bayesian network, BN）又名信念网络和因果概率网络，由Pearl于1988年首次提出，是一种基于概率推理的数学网络模型。贝叶斯网络是图论和概率论的结合体，即图形化概率网络，是一种有向非循环图形模型。贝叶斯网络是将概率统计应用于复杂问题的工具，其在解决不确定性和不完整性问题上具有相当的优势，在数据挖掘、模式识别及人工智能等领域都有广泛研究。【百度百科】">
 <meta property="og:type" content="article">
 <meta property="og:title" content="贝叶斯网络学习（一）">
 <meta property="og:url" content="https://tintingo.github.io/2017/12/11/TT0004/index.html">
 <meta property="og:site_name" content="TinTin">
-<meta property="og:description" content="贝叶斯网络贝叶斯网络（Bayesian network, BN）又名信念网络和因果概率网络，由Pearl于1988年首次提出，是一种基于概率推理的数学网络模型。贝叶斯网络是图论和概率论的结合体，即图形化概率网络，是一种有向非循环图形模型。贝叶斯网络是将概率统计应用于复杂问题的工具，其在解决不确定性和不完整性问题上具有相当的优势，在数据挖掘、模式识别及人工智能等领域都有广泛研究。【百度百科】 常">
+<meta property="og:description" content="贝叶斯网络贝叶斯网络（Bayesian network, BN）又名信念网络和因果概率网络，由Pearl于1988年首次提出，是一种基于概率推理的数学网络模型。贝叶斯网络是图论和概率论的结合体，即图形化概率网络，是一种有向非循环图形模型。贝叶斯网络是将概率统计应用于复杂问题的工具，其在解决不确定性和不完整性问题上具有相当的优势，在数据挖掘、模式识别及人工智能等领域都有广泛研究。【百度百科】">
 <meta property="og:image" content="https://tintingo.github.io/images/top.jpg">
 <meta property="og:image" content="https://tintingo.github.io/images/F01.png">
 <meta property="og:image" content="https://tintingo.github.io/images/F02.png">
@@ -33,10 +33,10 @@
 <meta property="og:image" content="https://tintingo.github.io/images/17.jpg">
 <meta property="og:image" content="https://tintingo.github.io/images/18.jpg">
 <meta property="og:image" content="https://tintingo.github.io/images/bottom.jpg">
-<meta property="og:updated_time" content="2017-12-20T11:00:58.094Z">
+<meta property="og:updated_time" content="2017-12-20T11:09:32.029Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="贝叶斯网络学习（一）">
-<meta name="twitter:description" content="贝叶斯网络贝叶斯网络（Bayesian network, BN）又名信念网络和因果概率网络，由Pearl于1988年首次提出，是一种基于概率推理的数学网络模型。贝叶斯网络是图论和概率论的结合体，即图形化概率网络，是一种有向非循环图形模型。贝叶斯网络是将概率统计应用于复杂问题的工具，其在解决不确定性和不完整性问题上具有相当的优势，在数据挖掘、模式识别及人工智能等领域都有广泛研究。【百度百科】 常">
+<meta name="twitter:description" content="贝叶斯网络贝叶斯网络（Bayesian network, BN）又名信念网络和因果概率网络，由Pearl于1988年首次提出，是一种基于概率推理的数学网络模型。贝叶斯网络是图论和概率论的结合体，即图形化概率网络，是一种有向非循环图形模型。贝叶斯网络是将概率统计应用于复杂问题的工具，其在解决不确定性和不完整性问题上具有相当的优势，在数据挖掘、模式识别及人工智能等领域都有广泛研究。【百度百科】">
 <meta name="twitter:image" content="https://tintingo.github.io/images/top.jpg">
   
     <link rel="alternate" href="/atom.xml" title="TinTin" type="application/atom+xml">
@@ -194,9 +194,9 @@ var themeMenus = {};
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a>
-<p><img src="/images/top.jpg" alt=""></p>
+        <p><img src="/images/top.jpg" alt=""></p>
 <h1 id="贝叶斯网络"><a href="#贝叶斯网络" class="headerlink" title="贝叶斯网络"></a>贝叶斯网络</h1><p>贝叶斯网络（Bayesian network, BN）又名信念网络和因果概率网络，由Pearl于1988年首次提出，是一种基于概率推理的数学网络模型。贝叶斯网络是图论和概率论的结合体，即图形化概率网络，是一种有向非循环图形模型。贝叶斯网络是将概率统计应用于复杂问题的工具，其在解决不确定性和不完整性问题上具有相当的优势，在数据挖掘、模式识别及人工智能等领域都有广泛研究。<br><a href="https://baike.baidu.com/item/%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%BD%91%E7%BB%9C/4102921?fr=aladdin" target="_blank" rel="external">【百度百科】</a></p>
+<a id="more"></a>
 <h2 id="常见用途1-诊断；2-预测；3-分类；4-决策。"><a href="#常见用途1-诊断；2-预测；3-分类；4-决策。" class="headerlink" title="常见用途1.诊断；2.预测；3.分类；4.决策。"></a>常见用途1.诊断；2.预测；3.分类；4.决策。</h2><h2 id="三大过程"><a href="#三大过程" class="headerlink" title="三大过程"></a>三大过程</h2><p>贝叶斯网络是目前解决不确定性和不完整性问题最有效的模型之一，结构学习和参数学习是贝叶斯网络研究的基础，而贝叶斯推理则是贝叶斯网络研究的上层建筑。</p>
 <h3 id="结构学习：贝叶斯网络结构学习是贝叶斯网络研究的重点和难点，它是在观测数据和先验知识的基础上构建起来的网络。贝叶斯网络结构学习就是寻找与给定数据集拟合最优的网络，而贝叶斯网络结构学习算法中，最经典的两种就是K2算法和爬山算法-hill-climbing-HC-。K2算法对先验知识要求比HC算法高，K2算法需预先知道搜索空间的节点序，这往往需要专家知识的帮助。随着研究不断深入，新算法也不断加入到结构学习，如模拟退火算法、遗传算法和群体算法等。"><a href="#结构学习：贝叶斯网络结构学习是贝叶斯网络研究的重点和难点，它是在观测数据和先验知识的基础上构建起来的网络。贝叶斯网络结构学习就是寻找与给定数据集拟合最优的网络，而贝叶斯网络结构学习算法中，最经典的两种就是K2算法和爬山算法-hill-climbing-HC-。K2算法对先验知识要求比HC算法高，K2算法需预先知道搜索空间的节点序，这往往需要专家知识的帮助。随着研究不断深入，新算法也不断加入到结构学习，如模拟退火算法、遗传算法和群体算法等。" class="headerlink" title="结构学习：贝叶斯网络结构学习是贝叶斯网络研究的重点和难点，它是在观测数据和先验知识的基础上构建起来的网络。贝叶斯网络结构学习就是寻找与给定数据集拟合最优的网络，而贝叶斯网络结构学习算法中，最经典的两种就是K2算法和爬山算法(hill climbing, HC)。K2算法对先验知识要求比HC算法高，K2算法需预先知道搜索空间的节点序，这往往需要专家知识的帮助。随着研究不断深入，新算法也不断加入到结构学习，如模拟退火算法、遗传算法和群体算法等。"></a>结构学习：贝叶斯网络结构学习是贝叶斯网络研究的重点和难点，它是在观测数据和先验知识的基础上构建起来的网络。贝叶斯网络结构学习就是寻找与给定数据集拟合最优的网络，而贝叶斯网络结构学习算法中，最经典的两种就是K2算法和爬山算法(hill climbing, HC)。K2算法对先验知识要求比HC算法高，K2算法需预先知道搜索空间的节点序，这往往需要专家知识的帮助。随着研究不断深入，新算法也不断加入到结构学习，如模拟退火算法、遗传算法和群体算法等。</h3><h3 id="参数学习：所谓参数学习就是在已知网络拓扑结构的情况下，通过给定样本数据，学习整个贝叶斯网络的概率分布情况。"><a href="#参数学习：所谓参数学习就是在已知网络拓扑结构的情况下，通过给定样本数据，学习整个贝叶斯网络的概率分布情况。" class="headerlink" title="参数学习：所谓参数学习就是在已知网络拓扑结构的情况下，通过给定样本数据，学习整个贝叶斯网络的概率分布情况。"></a>参数学习：所谓参数学习就是在已知网络拓扑结构的情况下，通过给定样本数据，学习整个贝叶斯网络的概率分布情况。</h3><h3 id="推理：贝叶斯推理是在已知贝叶斯网络结构的基础上进行推理的，它有效的结合了训练样本的先验知识和当前样本的后验概率，是概率论中贝叶斯定理的延伸。贝叶斯网络推理是在网络结构建立及数据参数学习之后，给定证据计算某节点出现概率的过程。换言之，贝叶斯网络推理就是通过计算后验概率回答查询的问题；它结合了拓扑节点之间的相互联系，通过参数信息的相互传递，从而进行有效的概率推理。常见的推理算法包括团树传播算法、联合树算法、随机抽样算法以及循环消息传递算法等。"><a href="#推理：贝叶斯推理是在已知贝叶斯网络结构的基础上进行推理的，它有效的结合了训练样本的先验知识和当前样本的后验概率，是概率论中贝叶斯定理的延伸。贝叶斯网络推理是在网络结构建立及数据参数学习之后，给定证据计算某节点出现概率的过程。换言之，贝叶斯网络推理就是通过计算后验概率回答查询的问题；它结合了拓扑节点之间的相互联系，通过参数信息的相互传递，从而进行有效的概率推理。常见的推理算法包括团树传播算法、联合树算法、随机抽样算法以及循环消息传递算法等。" class="headerlink" title="推理：贝叶斯推理是在已知贝叶斯网络结构的基础上进行推理的，它有效的结合了训练样本的先验知识和当前样本的后验概率，是概率论中贝叶斯定理的延伸。贝叶斯网络推理是在网络结构建立及数据参数学习之后，给定证据计算某节点出现概率的过程。换言之，贝叶斯网络推理就是通过计算后验概率回答查询的问题；它结合了拓扑节点之间的相互联系，通过参数信息的相互传递，从而进行有效的概率推理。常见的推理算法包括团树传播算法、联合树算法、随机抽样算法以及循环消息传递算法等。"></a>推理：贝叶斯推理是在已知贝叶斯网络结构的基础上进行推理的，它有效的结合了训练样本的先验知识和当前样本的后验概率，是概率论中贝叶斯定理的延伸。贝叶斯网络推理是在网络结构建立及数据参数学习之后，给定证据计算某节点出现概率的过程。换言之，贝叶斯网络推理就是通过计算后验概率回答查询的问题；它结合了拓扑节点之间的相互联系，通过参数信息的相互传递，从而进行有效的概率推理。常见的推理算法包括团树传播算法、联合树算法、随机抽样算法以及循环消息传递算法等。</h3><h2 id="研究现状"><a href="#研究现状" class="headerlink" title="研究现状"></a>研究现状</h2><h3 id="结构学习"><a href="#结构学习" class="headerlink" title="结构学习"></a>结构学习</h3><p><img src="/images/F01.png" alt=""></p>
 <h3 id="参数学习"><a href="#参数学习" class="headerlink" title="参数学习"></a>参数学习</h3><p><img src="/images/F02.png" alt=""></p>
@@ -260,19 +260,19 @@ var a = new Donate({
     
 <nav id="article-nav">
   
-    <a href="/2017/12/11/TT0003/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/12/11/TT0005/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">上一篇</strong>
       <div class="article-nav-title">
         
-          一些常用Matlab代码记录
+          音乐|视频更新
         
       </div>
     </a>
   
   
-    <a href="/2017/12/11/TT0002/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2017/12/11/TT0003/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">下一篇</strong>
-      <div class="article-nav-title">如何用Matlab设计GUI？</div>
+      <div class="article-nav-title">一些常用Matlab代码记录</div>
     </a>
   
 </nav>
