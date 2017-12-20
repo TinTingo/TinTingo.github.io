@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <!-- PACE Progress Bar START -->
+  
+    <script src="/js/pace.min.js"></script>
+    <link rel="stylesheet" href="https://github.com/HubSpot/pace/raw/master/themes/orange/pace-theme-flash.css">
+  
+  
+
+  <!-- PACE Progress Bar START -->
+
+  
+  <title>一些常用matlab代码记录 | TinTin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  
+  <meta name="description" content="记忆力差？用过的代码老忘记？一次又一次的上网搜?好浪费时间！写在博客里方便随时查阅~~~~">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一些常用Matlab代码记录">
+<meta property="og:url" content="https://tintingo.github.io/2017/12/20/TT0011/index.html">
+<meta property="og:site_name" content="TinTin">
+<meta property="og:description" content="记忆力差？用过的代码老忘记？一次又一次的上网搜?好浪费时间！写在博客里方便随时查阅~~~~">
+<meta property="og:image" content="https://tintingo.github.io/images/top.jpg">
+<meta property="og:image" content="https://tintingo.github.io/images/bottom.jpg">
+<meta property="og:updated_time" content="2017-12-20T11:09:43.077Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="一些常用Matlab代码记录">
+<meta name="twitter:description" content="记忆力差？用过的代码老忘记？一次又一次的上网搜?好浪费时间！写在博客里方便随时查阅~~~~">
+<meta name="twitter:image" content="https://tintingo.github.io/images/top.jpg">
+  
+    <link rel="alternate" href="/atom.xml" title="TinTin" type="application/atom+xml">
+  
+  <link rel="icon" href="/css/images/favicon.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/js/jquery-3.1.1.min.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+  <link rel="stylesheet" href="/css/hiero.css" >
+  <link rel="stylesheet" href="/css/glyphs.css" >
+  
+    <link rel="stylesheet" href="/css/vdonate.css" >
+  
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/my.css">
+
+</head>
+
+<script>
+var themeMenus = {};
+
+  themeMenus["/"] = "首页"; 
+
+  themeMenus["/archives"] = "归档"; 
+
+  themeMenus["/life"] = "生活馆"; 
+
+  themeMenus["https://tintingo.github.io/images/about.html"] = "关于"; 
+
+  themeMenus["/comments"] = "留言"; 
+
+</script>
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  <header id="allheader" class="site-header" role="banner">
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/" title="TinTin" rel="home"> TinTin </a>
+            
+          </h1>
+
+          
+            <div class="site-description">学习matlab/python/HTML5/c/c++/机器学习/贝叶斯网络中~~~</div>
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+            <div class="clearfix sf-menu">
+
+              <ul id="main-nav" class="nmenu sf-js-enabled">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">首页</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">归档</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/life">生活馆</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="https://tintingo.github.io/images/about.html">关于</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/comments">留言</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+
+      </div>
+  </div>
+</header>
+
+
+  <div id="originBgDiv" style="background: #fff; width: 100%;">
+
+      <div style="max-height:600px; overflow: hidden;  display: flex; display: -webkit-flex; align-items: center;">
+        <img id="originBg" width="100%" alt="" src="">
+      </div>
+
+  </div>
+
+  <script>
+  function setAboutIMG(){
+      var imgUrls = "css/images/pose1.jpg,css/images/pose2.jpg,css/images/pose3.jpg".split(",");
+      var random = Math.floor((Math.random() * imgUrls.length ));
+      if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+        document.getElementById("originBg").src=imgUrls[random];
+      } else {
+        document.getElementById("originBg").src='/' + imgUrls[random];
+      }
+  }
+  bgDiv=document.getElementById("originBgDiv");
+  if(location.pathname.match('about')){
+    setAboutIMG();
+    bgDiv.style.display='block';
+  }else{
+    bgDiv.style.display='none';
+  }
+  </script>
+
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-TT0011" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      一些常用Matlab代码记录
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/2017/12/20/TT0011/" class="article-date">
+	  <time datetime="2017-12-20T11:11:06.365Z" itemprop="datePublished">December 20, 2017</time>
+	</a>
+
+      
+	<span id="busuanzi_container_page_pv">
+	  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+	</span>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/images/top.jpg" alt=""></p>
+<p>记忆力差？<br>用过的代码老忘记？<br>一次又一次的上网搜?<br>好浪费时间！<br>写在博客里方便随时查阅~~~~<br><a id="more"></a></p>
+<h1 id="Excel读写（xlsread、xlswrite）"><a href="#Excel读写（xlsread、xlswrite）" class="headerlink" title="Excel读写（xlsread、xlswrite）"></a>Excel读写（xlsread、xlswrite）</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">%读</div><div class="line">mytxt = xlsread(<span class="string">'C:/filename.xls'</span>)</div><div class="line"></div><div class="line">%写</div><div class="line">txt = [<span class="string">'a'</span> <span class="string">'s'</span> <span class="string">'d'</span> <span class="string">'f'</span> <span class="string">'g'</span> <span class="string">'h'</span>];</div><div class="line">mytxt = xlswrite(<span class="string">'C:/filename.xls'</span>,txt)</div></pre></td></tr></table></figure>
+<h1 id="txt读写"><a href="#txt读写" class="headerlink" title="txt读写"></a>txt读写</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">%读</div><div class="line">fid = fopen(<span class="string">'C:/words.txt'</span>,<span class="string">'r'</span>);</div><div class="line">txt = textscan(fid,<span class="string">'%s'</span>);</div><div class="line">fclose(fid);</div><div class="line"></div><div class="line">%写</div><div class="line">txt = [<span class="string">'a'</span> <span class="string">'s'</span> <span class="string">'d'</span> <span class="string">'f'</span> <span class="string">'g'</span> <span class="string">'h'</span>];</div><div class="line">dlmwrite(<span class="string">'C:/myfile.txt'</span>, txt, <span class="string">'delimiter'</span>, <span class="string">'\t'</span>)</div></pre></td></tr></table></figure>
+<h1 id="图片读写"><a href="#图片读写" class="headerlink" title="图片读写"></a>图片读写</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">%读</div><div class="line">I = imread(<span class="string">'C:/im01.jpg'</span>);</div><div class="line"></div><div class="line">%写</div><div class="line">imwrite(I,<span class="string">'C:/im01.jpg'</span>);</div></pre></td></tr></table></figure>
+<h1 id="mat读写"><a href="#mat读写" class="headerlink" title="mat读写"></a>mat读写</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">%读</div><div class="line">Data = load(<span class="string">'C:/myfile.mat'</span>)%</div><div class="line"></div><div class="line">%写</div><div class="line">save DATA %workspace中的内容全部保存</div><div class="line">save data.mat -regexp <span class="string">'[^data1 ^data2]'</span>  %保存workspace中除data1和data2的内容</div><div class="line">%也可在workspace中想要保存的内容右键保存</div></pre></td></tr></table></figure>
+<h1 id="矩阵随机交换行（列）"><a href="#矩阵随机交换行（列）" class="headerlink" title="矩阵随机交换行（列）"></a>矩阵随机交换行（列）</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">% 给矩阵A随机换行</div><div class="line">A = [1 2 3; 4 5 6; 7 8 9; 10 11 12]</div><div class="line">　　h = randperm(size(A, 1)); %randperm生成1:size(A, 1)的随机数</div><div class="line">　　B = A(h,:)</div><div class="line"></div><div class="line">% 给矩阵A随机换行</div><div class="line">A = [1 2 3; 4 5 6; 7 8 9; 10 11 12]</div><div class="line">　　l = randperm(size(A, 2)); </div><div class="line">　　C = A(:,l)</div></pre></td></tr></table></figure>
+<h1 id="比较两匹配"><a href="#比较两匹配" class="headerlink" title="比较两匹配"></a>比较两匹配</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">A = [<span class="string">'AAA'</span>];</div><div class="line">B = [<span class="string">'BBB'</span>];</div><div class="line">result = strcmpi(A,B); %结果为1，A、B相同，结果为0，A、B不同</div></pre></td></tr></table></figure>
+<h1 id="打开文件夹"><a href="#打开文件夹" class="headerlink" title="打开文件夹"></a>打开文件夹</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">filename = uigetdir(<span class="string">'选择一个目录'</span>);</div></pre></td></tr></table></figure>
+<h1 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">web https://tintingo.github.io/ -browser;</div></pre></td></tr></table></figure>
+<h1 id="弹出对话框"><a href="#弹出对话框" class="headerlink" title="弹出对话框"></a>弹出对话框</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">msgbox(<span class="string">'               任务完成！'</span>)</div></pre></td></tr></table></figure>
+<h1 id="GUI按钮换背景图"><a href="#GUI按钮换背景图" class="headerlink" title="GUI按钮换背景图"></a>GUI按钮换背景图</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">I = importdata(<span class="string">'image\eye.jpg'</span>);</div><div class="line"><span class="built_in">set</span>(handles.pushbutton1,<span class="string">'CDATA'</span>,I);</div></pre></td></tr></table></figure>
+<h1 id="GUI更换自己的logo"><a href="#GUI更换自己的logo" class="headerlink" title="GUI更换自己的logo"></a>GUI更换自己的logo</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">h  =  handles.figure1; </div><div class="line">newIcon  =  javax.swing.ImageIcon(<span class="string">'image\logo.jpg'</span>);</div><div class="line">figFrame  =  get(h,<span class="string">'JavaFrame'</span>); </div><div class="line">figFrame.setFigureIcon(newIcon);</div></pre></td></tr></table></figure>
+<h1 id="GUI更设置面背景"><a href="#GUI更设置面背景" class="headerlink" title="GUI更设置面背景"></a>GUI更设置面背景</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">Hd_axes = axes(<span class="string">'units'</span>,<span class="string">'normalized'</span>,<span class="string">'position'</span>,[0 0 1 1],<span class="string">'tag'</span>,<span class="string">'Hd_axes'</span>);</div><div class="line">uistack(Hd_axes,<span class="string">'down'</span>)</div><div class="line">II = imread(<span class="string">'image\background.jpg'</span>);</div><div class="line">image(II)</div><div class="line">colormap gray</div><div class="line"><span class="built_in">set</span>(Hd_axes,<span class="string">'handlevisibility'</span>,<span class="string">'off'</span>,<span class="string">'visible'</span>,<span class="string">'off'</span>);</div></pre></td></tr></table></figure>
+<h1 id="GUI可编辑文本框显示文字"><a href="#GUI可编辑文本框显示文字" class="headerlink" title="GUI可编辑文本框显示文字"></a>GUI可编辑文本框显示文字</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">set</span>(handles.edit1, <span class="string">'String'</span>,<span class="string">'文字'</span>)</div></pre></td></tr></table></figure>
+<h1 id="GUI获取可编辑文本框里的文字"><a href="#GUI获取可编辑文本框里的文字" class="headerlink" title="GUI获取可编辑文本框里的文字"></a>GUI获取可编辑文本框里的文字</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">txt = get(handles.edit1,<span class="string">'string'</span>);</div></pre></td></tr></table></figure>
+<h1 id="GUI可编辑文本框显示时间"><a href="#GUI可编辑文本框显示时间" class="headerlink" title="GUI可编辑文本框显示时间"></a>GUI可编辑文本框显示时间</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> timercallback(obj, event,handles)</div><div class="line">str = datestr(now, <span class="string">'HH:MM:SS'</span>);</div><div class="line"><span class="built_in">set</span>(handles.edit1, <span class="string">'String'</span>,str);</div></pre></td></tr></table></figure>
+<h1 id="GUI打包成exe"><a href="#GUI打包成exe" class="headerlink" title="GUI打包成exe"></a>GUI打包成exe</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">deploytool</div></pre></td></tr></table></figure>
+<h1 id="画网络结构图自定义节点名"><a href="#画网络结构图自定义节点名" class="headerlink" title="画网络结构图自定义节点名"></a>画网络结构图自定义节点名</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">labels = &#123;<span class="string">'one'</span>,<span class="string">'two'</span>,<span class="string">'three'</span>,<span class="string">'four'</span>&#125;;</div><div class="line">draw_graph(dag,labels);</div></pre></td></tr></table></figure>
+<h1 id="画网络结构图的两种方式"><a href="#画网络结构图的两种方式" class="headerlink" title="画网络结构图的两种方式"></a>画网络结构图的两种方式</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">draw_graph( dag ); %dag为网络结构边的关系</div><div class="line">h = view(biograph( dag ));</div></pre></td></tr></table></figure>
+<h1 id="安装了matlab，但无法双击打开-m文件"><a href="#安装了matlab，但无法双击打开-m文件" class="headerlink" title="安装了matlab，但无法双击打开.m文件"></a>安装了matlab，但无法双击打开.m文件</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">cwd=<span class="built_in">pwd</span>;</div><div class="line"><span class="built_in">cd</span>([matlabroot <span class="string">'\toolbox\matlab\winfun\private'</span>]);</div><div class="line">fileassoc(<span class="string">'add'</span>,&#123;<span class="string">'.m'</span>,<span class="string">'.mat'</span>,<span class="string">'.fig'</span>,<span class="string">'.p'</span>,<span class="string">'.mdl'</span>,[<span class="string">'.'</span> mexext]&#125;); </div><div class="line"><span class="built_in">cd</span>(cwd);</div></pre></td></tr></table></figure>
+<h1 id="生成‘ABCDE’这5个字母的随机组合"><a href="#生成‘ABCDE’这5个字母的随机组合" class="headerlink" title="生成‘ABCDE’这5个字母的随机组合"></a>生成‘ABCDE’这5个字母的随机组合</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">s = perms(<span class="string">'ABCDE'</span>); %随机生成Cnn种组合</div></pre></td></tr></table></figure>
+<h1 id="同一figure显示多个图"><a href="#同一figure显示多个图" class="headerlink" title="同一figure显示多个图"></a>同一figure显示多个图</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">subplot(n,m,i) %一个figure分为n行，m列。i表示第i个图。</div></pre></td></tr></table></figure>
+<h1 id="22-给一个数列（矩阵）里的数排序（从大到小）"><a href="#22-给一个数列（矩阵）里的数排序（从大到小）" class="headerlink" title="22.给一个数列（矩阵）里的数排序（从大到小）"></a>22.给一个数列（矩阵）里的数排序（从大到小）</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[a b]=sort(A(:)); %从小到大排序</div><div class="line">a = fliplr(a<span class="string">'); %取倒序</span></div><div class="line"><span class="string">b = fliplr(b'</span>);</div></pre></td></tr></table></figure>
+<h1 id="判断两字符是否匹配"><a href="#判断两字符是否匹配" class="headerlink" title="判断两字符是否匹配"></a>判断两字符是否匹配</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&gt;&gt; regexpi(<span class="string">'asdf'</span>,<span class="string">'asdf'</span>)</div><div class="line"></div><div class="line">ans =</div><div class="line"></div><div class="line">     1</div><div class="line"></div><div class="line">&gt;&gt; regexpi(<span class="string">'asdf'</span>,<span class="string">'agsdf'</span>)</div><div class="line"></div><div class="line">ans =</div><div class="line"></div><div class="line">     []</div></pre></td></tr></table></figure>
+<h1 id="判断字符Str中是否含有‘http’字符"><a href="#判断字符Str中是否含有‘http’字符" class="headerlink" title="判断字符Str中是否含有‘http’字符"></a>判断字符Str中是否含有‘http’字符</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&gt;&gt; Str=<span class="string">'httpthestartingindicesoft'</span>;strfind(Str,<span class="string">'http'</span>)</div><div class="line"></div><div class="line">ans =</div><div class="line"></div><div class="line">     1</div><div class="line"></div><div class="line">&gt;&gt; Str=<span class="string">'httpthestartingindicesofthttp'</span>;strfind(Str,<span class="string">'http'</span>)</div><div class="line"></div><div class="line">ans =</div><div class="line"></div><div class="line">     1    26</div></pre></td></tr></table></figure>
+<h1 id="消除matlAB启动时的Warning：Name-is-nonexistent-or-not-a-directory…"><a href="#消除matlAB启动时的Warning：Name-is-nonexistent-or-not-a-directory…" class="headerlink" title="消除matlAB启动时的Warning：Name is nonexistent or not a directory…"></a>消除matlAB启动时的Warning：Name is nonexistent or not a directory…</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">步骤：</div><div class="line">file -&gt; <span class="built_in">set</span> path -&gt; Defualt -&gt; Yes -&gt; 重启matlab</div></pre></td></tr></table></figure>
+<h1 id="删除cell中的空元素"><a href="#删除cell中的空元素" class="headerlink" title="删除cell中的空元素"></a>删除cell中的空元素</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">A(cellfun(@isempty,A)) = [];</div></pre></td></tr></table></figure>
+<h1 id="matlab添加工具箱"><a href="#matlab添加工具箱" class="headerlink" title="matlab添加工具箱"></a>matlab添加工具箱</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">步骤1：</div><div class="line">将工具箱文件夹放到matlab安装目录下的toolbox下；</div><div class="line">步骤2：</div><div class="line">addpath(genpath(<span class="string">'C:\MATLAB\toolbox\BNT'</span>));   </div><div class="line">savepath;  </div><div class="line">步骤3：</div><div class="line"><span class="built_in">which</span> test_BNT.m %test_BNT.m为工具箱任意中的一个函数，若返回路径，则添加成功</div></pre></td></tr></table></figure>
+<h1 id="matlab关联-m文件"><a href="#matlab关联-m文件" class="headerlink" title="matlab关联.m文件"></a>matlab关联.m文件</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">步骤1：</div><div class="line">下载文件  链接：https://pan.baidu.com/s/1boKMur9 密码：x4ui</div><div class="line">步骤2：</div><div class="line">（1）运行matlab软件 -&gt; 打开 -&gt; associateFiles.m -&gt; F5运行 </div><div class="line">（2）运行完毕后文件夹中会生成一个.reg文件，双击该文件，完成即可</div><div class="line">（3）找一个.m文件,右键 -&gt; 打开方式，若有matlab选项，说明关联成功</div></pre></td></tr></table></figure>
+<p><img src="/images/bottom.jpg" alt=""></p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+      
+        <div id="donation_div"></div>
+
+<script src="/js/vdonate.js"></script>
+<script>
+var a = new Donate({
+  title: '请随意打赏。您的支持将鼓励我继续创作!', // 可选参数，打赏标题
+  btnText: '打赏支持', // 可选参数，打赏按钮文字
+  el: document.getElementById('donation_div'),
+  wechatImage: '/css/images/wechatpay.jpg',
+  alipayImage: '/css/images/alipay.jpg'
+});
+</script>
+      
+            
+      
+	  
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8zMjU1NS85MTE2">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/12/20/TT0012/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">
+        
+          贝叶斯网络学习（一）
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/12/20/TT0010/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">如何用Matlab设计GUI？</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    
+      <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Excel读写（xlsread、xlswrite）"><span class="nav-number">1.</span> <span class="nav-text">Excel读写（xlsread、xlswrite）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#txt读写"><span class="nav-number">2.</span> <span class="nav-text">txt读写</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#图片读写"><span class="nav-number">3.</span> <span class="nav-text">图片读写</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#mat读写"><span class="nav-number">4.</span> <span class="nav-text">mat读写</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#矩阵随机交换行（列）"><span class="nav-number">5.</span> <span class="nav-text">矩阵随机交换行（列）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#比较两匹配"><span class="nav-number">6.</span> <span class="nav-text">比较两匹配</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#打开文件夹"><span class="nav-number">7.</span> <span class="nav-text">打开文件夹</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#超链接"><span class="nav-number">8.</span> <span class="nav-text">超链接</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#弹出对话框"><span class="nav-number">9.</span> <span class="nav-text">弹出对话框</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#GUI按钮换背景图"><span class="nav-number">10.</span> <span class="nav-text">GUI按钮换背景图</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#GUI更换自己的logo"><span class="nav-number">11.</span> <span class="nav-text">GUI更换自己的logo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#GUI更设置面背景"><span class="nav-number">12.</span> <span class="nav-text">GUI更设置面背景</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#GUI可编辑文本框显示文字"><span class="nav-number">13.</span> <span class="nav-text">GUI可编辑文本框显示文字</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#GUI获取可编辑文本框里的文字"><span class="nav-number">14.</span> <span class="nav-text">GUI获取可编辑文本框里的文字</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#GUI可编辑文本框显示时间"><span class="nav-number">15.</span> <span class="nav-text">GUI可编辑文本框显示时间</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#GUI打包成exe"><span class="nav-number">16.</span> <span class="nav-text">GUI打包成exe</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#画网络结构图自定义节点名"><span class="nav-number">17.</span> <span class="nav-text">画网络结构图自定义节点名</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#画网络结构图的两种方式"><span class="nav-number">18.</span> <span class="nav-text">画网络结构图的两种方式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装了matlab，但无法双击打开-m文件"><span class="nav-number">19.</span> <span class="nav-text">安装了matlab，但无法双击打开.m文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#生成‘ABCDE’这5个字母的随机组合"><span class="nav-number">20.</span> <span class="nav-text">生成‘ABCDE’这5个字母的随机组合</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#同一figure显示多个图"><span class="nav-number">21.</span> <span class="nav-text">同一figure显示多个图</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#22-给一个数列（矩阵）里的数排序（从大到小）"><span class="nav-number">22.</span> <span class="nav-text">22.给一个数列（矩阵）里的数排序（从大到小）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#判断两字符是否匹配"><span class="nav-number">23.</span> <span class="nav-text">判断两字符是否匹配</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#判断字符Str中是否含有‘http’字符"><span class="nav-number">24.</span> <span class="nav-text">判断字符Str中是否含有‘http’字符</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#消除matlAB启动时的Warning：Name-is-nonexistent-or-not-a-directory…"><span class="nav-number">25.</span> <span class="nav-text">消除matlAB启动时的Warning：Name is nonexistent or not a directory…</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#删除cell中的空元素"><span class="nav-number">26.</span> <span class="nav-text">删除cell中的空元素</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#matlab添加工具箱"><span class="nav-number">27.</span> <span class="nav-text">matlab添加工具箱</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#matlab关联-m文件"><span class="nav-number">28.</span> <span class="nav-text">matlab关联.m文件</span></a></li></ol>
+    
+    </div>
+  </aside>
+</section>
+        
+      </div>
+      <footer id="footer" class="site-footer">
+  
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2017 TinTin All Rights Reserved.
+          
+            <span id="busuanzi_container_site_uv">
+              本站访客数<span id="busuanzi_value_site_uv"></span>人次  
+              本站总访问量<span id="busuanzi_value_site_pv"></span>次
+            </span>
+          
+      </div>
+      <div class="site-credit">
+        主题： <a href="https://github.com/iTimeTraveler/hexo-theme-hiero" target="_blank">hiero</a>
+      </div>
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var contentdiv = document.getElementById("content");
+
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+</script>
+
+<!-- Custome JS -->
+<script src="/js/my.js"></script>
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/life" class="mobile-nav-link">life</a>
+  
+    <a href="https://tintingo.github.io/images/about.html" class="mobile-nav-link">About</a>
+  
+    <a href="/comments" class="mobile-nav-link">comment</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/scripts.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1271468861&web_id=1271468861" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+	</script>
+
+
+
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
+</body>
+</html>
