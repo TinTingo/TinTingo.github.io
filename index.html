@@ -182,25 +182,24 @@ var themeMenus = {};
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <a id="more"></a>
+<p><img src="/images/top.jpg" alt=""></p>
+<p>万事开头难！</p>
+<h2 id="步骤一：新建MFC项目"><a href="#步骤一：新建MFC项目" class="headerlink" title="步骤一：新建MFC项目"></a>步骤一：新建MFC项目</h2><p>打开Visual Studio，文件–&gt;新建–&gt;项目，如图1所示：</p>
+<p><img src="/images/MFC001.png" alt="图1"><br>进入新建项目窗口后，左侧选择已安装–&gt;模板–&gt;Visual C++–&gt;MFC，中间选择MFC应用程序，下方自由命名名称和选择新建项目位置，最后点击确定，如图2所示：</p>
+<p><img src="/images/MFC002.png" alt="图2"><br>确定后，选择MFC应用程序向导按如下图操作：</p>
+<p><img src="/images/MFC003.png" alt="图3"><br><img src="/images/MFC004.png" alt="图4"><br><img src="/images/MFC005.png" alt="图5"><br><img src="/images/MFC006.png" alt="图6"><br><img src="/images/MFC007.png" alt="图7"><br><img src="/images/MFC008.png" alt="图8"><br>以上步骤完成后，进入图8的界面，至此，项目建立完成！</p>
+<h2 id="步骤二：对话框编辑"><a href="#步骤二：对话框编辑" class="headerlink" title="步骤二：对话框编辑"></a>步骤二：对话框编辑</h2><p>打开左侧工具箱–&gt;对话框编辑器，如图9所示，</p>
+<p><img src="/images/MFC009.png" alt="图9"><br>删除对话框中确定按钮，从对话框编辑中拖一个Button和一个Edit Control到对话框中，将Button复制四份，Edit Control复制两份，如图10所示：</p>
+<p><img src="/images/MFC010.png" alt="图10"><br>调整好大小，放好位置，鼠标放在Button右键–&gt;属性，在右下角属性栏的Caption修改按钮名，如图11所示：</p>
+<p><img src="/images/MFC011.png" alt="图11"></p>
+<h2 id="步骤三：设置变量与编程"><a href="#步骤三：设置变量与编程" class="headerlink" title="步骤三：设置变量与编程"></a>步骤三：设置变量与编程</h2><p>鼠标放在Edit Control右键–&gt;添加变量，设置前两个Edit Control变量为E1、E2，设置后一个Edit Control变量为E3，类型：Value，变量类型：float，变量名：E1，如图12所示：</p>
+<p><img src="/images/MFC012.png" alt="图12"></p>
+<p>双击每一个控件，就进入主程序中，输入以下代码,<font color="red">运行(本地Windows调试器)</font>：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div><div class="line">173</div><div class="line">174</div><div class="line">175</div><div class="line">176</div><div class="line">177</div><div class="line">178</div><div class="line">179</div><div class="line">180</div><div class="line">181</div><div class="line">182</div><div class="line">183</div><div class="line">184</div><div class="line">185</div><div class="line">186</div><div class="line">187</div><div class="line">188</div><div class="line">189</div><div class="line">190</div><div class="line">191</div><div class="line">192</div><div class="line">193</div><div class="line">194</div><div class="line">195</div><div class="line">196</div><div class="line">197</div><div class="line">198</div><div class="line">199</div><div class="line">200</div><div class="line">201</div><div class="line">202</div><div class="line">203</div><div class="line">204</div><div class="line">205</div><div class="line">206</div><div class="line">207</div><div class="line">208</div><div class="line">209</div><div class="line">210</div><div class="line">211</div><div class="line">212</div><div class="line">213</div><div class="line">214</div><div class="line">215</div><div class="line">216</div><div class="line">217</div><div class="line">218</div><div class="line">219</div><div class="line">220</div><div class="line">221</div><div class="line">222</div><div class="line">223</div><div class="line">224</div><div class="line">225</div><div class="line">226</div><div class="line">227</div><div class="line">228</div><div class="line">229</div><div class="line">230</div><div class="line">231</div><div class="line">232</div><div class="line">233</div><div class="line">234</div><div class="line">235</div><div class="line">236</div><div class="line">237</div><div class="line">238</div><div class="line">239</div><div class="line">240</div><div class="line">241</div><div class="line">242</div><div class="line">243</div><div class="line">244</div><div class="line">245</div><div class="line">246</div><div class="line">247</div><div class="line">248</div><div class="line">249</div><div class="line">250</div><div class="line">251</div><div class="line">252</div><div class="line">253</div><div class="line">254</div><div class="line">255</div><div class="line">256</div><div class="line">257</div><div class="line">258</div><div class="line">259</div><div class="line">260</div><div class="line">261</div><div class="line">262</div><div class="line">263</div><div class="line">264</div><div class="line">265</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">// MFConeDlg.cpp : 实现文件</div><div class="line">//</div><div class="line"></div><div class="line"><span class="comment">#include "stdafx.h"</span></div><div class="line"><span class="comment">#include "MFCone.h"</span></div><div class="line"><span class="comment">#include "MFConeDlg.h"</span></div><div class="line"><span class="comment">#include "afxdialogex.h"</span></div><div class="line"></div><div class="line"><span class="comment">#ifdef _DEBUG</span></div><div class="line"><span class="comment">#define new DEBUG_NEW</span></div><div class="line"><span class="comment">#endif</span></div><div class="line"></div><div class="line"></div><div class="line">// 用于应用程序“关于”菜单项的 CAboutDlg 对话框</div><div class="line"></div><div class="line">class CAboutDlg : public CDialogEx</div><div class="line">&#123;</div><div class="line">public:</div><div class="line">	CAboutDlg();</div><div class="line"></div><div class="line">// 对话框数据</div><div class="line"><span class="comment">#ifdef AFX_DESIGN_TIME</span></div><div class="line">	enum &#123; IDD = IDD_ABOUTBOX &#125;;</div><div class="line"><span class="comment">#endif</span></div><div class="line"></div><div class="line">	protected:</div><div class="line">	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV 支持</div><div class="line"></div><div class="line">// 实现</div><div class="line">protected:</div><div class="line">	DECLARE_MESSAGE_MAP()</div><div class="line">&#125;;</div><div class="line"></div><div class="line">CAboutDlg::CAboutDlg() : CDialogEx(IDD_ABOUTBOX)</div><div class="line">&#123;</div><div class="line">&#125;</div><div class="line"></div><div class="line">void CAboutDlg::DoDataExchange(CDataExchange* pDX)</div><div class="line">&#123;</div><div class="line">	CDialogEx::DoDataExchange(pDX);</div><div class="line">&#125;</div><div class="line"></div><div class="line">BEGIN_MESSAGE_MAP(CAboutDlg, CDialogEx)</div><div class="line">END_MESSAGE_MAP()</div><div class="line"></div><div class="line"></div><div class="line">// CMFConeDlg 对话框</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">CMFConeDlg::CMFConeDlg(CWnd* pParent /*=NULL*/)</div><div class="line">	: CDialogEx(IDD_MFCONE_DIALOG, pParent)</div><div class="line">	, E2(0)</div><div class="line">	, E3(0)</div><div class="line">	, E1(0)</div><div class="line">&#123;</div><div class="line">	m_hIcon = AfxGetApp()-&gt;LoadIcon(IDR_MAINFRAME);</div><div class="line">&#125;</div><div class="line"></div><div class="line">void CMFConeDlg::DoDataExchange(CDataExchange* pDX)</div><div class="line">&#123;</div><div class="line">	CDialogEx::DoDataExchange(pDX);</div><div class="line">	DDX_Text(pDX, IDC_EDIT2, E2);</div><div class="line">	DDX_Text(pDX, IDC_EDIT3, E3);</div><div class="line">	DDX_Text(pDX, IDC_EDIT1, E1);</div><div class="line">&#125;</div><div class="line"></div><div class="line">BEGIN_MESSAGE_MAP(CMFConeDlg, CDialogEx)</div><div class="line">	ON_WM_SYSCOMMAND()</div><div class="line">	ON_WM_PAINT()</div><div class="line">	ON_WM_QUERYDRAGICON()</div><div class="line">	ON_BN_CLICKED(IDC_BUTTON1, &amp;CMFConeDlg::OnBnClickedButton1)</div><div class="line">	ON_BN_CLICKED(IDC_BUTTON2, &amp;CMFConeDlg::OnBnClickedButton2)</div><div class="line">	ON_BN_CLICKED(IDC_BUTTON3, &amp;CMFConeDlg::OnBnClickedButton3)</div><div class="line">	ON_BN_CLICKED(IDC_BUTTON4, &amp;CMFConeDlg::OnBnClickedButton4)</div><div class="line">	ON_BN_CLICKED(IDC_BUTTON5, &amp;CMFConeDlg::OnBnClickedButton5)</div><div class="line">	ON_EN_CHANGE(IDC_EDIT2, &amp;CMFConeDlg::OnEnChangeEdit2)</div><div class="line">	ON_EN_CHANGE(IDC_EDIT1, &amp;CMFConeDlg::OnEnChangeEdit1)</div><div class="line">	ON_EN_CHANGE(IDC_EDIT3, &amp;CMFConeDlg::OnEnChangeEdit3)</div><div class="line">	ON_BN_CLICKED(IDCANCEL, &amp;CMFConeDlg::OnBnClickedCancel)</div><div class="line">END_MESSAGE_MAP()</div><div class="line"></div><div class="line"></div><div class="line">// CMFConeDlg 消息处理程序</div><div class="line"></div><div class="line">BOOL CMFConeDlg::OnInitDialog()</div><div class="line">&#123;</div><div class="line">	CDialogEx::OnInitDialog();</div><div class="line"></div><div class="line">	// 将“关于...”菜单项添加到系统菜单中。</div><div class="line"></div><div class="line">	// IDM_ABOUTBOX 必须在系统命令范围内。</div><div class="line">	ASSERT((IDM_ABOUTBOX &amp; 0xFFF0) == IDM_ABOUTBOX);</div><div class="line">	ASSERT(IDM_ABOUTBOX &lt; 0xF000);</div><div class="line"></div><div class="line">	CMenu* pSysMenu = GetSystemMenu(FALSE);</div><div class="line">	<span class="keyword">if</span> (pSysMenu != NULL)</div><div class="line">	&#123;</div><div class="line">		BOOL bNameValid;</div><div class="line">		CString strAboutMenu;</div><div class="line">		bNameValid = strAboutMenu.LoadString(IDS_ABOUTBOX);</div><div class="line">		ASSERT(bNameValid);</div><div class="line">		<span class="keyword">if</span> (!strAboutMenu.IsEmpty())</div><div class="line">		&#123;</div><div class="line">			pSysMenu-&gt;AppendMenu(MF_SEPARATOR);</div><div class="line">			pSysMenu-&gt;AppendMenu(MF_STRING, IDM_ABOUTBOX, strAboutMenu);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	// 设置此对话框的图标。  当应用程序主窗口不是对话框时，框架将自动</div><div class="line">	//  执行此操作</div><div class="line">	SetIcon(m_hIcon, TRUE);			// 设置大图标</div><div class="line">	SetIcon(m_hIcon, FALSE);		// 设置小图标</div><div class="line"></div><div class="line">	ShowWindow(SW_MINIMIZE);</div><div class="line"></div><div class="line">	// TODO: 在此添加额外的初始化代码</div><div class="line"></div><div class="line">	<span class="built_in">return</span> TRUE;  // 除非将焦点设置到控件，否则返回 TRUE</div><div class="line">&#125;</div><div class="line"></div><div class="line">void CMFConeDlg::OnSysCommand(UINT nID, LPARAM lParam)</div><div class="line">&#123;</div><div class="line">	<span class="keyword">if</span> ((nID &amp; 0xFFF0) == IDM_ABOUTBOX)</div><div class="line">	&#123;</div><div class="line">		CAboutDlg dlgAbout;</div><div class="line">		dlgAbout.DoModal();</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">else</span></div><div class="line">	&#123;</div><div class="line">		CDialogEx::OnSysCommand(nID, lParam);</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">// 如果向对话框添加最小化按钮，则需要下面的代码</div><div class="line">//  来绘制该图标。  对于使用文档/视图模型的 MFC 应用程序，</div><div class="line">//  这将由框架自动完成。</div><div class="line"></div><div class="line">void CMFConeDlg::OnPaint()</div><div class="line">&#123;</div><div class="line">	<span class="keyword">if</span> (IsIconic())</div><div class="line">	&#123;</div><div class="line">		CPaintDC dc(this); // 用于绘制的设备上下文</div><div class="line"></div><div class="line">		SendMessage(WM_ICONERASEBKGND, reinterpret_cast&lt;WPARAM&gt;(dc.GetSafeHdc()), 0);</div><div class="line"></div><div class="line">		// 使图标在工作区矩形中居中</div><div class="line">		int cxIcon = GetSystemMetrics(SM_CXICON);</div><div class="line">		int cyIcon = GetSystemMetrics(SM_CYICON);</div><div class="line">		CRect rect;</div><div class="line">		GetClientRect(&amp;rect);</div><div class="line">		int x = (rect.Width() - cxIcon + 1) / 2;</div><div class="line">		int y = (rect.Height() - cyIcon + 1) / 2;</div><div class="line"></div><div class="line">		// 绘制图标</div><div class="line">		dc.DrawIcon(x, y, m_hIcon);</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">else</span></div><div class="line">	&#123;</div><div class="line">		CDialogEx::OnPaint();</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">//当用户拖动最小化窗口时系统调用此函数取得光标</div><div class="line">//显示。</div><div class="line">HCURSOR CMFConeDlg::OnQueryDragIcon()</div><div class="line">&#123;</div><div class="line">	<span class="built_in">return</span> static_cast&lt;HCURSOR&gt;(m_hIcon);</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">void CMFConeDlg::OnBnClickedButton1()</div><div class="line">&#123;</div><div class="line">	// TODO: 在此添加控件通知处理程序代码</div><div class="line">	UpdateData(<span class="literal">true</span>);//从控件获得数据赋给变量  </div><div class="line">	E3 = E1 + E2;</div><div class="line">	UpdateData(<span class="literal">false</span>);//输出变量的值到控件 </div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">void CMFConeDlg::OnBnClickedButton2()</div><div class="line">&#123;</div><div class="line">	// TODO: 在此添加控件通知处理程序代码</div><div class="line">	UpdateData(<span class="literal">true</span>);//从控件获得数据赋给变量  </div><div class="line">	E3 = E1 - E2;</div><div class="line">	UpdateData(<span class="literal">false</span>);//输出变量的值到控件 </div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">void CMFConeDlg::OnBnClickedButton3()</div><div class="line">&#123;</div><div class="line">	// TODO: 在此添加控件通知处理程序代码</div><div class="line">	UpdateData(<span class="literal">true</span>);//从控件获得数据赋给变量  </div><div class="line">	E3 = E1 * E2;</div><div class="line">	UpdateData(<span class="literal">false</span>);//输出变量的值到控件</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">void CMFConeDlg::OnBnClickedButton4()</div><div class="line">&#123;</div><div class="line">	// TODO: 在此添加控件通知处理程序代码</div><div class="line">	UpdateData(<span class="literal">true</span>);</div><div class="line">	<span class="keyword">if</span> (E2 == 0)</div><div class="line">	&#123;</div><div class="line">		MessageBox(_T(<span class="string">"除数不能为零！"</span>));</div><div class="line">		<span class="built_in">return</span>;</div><div class="line">	&#125;</div><div class="line">	E3 = E1 / E2;</div><div class="line">	UpdateData(<span class="literal">false</span>);</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">void CMFConeDlg::OnBnClickedButton5()</div><div class="line">&#123;</div><div class="line">	// TODO: 在此添加控件通知处理程序代码</div><div class="line">	E1 = 0;</div><div class="line">	E2 = 0;</div><div class="line">	E3 = 0;</div><div class="line">	UpdateData(<span class="literal">false</span>);</div><div class="line">	GotoDlgCtrl((CEdit*)GetDlgItem(IDC_EDIT1));//设置焦点在第一个编辑框</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">void CMFConeDlg::OnEnChangeEdit2()</div><div class="line">&#123;</div><div class="line">	// TODO:  如果该控件是 RICHEDIT 控件，它将不</div><div class="line">	// 发送此通知，除非重写 CDialogEx::OnInitDialog()</div><div class="line">	// 函数并调用 CRichEditCtrl().SetEventMask()，</div><div class="line">	// 同时将 ENM_CHANGE 标志“或”运算到掩码中。</div><div class="line"></div><div class="line">	// TODO:  在此添加控件通知处理程序代码</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">void CMFConeDlg::OnEnChangeEdit1()</div><div class="line">&#123;</div><div class="line">	// TODO:  如果该控件是 RICHEDIT 控件，它将不</div><div class="line">	// 发送此通知，除非重写 CDialogEx::OnInitDialog()</div><div class="line">	// 函数并调用 CRichEditCtrl().SetEventMask()，</div><div class="line">	// 同时将 ENM_CHANGE 标志“或”运算到掩码中。</div><div class="line"></div><div class="line">	// TODO:  在此添加控件通知处理程序代码</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">void CMFConeDlg::OnEnChangeEdit3()</div><div class="line">&#123;</div><div class="line">	// TODO:  如果该控件是 RICHEDIT 控件，它将不</div><div class="line">	// 发送此通知，除非重写 CDialogEx::OnInitDialog()</div><div class="line">	// 函数并调用 CRichEditCtrl().SetEventMask()，</div><div class="line">	// 同时将 ENM_CHANGE 标志“或”运算到掩码中。</div><div class="line"></div><div class="line">	// TODO:  在此添加控件通知处理程序代码</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">void CMFConeDlg::OnBnClickedCancel()</div><div class="line">&#123;</div><div class="line">	// TODO: 在此添加控件通知处理程序代码</div><div class="line">	CDialogEx::OnCancel();</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>打开刚刚的新建项目目录：MFCone/Debug里就有个MFCone.exe，点击运行就成功了，如图13</p>
+<p><img src="/images/MFC013.png" alt="图13"><br>完成喽！</p>
+<p><img src="/images/bottom.jpg" alt=""></p>
 
-          
-            <div class="entry-summary" style="margin-left:0;">
-            
-万事开头难！
-步骤一：新建MFC项目打开Visual Studio，文件–&gt;新建–&gt;项目，如图1所示：进入新建项目窗口后，左侧选择已安装–&gt;模板–&gt;Visual C++–&gt;MFC，中间选择MFC应用程序，下方自由命名名称和选择新建项目位置，最后点击确定，如图2所示：
-确定后，选择MFC应用程序向导按如下图操作：
-以上步骤完成后，进入图8的界面，至此，项目建立完成！
-步骤二：对话框编辑打开左侧工具箱–&gt;对话框编辑器，如图9所示，
-删除对话框中确定按钮，从对话框编辑中拖一个Button和一个Edit Control到对话框中，将Button复制四份，Edit Control复制两份，如图10所示：
-调整好大小，放好位置，鼠标放在Button右键–&gt...
-          
-
-        
-          <p class="article-more-link">
-            <a href="/2017/12/11/TT0008/#more">阅读全文</a>
-          </p>
-        </div>
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -241,20 +240,21 @@ var themeMenus = {};
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <a id="more"></a>
+<p><img src="/images/top.jpg" alt=""></p>
+<p><font color="red" face="黑体">声明：以下内容为学习范立锋等《Java Web程序设计教程》的笔记，大部分内容均出自原文！</font></p>
+<h1 id="一、XML"><a href="#一、XML" class="headerlink" title="一、XML"></a>一、XML</h1><p>XML-可拓展标记语言，是一种数据存储语言，用简单的标记来描述数据，其中，XML文件以.xml结尾。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version=<span class="string">"1.0"</span> enconding=<span class="string">"GB2312"</span>?&gt; %声明：版本号1.0；字符编码格式中文</div><div class="line">&lt;person&gt;                                 %根元素，一个xml中只能有一个根元素，其他元素都包含在其中；</div><div class="line">    &lt;!--姓名--!&gt;                         %注释</div><div class="line">    &lt;name&gt;TINTIN&lt;/name&gt;                  %元素</div><div class="line">    &lt;!--性别--!&gt;</div><div class="line">    &lt;sex&gt;男&lt;/sex&gt;</div><div class="line">&lt;/person&gt;</div></pre></td></tr></table></figure></p>
+<p>xml常见用途：<br>1.不同应用程序间数据交互：xml提供一种不同应用程序间数据交互的公共标准；<br>2.一种是数据多种样式：xml将信息的数据和显示样式分离开来（样式需用其他语言来定义，如CSS），这样同一份数据可添加多种式样；<br>3.数据的分布式处理：xml可在Internet上自由传送，客户可从xml中提取到数据，因此，数据处理可在客户端完成，无需返回Web服务器，节省了Internet上的数据宽带。</p>
+<h1 id="二、CSS"><a href="#二、CSS" class="headerlink" title="二、CSS"></a>二、CSS</h1><p>CSS-层叠样式表单，是一种表现HTML或XML等文件式样的语言（浏览器解释语言）。<br>CSS语法包括：CSS选择符、CSS属性。（每个CSS选择符可包含一或多个CSS属性）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">格式：选择符&#123;属性&#125;</div><div class="line">body&#123;color:blue&#125; %在&lt;body&gt;标记内，文本颜色为蓝色</div></pre></td></tr></table></figure></p>
+<p>XML中选择符可为标记名称或标记名称的id/class属性值。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version=<span class="string">"1.0"</span> enconding=<span class="string">"GB2312"</span>?&gt;</div><div class="line">&lt;?xml-stylesheet <span class="built_in">type</span>=<span class="string">"text/css"</span> href=<span class="string">"game.css"</span>?&gt; %XML引用CSS文件格式，href值为.CSS的地址</div><div class="line">&lt;person&gt;                                     </div><div class="line">    &lt;name id=<span class="string">"myNAME"</span>&gt;TINTIN&lt;/name&gt;                  </div><div class="line">    &lt;sex class=<span class="string">"yourSEX"</span>&gt;男&lt;/sex&gt;</div><div class="line">&lt;/person&gt;</div></pre></td></tr></table></figure></p>
+<p>id属性的值是唯一的，唯一标记一个标记，而class属性可标记一组标记<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">id格式：<span class="comment">#id名&#123;属性1;属性2&#125;</span></div><div class="line"><span class="comment">#myNAME&#123;color：black;size:10px&#125;</span></div><div class="line">class格式：.class名&#123;属性;属性2&#125;</div><div class="line">.yourSEX&#123;color：blue;size:10px&#125;</div></pre></td></tr></table></figure></p>
+<p>CSS代码也可直接写到XML代码中，但不方便维护，故不推荐使用。</p>
+<h1 id="三、JavaScript"><a href="#三、JavaScript" class="headerlink" title="三、JavaScript"></a>三、JavaScript</h1><p>JavaScript是一种允许在HTML基础上进行交互式Web网页开发的脚本语言，JavaScript大多用在客户端数据校验，减轻了服务器的负载量，使客户浏览更流畅。<br>HTML使用JavaScript的两种方式：<br>1.外部引用：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;html&gt;</div><div class="line">    &lt;head&gt;</div><div class="line">        &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"game.js"</span>&gt;&lt;/script&gt; %可在&lt;head&gt;或&lt;body&gt;中如何地方出现</div><div class="line">    &lt;/head&gt;</div><div class="line">    &lt;body&gt;</div><div class="line">    &lt;p id=<span class="string">"hello"</span>&gt;你好！&lt;/p&gt;</div><div class="line">    &lt;button <span class="built_in">type</span>=<span class="string">"button"</span> onclick=<span class="string">"myFunction()"</span>&gt;打招呼&lt;/button&gt;</div><div class="line">    &lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
+<p>其中，game.js中可以添加任意多的类和函数，实际应用推荐使用外部引用方式，这样更安全也更易维护。<br>game.js文件如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> myFunction()</div><div class="line">&#123;</div><div class="line">document.getElementById(<span class="string">"hello"</span>).innerHTML=<span class="string">"Hello!"</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>2.内部调用：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">&lt;html&gt;</div><div class="line">    &lt;body&gt;</div><div class="line">        &lt;p id=<span class="string">"hello"</span>&gt;你好！&lt;/p&gt;</div><div class="line">        &lt;button <span class="built_in">type</span>=<span class="string">"button"</span> onclick=<span class="string">"myFunction()"</span>&gt;打招呼&lt;/button&gt;</div><div class="line">        &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</div><div class="line">        &lt;!-- %加注释是为了防止浏览器不支持javascript时出现源码</div><div class="line">        <span class="keyword">function</span> myFunction()</div><div class="line">        &#123;</div><div class="line">        document.getElementById(<span class="string">"hello"</span>).innerHTML=<span class="string">"Hello!"</span>;</div><div class="line">        &#125;</div><div class="line">        //--&gt;</div><div class="line">        &lt;/script&gt;</div><div class="line">    &lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
+<h1 id="四、Ajax"><a href="#四、Ajax" class="headerlink" title="四、Ajax"></a>四、Ajax</h1><p>当用户填写完信息提交表单时，会向服务器发送请求，服务器收到请求并处理表单数据后才会给用户新页面。但当大量用户同时发出请求时，由于服务器需要处理大量请求会导致用户刷新页面变慢，此时，Ajax就至关重要了。<br>Ajax是一种结合了XML和JavaScript等技术建立交互式网页应用的技术。<br>Ajax包含技术：XML、CSS、JavaScript、XMLHttpRequest、DOM、XHTML、XSLT。</p>
+<p><img src="/images/bottom.jpg" alt=""></p>
 
-          
-            <div class="entry-summary" style="margin-left:0;">
-            
-声明：以下内容为学习范立锋等《Java Web程序设计教程》的笔记，大部分内容均出自原文！
-一、XMLXML-可拓展标记语言，是一种数据存储语言，用简单的标记来描述数据，其中，XML文件以.xml结尾。1234567&lt;?xml version="1.0" enconding="GB2312"?&gt; %声明：版本号1.0；字符编码格式中文&lt;person&gt;                                 %根元素，一个xml中只能有一个根元素，其他元素都包含在其中；    &lt;!--姓名--!&gt;                         %注释    &lt;name&gt;TINTIN&lt;/name&gt;           ...
-          
-
-        
-          <p class="article-more-link">
-            <a href="/2017/12/11/TT0007/#more">阅读全文</a>
-          </p>
-        </div>
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -295,23 +295,17 @@ var themeMenus = {};
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <a id="more"></a>
+<p><img src="/images/top.jpg" alt=""></p>
+<h1 id="设置标签页logo"><a href="#设置标签页logo" class="headerlink" title="设置标签页logo"></a>设置标签页logo</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;link rel=<span class="string">"icon"</span> href=<span class="string">"images/log.png"</span>/&gt;</div></pre></td></tr></table></figure>
+<h1 id="设置背景图片"><a href="#设置背景图片" class="headerlink" title="设置背景图片"></a>设置背景图片</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;body background=<span class="string">"images/BG3.jpg"</span>&gt;</div></pre></td></tr></table></figure>
+<h1 id="设置段落格式"><a href="#设置段落格式" class="headerlink" title="设置段落格式"></a>设置段落格式</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;p style=<span class="string">"font-family:arial;color:black;font-size:35px;text-align:center;"</span>&gt;</div></pre></td></tr></table></figure>
+<h1 id="设置图片超链接"><a href="#设置图片超链接" class="headerlink" title="设置图片超链接"></a>设置图片超链接</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">1.当前页面打开</div><div class="line">&lt;a href=<span class="string">"https://***.com/"</span>&gt;&lt;img border=<span class="string">"0"</span> src=<span class="string">"images/download.png"</span> alt=<span class="string">"Download"</span> width=<span class="string">"30"</span> height=<span class="string">"30"</span>&gt;下载&lt;/a&gt;</div><div class="line">2.新页面打开</div><div class="line">&lt;a href=<span class="string">"https://***.com/"</span> target=<span class="string">"_black"</span>&gt;&lt;img border=<span class="string">"0"</span> src=<span class="string">"images/download.png"</span> alt=<span class="string">"Download"</span> width=<span class="string">"30"</span> height=<span class="string">"30"</span>&gt;下载&lt;/a&gt;</div></pre></td></tr></table></figure>
+<h1 id="空格"><a href="#空格" class="headerlink" title="空格"></a>空格</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&amp;nbsp</div></pre></td></tr></table></figure>
+<h1 id="画横线"><a href="#画横线" class="headerlink" title="画横线"></a>画横线</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">1.虚线（dashed）</div><div class="line">&lt;hr style=<span class="string">"height:10px;border:none;border-top:10px dashed black;"</span> /&gt;</div><div class="line">2.实线（solid）</div><div class="line">&lt;hr style=<span class="string">"height:10px;border:none;border-top:10px solid black;"</span> /&gt;</div><div class="line">3.双实线（上颜色：black；下颜色：blue）</div><div class="line">&lt;hr style=<span class="string">"height:10px;border:none;border-top:10px black blue;"</span> /&gt;</div></pre></td></tr></table></figure>
+<h1 id="正文图片"><a href="#正文图片" class="headerlink" title="正文图片"></a>正文图片</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;div align=<span class="string">"center"</span> style=<span class="string">"background-color:honeydew"</span>&gt;&lt;img src=<span class="string">"images/f001.jpg"</span> style=<span class="string">"width:100%;"</span>/&gt;&lt;/div&gt;</div></pre></td></tr></table></figure>
+<p><img src="/images/bottom.jpg" alt=""></p>
 
-          
-            <div class="entry-summary" style="margin-left:0;">
-            
-设置标签页logo1&lt;link rel="icon" href="images/log.png"/&gt;
-
-设置背景图片1&lt;body background="images/BG3.jpg"&gt;
-设置段落格式1&lt;p style="font-family:arial;color:black;font-size:35px;text-align:center;"&gt;
-设置图片超链接12341.当前页面打开&lt;a href="https://***.com/"&gt;&lt;img border="0" src="images/download.png" alt="Download" width="30" height="30"&gt;下载&lt;/a&gt;2...
-          
-
-        
-          <p class="article-more-link">
-            <a href="/2017/12/11/TT0006/#more">阅读全文</a>
-          </p>
-        </div>
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -352,82 +346,20 @@ var themeMenus = {};
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <a id="more"></a>
+<p><img src="/images/top.jpg" alt=""></p>
+<h1 id="插入视频"><a href="#插入视频" class="headerlink" title="插入视频"></a>插入视频</h1><h2 id="法（一）"><a href="#法（一）" class="headerlink" title="法（一）"></a>法（一）</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;iframe  align=center </div><div class="line">	width=<span class="string">"736"</span> height=<span class="string">"400"</span> </div><div class="line">    src=<span class="string">"/movies/M01.mp4"</span>   </div><div class="line">    frameborder=0 allowfullscreen&gt;  </div><div class="line">&lt;/iframe&gt;</div></pre></td></tr></table></figure>
+<p>src=”/movies/M01.mp4”为视频地址。</p>
+<iframe align="center" width="736" height="400" src="/movies/M01.mp4" frameborder="0" allowfullscreen><br></iframe> 
 
-          
-            <div class="entry-summary" style="margin-left:0;">
-            
-插入视频法（一）12345&lt;iframe  align=center 	width="736" height="400"     src="/movies/M01.mp4"       frameborder=0 allowfullscreen&gt;  &lt;/iframe&gt;
+<h2 id="法（二）"><a href="#法（二）" class="headerlink" title="法（二）"></a>法（二）</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;video width=<span class="string">"736"</span> height=<span class="string">"400"</span> controls&gt;</div><div class="line">&lt;<span class="built_in">source</span> src=<span class="string">"/movies/M01.mp4"</span>&gt;</div><div class="line">&lt;/video&gt;</div></pre></td></tr></table></figure>
+<video width="736" height="400" controls><br><source src="/movies/M01.mp4"><br></video>
 
-src=”/movies/M01.mp4”为视频地址。
- 
+<h1 id="插入音乐"><a href="#插入音乐" class="headerlink" title="插入音乐"></a>插入音乐</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;iframe frameborder=<span class="string">"no"</span> border=<span class="string">"0"</span> marginwidth=<span class="string">"0"</span> marginheight=<span class="string">"0"</span> width=736 height=260   </div><div class="line">    src=<span class="string">"/musics/m001.mp3"</span>&gt;  </div><div class="line">&lt;/iframe&gt;</div></pre></td></tr></table></figure>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="736" height="260" src="/musics/m001.mp3"><br></iframe> 
 
-法（二）123&lt;video width="736" height="400" controls&gt;&lt;source src="/movies/M01.mp4"&gt;&lt;/video&gt;
+<p><img src="/images/bottom.jpg" alt=""></p>
 
-
-插入音乐123&lt;iframe frameborder="no" border="0" marginwidth="0...
-          
-
-        
-          <p class="article-more-link">
-            <a href="/2017/12/11/TT0005/#more">阅读全文</a>
-          </p>
-        </div>
-      
-    </div>
-    <footer class="entry-meta entry-footer">
-      
-      
-      
-            
-      
-    </footer>
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-  
-    <article id="post-TT0004"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2017/12/11/TT0004/">贝叶斯网络学习（一）</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	Posted on <a href="/2017/12/11/TT0004/" class="article-date">
-	  <time datetime="2017-12-11T08:57:18.309Z" itemprop="datePublished">December 11, 2017</time>
-	</a>
-
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-
-          
-            <div class="entry-summary" style="margin-left:0;">
-            
-贝叶斯网络贝叶斯网络（Bayesian network, BN）又名信念网络和因果概率网络，由Pearl于1988年首次提出，是一种基于概率推理的数学网络模型。贝叶斯网络是图论和概率论的结合体，即图形化概率网络，是一种有向非循环图形模型。贝叶斯网络是将概率统计应用于复杂问题的工具，其在解决不确定性和不完整性问题上具有相当的优势，在数据挖掘、模式识别及人工智能等领域都有广泛研究。【百度百科】
-常见用途1.诊断；2.预测；3.分类；4.决策。三大过程贝叶斯网络是目前解决不确定性和不完整性问题最有效的模型之一，结构学习和参数学习是贝叶斯网络研究的基础，而贝叶斯推理则是贝叶斯网络研究的上层建筑。
-结构学习：贝叶斯网络结构学习是贝叶斯网络研究的重点和难点，它是在观测数据和先验知识的基础上构建起...
-          
-
-        
-          <p class="article-more-link">
-            <a href="/2017/12/11/TT0004/#more">阅读全文</a>
-          </p>
-        </div>
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -468,21 +400,93 @@ src=”/movies/M01.mp4”为视频地址。
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <a id="more"></a>
+<p><img src="/images/top.jpg" alt=""></p>
+<p>记忆力差？<br>用过的代码老忘记？<br>一次又一次的上网搜?<br>好浪费时间！<br>写在博客里方便随时查阅~~~~</p>
+<h1 id="Excel读写（xlsread、xlswrite）"><a href="#Excel读写（xlsread、xlswrite）" class="headerlink" title="Excel读写（xlsread、xlswrite）"></a>Excel读写（xlsread、xlswrite）</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">%读</div><div class="line">mytxt = xlsread(<span class="string">'C:/filename.xls'</span>)</div><div class="line"></div><div class="line">%写</div><div class="line">txt = [<span class="string">'a'</span> <span class="string">'s'</span> <span class="string">'d'</span> <span class="string">'f'</span> <span class="string">'g'</span> <span class="string">'h'</span>];</div><div class="line">mytxt = xlswrite(<span class="string">'C:/filename.xls'</span>,txt)</div></pre></td></tr></table></figure>
+<h1 id="txt读写"><a href="#txt读写" class="headerlink" title="txt读写"></a>txt读写</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">%读</div><div class="line">fid = fopen(<span class="string">'C:/words.txt'</span>,<span class="string">'r'</span>);</div><div class="line">txt = textscan(fid,<span class="string">'%s'</span>);</div><div class="line">fclose(fid);</div><div class="line"></div><div class="line">%写</div><div class="line">txt = [<span class="string">'a'</span> <span class="string">'s'</span> <span class="string">'d'</span> <span class="string">'f'</span> <span class="string">'g'</span> <span class="string">'h'</span>];</div><div class="line">dlmwrite(<span class="string">'C:/myfile.txt'</span>, txt, <span class="string">'delimiter'</span>, <span class="string">'\t'</span>)</div></pre></td></tr></table></figure>
+<h1 id="图片读写"><a href="#图片读写" class="headerlink" title="图片读写"></a>图片读写</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">%读</div><div class="line">I = imread(<span class="string">'C:/im01.jpg'</span>);</div><div class="line"></div><div class="line">%写</div><div class="line">imwrite(I,<span class="string">'C:/im01.jpg'</span>);</div></pre></td></tr></table></figure>
+<h1 id="mat读写"><a href="#mat读写" class="headerlink" title="mat读写"></a>mat读写</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">%读</div><div class="line">Data = load(<span class="string">'C:/myfile.mat'</span>)%</div><div class="line"></div><div class="line">%写</div><div class="line">save DATA %workspace中的内容全部保存</div><div class="line">save data.mat -regexp <span class="string">'[^data1 ^data2]'</span>  %保存workspace中除data1和data2的内容</div><div class="line">%也可在workspace中想要保存的内容右键保存</div></pre></td></tr></table></figure>
+<h1 id="矩阵随机交换行（列）"><a href="#矩阵随机交换行（列）" class="headerlink" title="矩阵随机交换行（列）"></a>矩阵随机交换行（列）</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">% 给矩阵A随机换行</div><div class="line">A = [1 2 3; 4 5 6; 7 8 9; 10 11 12]</div><div class="line">　　h = randperm(size(A, 1)); %randperm生成1:size(A, 1)的随机数</div><div class="line">　　B = A(h,:)</div><div class="line"></div><div class="line">% 给矩阵A随机换行</div><div class="line">A = [1 2 3; 4 5 6; 7 8 9; 10 11 12]</div><div class="line">　　l = randperm(size(A, 2)); </div><div class="line">　　C = A(:,l)</div></pre></td></tr></table></figure>
+<h1 id="比较两匹配"><a href="#比较两匹配" class="headerlink" title="比较两匹配"></a>比较两匹配</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">A = [<span class="string">'AAA'</span>];</div><div class="line">B = [<span class="string">'BBB'</span>];</div><div class="line">result = strcmpi(A,B); %结果为1，A、B相同，结果为0，A、B不同</div></pre></td></tr></table></figure>
+<h1 id="打开文件夹"><a href="#打开文件夹" class="headerlink" title="打开文件夹"></a>打开文件夹</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">filename = uigetdir(<span class="string">'选择一个目录'</span>);</div></pre></td></tr></table></figure>
+<h1 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">web https://tintingo.github.io/ -browser;</div></pre></td></tr></table></figure>
+<h1 id="弹出对话框"><a href="#弹出对话框" class="headerlink" title="弹出对话框"></a>弹出对话框</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">msgbox(<span class="string">'               任务完成！'</span>)</div></pre></td></tr></table></figure>
+<h1 id="GUI按钮换背景图"><a href="#GUI按钮换背景图" class="headerlink" title="GUI按钮换背景图"></a>GUI按钮换背景图</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">I = importdata(<span class="string">'image\eye.jpg'</span>);</div><div class="line"><span class="built_in">set</span>(handles.pushbutton1,<span class="string">'CDATA'</span>,I);</div></pre></td></tr></table></figure>
+<h1 id="GUI更换自己的logo"><a href="#GUI更换自己的logo" class="headerlink" title="GUI更换自己的logo"></a>GUI更换自己的logo</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">h  =  handles.figure1; </div><div class="line">newIcon  =  javax.swing.ImageIcon(<span class="string">'image\logo.jpg'</span>);</div><div class="line">figFrame  =  get(h,<span class="string">'JavaFrame'</span>); </div><div class="line">figFrame.setFigureIcon(newIcon);</div></pre></td></tr></table></figure>
+<h1 id="GUI更设置面背景"><a href="#GUI更设置面背景" class="headerlink" title="GUI更设置面背景"></a>GUI更设置面背景</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">Hd_axes = axes(<span class="string">'units'</span>,<span class="string">'normalized'</span>,<span class="string">'position'</span>,[0 0 1 1],<span class="string">'tag'</span>,<span class="string">'Hd_axes'</span>);</div><div class="line">uistack(Hd_axes,<span class="string">'down'</span>)</div><div class="line">II = imread(<span class="string">'image\background.jpg'</span>);</div><div class="line">image(II)</div><div class="line">colormap gray</div><div class="line"><span class="built_in">set</span>(Hd_axes,<span class="string">'handlevisibility'</span>,<span class="string">'off'</span>,<span class="string">'visible'</span>,<span class="string">'off'</span>);</div></pre></td></tr></table></figure>
+<h1 id="GUI可编辑文本框显示文字"><a href="#GUI可编辑文本框显示文字" class="headerlink" title="GUI可编辑文本框显示文字"></a>GUI可编辑文本框显示文字</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">set</span>(handles.edit1, <span class="string">'String'</span>,<span class="string">'文字'</span>)</div></pre></td></tr></table></figure>
+<h1 id="GUI获取可编辑文本框里的文字"><a href="#GUI获取可编辑文本框里的文字" class="headerlink" title="GUI获取可编辑文本框里的文字"></a>GUI获取可编辑文本框里的文字</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">txt = get(handles.edit1,<span class="string">'string'</span>);</div></pre></td></tr></table></figure>
+<h1 id="GUI可编辑文本框显示时间"><a href="#GUI可编辑文本框显示时间" class="headerlink" title="GUI可编辑文本框显示时间"></a>GUI可编辑文本框显示时间</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> timercallback(obj, event,handles)</div><div class="line">str = datestr(now, <span class="string">'HH:MM:SS'</span>);</div><div class="line"><span class="built_in">set</span>(handles.edit1, <span class="string">'String'</span>,str);</div></pre></td></tr></table></figure>
+<h1 id="GUI打包成exe"><a href="#GUI打包成exe" class="headerlink" title="GUI打包成exe"></a>GUI打包成exe</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">deploytool</div></pre></td></tr></table></figure>
+<h1 id="画网络结构图自定义节点名"><a href="#画网络结构图自定义节点名" class="headerlink" title="画网络结构图自定义节点名"></a>画网络结构图自定义节点名</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">labels = &#123;<span class="string">'one'</span>,<span class="string">'two'</span>,<span class="string">'three'</span>,<span class="string">'four'</span>&#125;;</div><div class="line">draw_graph(dag,labels);</div></pre></td></tr></table></figure>
+<h1 id="画网络结构图的两种方式"><a href="#画网络结构图的两种方式" class="headerlink" title="画网络结构图的两种方式"></a>画网络结构图的两种方式</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">draw_graph( dag ); %dag为网络结构边的关系</div><div class="line">h = view(biograph( dag ));</div></pre></td></tr></table></figure>
+<h1 id="安装了matlab，但无法双击打开-m文件"><a href="#安装了matlab，但无法双击打开-m文件" class="headerlink" title="安装了matlab，但无法双击打开.m文件"></a>安装了matlab，但无法双击打开.m文件</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">cwd=<span class="built_in">pwd</span>;</div><div class="line"><span class="built_in">cd</span>([matlabroot <span class="string">'\toolbox\matlab\winfun\private'</span>]);</div><div class="line">fileassoc(<span class="string">'add'</span>,&#123;<span class="string">'.m'</span>,<span class="string">'.mat'</span>,<span class="string">'.fig'</span>,<span class="string">'.p'</span>,<span class="string">'.mdl'</span>,[<span class="string">'.'</span> mexext]&#125;); </div><div class="line"><span class="built_in">cd</span>(cwd);</div></pre></td></tr></table></figure>
+<h1 id="生成‘ABCDE’这5个字母的随机组合"><a href="#生成‘ABCDE’这5个字母的随机组合" class="headerlink" title="生成‘ABCDE’这5个字母的随机组合"></a>生成‘ABCDE’这5个字母的随机组合</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">s = perms(<span class="string">'ABCDE'</span>); %随机生成Cnn种组合</div></pre></td></tr></table></figure>
+<h1 id="同一figure显示多个图"><a href="#同一figure显示多个图" class="headerlink" title="同一figure显示多个图"></a>同一figure显示多个图</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">subplot(n,m,i) %一个figure分为n行，m列。i表示第i个图。</div></pre></td></tr></table></figure>
+<h1 id="22-给一个数列（矩阵）里的数排序（从大到小）"><a href="#22-给一个数列（矩阵）里的数排序（从大到小）" class="headerlink" title="22.给一个数列（矩阵）里的数排序（从大到小）"></a>22.给一个数列（矩阵）里的数排序（从大到小）</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[a b]=sort(A(:)); %从小到大排序</div><div class="line">a = fliplr(a<span class="string">'); %取倒序</span></div><div class="line"><span class="string">b = fliplr(b'</span>);</div></pre></td></tr></table></figure>
+<h1 id="判断两字符是否匹配"><a href="#判断两字符是否匹配" class="headerlink" title="判断两字符是否匹配"></a>判断两字符是否匹配</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&gt;&gt; regexpi(<span class="string">'asdf'</span>,<span class="string">'asdf'</span>)</div><div class="line"></div><div class="line">ans =</div><div class="line"></div><div class="line">     1</div><div class="line"></div><div class="line">&gt;&gt; regexpi(<span class="string">'asdf'</span>,<span class="string">'agsdf'</span>)</div><div class="line"></div><div class="line">ans =</div><div class="line"></div><div class="line">     []</div></pre></td></tr></table></figure>
+<h1 id="判断字符Str中是否含有‘http’字符"><a href="#判断字符Str中是否含有‘http’字符" class="headerlink" title="判断字符Str中是否含有‘http’字符"></a>判断字符Str中是否含有‘http’字符</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&gt;&gt; Str=<span class="string">'httpthestartingindicesoft'</span>;strfind(Str,<span class="string">'http'</span>)</div><div class="line"></div><div class="line">ans =</div><div class="line"></div><div class="line">     1</div><div class="line"></div><div class="line">&gt;&gt; Str=<span class="string">'httpthestartingindicesofthttp'</span>;strfind(Str,<span class="string">'http'</span>)</div><div class="line"></div><div class="line">ans =</div><div class="line"></div><div class="line">     1    26</div></pre></td></tr></table></figure>
+<h1 id="消除matlAB启动时的Warning：Name-is-nonexistent-or-not-a-directory…"><a href="#消除matlAB启动时的Warning：Name-is-nonexistent-or-not-a-directory…" class="headerlink" title="消除matlAB启动时的Warning：Name is nonexistent or not a directory…"></a>消除matlAB启动时的Warning：Name is nonexistent or not a directory…</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">步骤：</div><div class="line">file -&gt; <span class="built_in">set</span> path -&gt; Defualt -&gt; Yes -&gt; 重启matlab</div></pre></td></tr></table></figure>
+<h1 id="删除cell中的空元素"><a href="#删除cell中的空元素" class="headerlink" title="删除cell中的空元素"></a>删除cell中的空元素</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">A(cellfun(@isempty,A)) = [];</div></pre></td></tr></table></figure>
+<h1 id="matlab添加工具箱"><a href="#matlab添加工具箱" class="headerlink" title="matlab添加工具箱"></a>matlab添加工具箱</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">步骤1：</div><div class="line">将工具箱文件夹放到matlab安装目录下的toolbox下；</div><div class="line">步骤2：</div><div class="line">addpath(genpath(<span class="string">'C:\MATLAB\toolbox\BNT'</span>));   </div><div class="line">savepath;  </div><div class="line">步骤3：</div><div class="line"><span class="built_in">which</span> test_BNT.m %test_BNT.m为工具箱任意中的一个函数，若返回路径，则添加成功</div></pre></td></tr></table></figure>
+<h1 id="matlab关联-m文件"><a href="#matlab关联-m文件" class="headerlink" title="matlab关联.m文件"></a>matlab关联.m文件</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">步骤1：</div><div class="line">下载文件  链接：https://pan.baidu.com/s/1boKMur9 密码：x4ui</div><div class="line">步骤2：</div><div class="line">（1）运行matlab软件 -&gt; 打开 -&gt; associateFiles.m -&gt; F5运行 </div><div class="line">（2）运行完毕后文件夹中会生成一个.reg文件，双击该文件，完成即可</div><div class="line">（3）找一个.m文件,右键 -&gt; 打开方式，若有matlab选项，说明关联成功</div></pre></td></tr></table></figure>
+<p><img src="/images/bottom.jpg" alt=""></p>
 
-          
-            <div class="entry-summary" style="margin-left:0;">
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+      
             
-记忆力差？用过的代码老忘记？一次又一次的上网搜?好浪费时间！写在博客里方便随时查阅~~~~
-Excel读写（xlsread、xlswrite）123456%读mytxt = xlsread('C:/filename.xls')%写txt = ['a' 's' 'd' 'f' 'g' 'h'];mytxt = xlswrite('C:/filename.xls',txt)
-txt读写12345678%读fid = fopen('C:/words.txt','r');txt = textscan(fid,'%s');fclose(fid);%写txt = ['a' 's' 'd' 'f' 'g' 'h'];dlmwrite('C:/myfile.txt', txt, 'delimiter...
-          
+      
+    </footer>
+  </div>
+  
+</article>
 
+<!-- Table of Contents -->
+
+  
+    <article id="post-TT0004"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
         
-          <p class="article-more-link">
-            <a href="/2017/12/11/TT0003/#more">阅读全文</a>
-          </p>
-        </div>
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2017/12/11/TT0004/">贝叶斯网络学习（一）</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/2017/12/11/TT0004/" class="article-date">
+	  <time datetime="2017-12-11T08:57:18.309Z" itemprop="datePublished">December 11, 2017</time>
+	</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <a id="more"></a>
+<p><img src="/images/top.jpg" alt=""></p>
+<h1 id="贝叶斯网络"><a href="#贝叶斯网络" class="headerlink" title="贝叶斯网络"></a>贝叶斯网络</h1><p>贝叶斯网络（Bayesian network, BN）又名信念网络和因果概率网络，由Pearl于1988年首次提出，是一种基于概率推理的数学网络模型。贝叶斯网络是图论和概率论的结合体，即图形化概率网络，是一种有向非循环图形模型。贝叶斯网络是将概率统计应用于复杂问题的工具，其在解决不确定性和不完整性问题上具有相当的优势，在数据挖掘、模式识别及人工智能等领域都有广泛研究。<br><a href="https://baike.baidu.com/item/%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%BD%91%E7%BB%9C/4102921?fr=aladdin" target="_blank" rel="external">【百度百科】</a></p>
+<h2 id="常见用途1-诊断；2-预测；3-分类；4-决策。"><a href="#常见用途1-诊断；2-预测；3-分类；4-决策。" class="headerlink" title="常见用途1.诊断；2.预测；3.分类；4.决策。"></a>常见用途1.诊断；2.预测；3.分类；4.决策。</h2><h2 id="三大过程"><a href="#三大过程" class="headerlink" title="三大过程"></a>三大过程</h2><p>贝叶斯网络是目前解决不确定性和不完整性问题最有效的模型之一，结构学习和参数学习是贝叶斯网络研究的基础，而贝叶斯推理则是贝叶斯网络研究的上层建筑。</p>
+<h3 id="结构学习：贝叶斯网络结构学习是贝叶斯网络研究的重点和难点，它是在观测数据和先验知识的基础上构建起来的网络。贝叶斯网络结构学习就是寻找与给定数据集拟合最优的网络，而贝叶斯网络结构学习算法中，最经典的两种就是K2算法和爬山算法-hill-climbing-HC-。K2算法对先验知识要求比HC算法高，K2算法需预先知道搜索空间的节点序，这往往需要专家知识的帮助。随着研究不断深入，新算法也不断加入到结构学习，如模拟退火算法、遗传算法和群体算法等。"><a href="#结构学习：贝叶斯网络结构学习是贝叶斯网络研究的重点和难点，它是在观测数据和先验知识的基础上构建起来的网络。贝叶斯网络结构学习就是寻找与给定数据集拟合最优的网络，而贝叶斯网络结构学习算法中，最经典的两种就是K2算法和爬山算法-hill-climbing-HC-。K2算法对先验知识要求比HC算法高，K2算法需预先知道搜索空间的节点序，这往往需要专家知识的帮助。随着研究不断深入，新算法也不断加入到结构学习，如模拟退火算法、遗传算法和群体算法等。" class="headerlink" title="结构学习：贝叶斯网络结构学习是贝叶斯网络研究的重点和难点，它是在观测数据和先验知识的基础上构建起来的网络。贝叶斯网络结构学习就是寻找与给定数据集拟合最优的网络，而贝叶斯网络结构学习算法中，最经典的两种就是K2算法和爬山算法(hill climbing, HC)。K2算法对先验知识要求比HC算法高，K2算法需预先知道搜索空间的节点序，这往往需要专家知识的帮助。随着研究不断深入，新算法也不断加入到结构学习，如模拟退火算法、遗传算法和群体算法等。"></a>结构学习：贝叶斯网络结构学习是贝叶斯网络研究的重点和难点，它是在观测数据和先验知识的基础上构建起来的网络。贝叶斯网络结构学习就是寻找与给定数据集拟合最优的网络，而贝叶斯网络结构学习算法中，最经典的两种就是K2算法和爬山算法(hill climbing, HC)。K2算法对先验知识要求比HC算法高，K2算法需预先知道搜索空间的节点序，这往往需要专家知识的帮助。随着研究不断深入，新算法也不断加入到结构学习，如模拟退火算法、遗传算法和群体算法等。</h3><h3 id="参数学习：所谓参数学习就是在已知网络拓扑结构的情况下，通过给定样本数据，学习整个贝叶斯网络的概率分布情况。"><a href="#参数学习：所谓参数学习就是在已知网络拓扑结构的情况下，通过给定样本数据，学习整个贝叶斯网络的概率分布情况。" class="headerlink" title="参数学习：所谓参数学习就是在已知网络拓扑结构的情况下，通过给定样本数据，学习整个贝叶斯网络的概率分布情况。"></a>参数学习：所谓参数学习就是在已知网络拓扑结构的情况下，通过给定样本数据，学习整个贝叶斯网络的概率分布情况。</h3><h3 id="推理：贝叶斯推理是在已知贝叶斯网络结构的基础上进行推理的，它有效的结合了训练样本的先验知识和当前样本的后验概率，是概率论中贝叶斯定理的延伸。贝叶斯网络推理是在网络结构建立及数据参数学习之后，给定证据计算某节点出现概率的过程。换言之，贝叶斯网络推理就是通过计算后验概率回答查询的问题；它结合了拓扑节点之间的相互联系，通过参数信息的相互传递，从而进行有效的概率推理。常见的推理算法包括团树传播算法、联合树算法、随机抽样算法以及循环消息传递算法等。"><a href="#推理：贝叶斯推理是在已知贝叶斯网络结构的基础上进行推理的，它有效的结合了训练样本的先验知识和当前样本的后验概率，是概率论中贝叶斯定理的延伸。贝叶斯网络推理是在网络结构建立及数据参数学习之后，给定证据计算某节点出现概率的过程。换言之，贝叶斯网络推理就是通过计算后验概率回答查询的问题；它结合了拓扑节点之间的相互联系，通过参数信息的相互传递，从而进行有效的概率推理。常见的推理算法包括团树传播算法、联合树算法、随机抽样算法以及循环消息传递算法等。" class="headerlink" title="推理：贝叶斯推理是在已知贝叶斯网络结构的基础上进行推理的，它有效的结合了训练样本的先验知识和当前样本的后验概率，是概率论中贝叶斯定理的延伸。贝叶斯网络推理是在网络结构建立及数据参数学习之后，给定证据计算某节点出现概率的过程。换言之，贝叶斯网络推理就是通过计算后验概率回答查询的问题；它结合了拓扑节点之间的相互联系，通过参数信息的相互传递，从而进行有效的概率推理。常见的推理算法包括团树传播算法、联合树算法、随机抽样算法以及循环消息传递算法等。"></a>推理：贝叶斯推理是在已知贝叶斯网络结构的基础上进行推理的，它有效的结合了训练样本的先验知识和当前样本的后验概率，是概率论中贝叶斯定理的延伸。贝叶斯网络推理是在网络结构建立及数据参数学习之后，给定证据计算某节点出现概率的过程。换言之，贝叶斯网络推理就是通过计算后验概率回答查询的问题；它结合了拓扑节点之间的相互联系，通过参数信息的相互传递，从而进行有效的概率推理。常见的推理算法包括团树传播算法、联合树算法、随机抽样算法以及循环消息传递算法等。</h3><h2 id="研究现状"><a href="#研究现状" class="headerlink" title="研究现状"></a>研究现状</h2><h3 id="结构学习"><a href="#结构学习" class="headerlink" title="结构学习"></a>结构学习</h3><p><img src="/images/F01.png" alt=""></p>
+<h3 id="参数学习"><a href="#参数学习" class="headerlink" title="参数学习"></a>参数学习</h3><p><img src="/images/F02.png" alt=""></p>
+<h3 id="贝叶斯推理"><a href="#贝叶斯推理" class="headerlink" title="贝叶斯推理"></a>贝叶斯推理</h3><p><img src="/images/F03.png" alt=""></p>
+<h1 id="结构学习1"><a href="#结构学习1" class="headerlink" title="结构学习1"></a>结构学习1</h1><h2 id="声明：以下内容为学习论文【郭童-基于改进鱼群蜂群算法的贝叶斯网络结构学习-D-浙江大学-2014-】的笔记，所有内容均出自原文！"><a href="#声明：以下内容为学习论文【郭童-基于改进鱼群蜂群算法的贝叶斯网络结构学习-D-浙江大学-2014-】的笔记，所有内容均出自原文！" class="headerlink" title="声明：以下内容为学习论文【郭童. 基于改进鱼群蜂群算法的贝叶斯网络结构学习[D]. 浙江大学, 2014.】的笔记，所有内容均出自原文！"></a><font color="red" face="黑体">声明：以下内容为学习论文【郭童. 基于改进鱼群蜂群算法的贝叶斯网络结构学习[D]. 浙江大学, 2014.】的笔记，所有内容均出自原文！</font></h2><h2 id="贝叶斯网络是一种图形化模型，网络结构是贝叶斯网络研究的基础，结构学习是贝叶斯网络研究的重中之重！"><a href="#贝叶斯网络是一种图形化模型，网络结构是贝叶斯网络研究的基础，结构学习是贝叶斯网络研究的重中之重！" class="headerlink" title="贝叶斯网络是一种图形化模型，网络结构是贝叶斯网络研究的基础，结构学习是贝叶斯网络研究的重中之重！"></a>贝叶斯网络是一种图形化模型，网络结构是贝叶斯网络研究的基础，结构学习是贝叶斯网络研究的重中之重！</h2><p>贝叶斯网络结构有效的描述了随机变量（节点）间的因果关系，利用节点间的条件独立关系可有效的计算出联合概率。<br>优点：<br>1、贝叶斯网络可以快速对问题的因果关系进行学习建模。<br>2、贝叶斯网络可以方便的处理不确定性和概率性的事物。<br>3、贝叶斯网络可以将专家先验知识和数据有效的结合进行分析。<br>4、贝叶斯网络可以有效地处理较小的甚至是部分数据丢失的数据集。<br>贝叶斯网络的学习就是通过大量的数据分析并且结合专家的经验，对给定的样本生成对此样本的因果关系网络，其实就一个有向无环图，以及与此因果关系网络之中节点相对应的条件概率分布表。</p>
+<h2 id="概率论"><a href="#概率论" class="headerlink" title="概率论"></a>概率论</h2><h3 id="条件概率"><a href="#条件概率" class="headerlink" title="条件概率"></a>条件概率</h3><h3 id="P-B-A-P-AB-P-A"><a href="#P-B-A-P-AB-P-A" class="headerlink" title="P(B|A) = P(AB)/P(A)"></a>P(B|A) = P(AB)/P(A)</h3><p>（概率其实就是信度，或者说信度可用概率表示。）</p>
+<h3 id="全概率"><a href="#全概率" class="headerlink" title="全概率"></a>全概率</h3><p>设B1、B2，…，Bn是样本空间S中两两不相容的事件，对于样本空间中的任意事件有如下概率公式：</p>
+<h3 id="P-A-E-P-A-Bi-P-Bi"><a href="#P-A-E-P-A-Bi-P-Bi" class="headerlink" title="P(A) = E(P(A|Bi)*P(Bi))"></a>P(A) = E(P(A|Bi)*P(Bi))</h3><h3 id="贝叶斯公式"><a href="#贝叶斯公式" class="headerlink" title="贝叶斯公式"></a>贝叶斯公式</h3><p><img src="/images/16.jpg" alt=""></p>
+<h2 id="图论"><a href="#图论" class="headerlink" title="图论"></a>图论</h2><h3 id="贝叶斯网络是一个有向无环图。图论体现的是节点之间连通或者分离的相互关系，而从概率论的角度定量的刻画了变量之间依赖或者独立的相互关系。"><a href="#贝叶斯网络是一个有向无环图。图论体现的是节点之间连通或者分离的相互关系，而从概率论的角度定量的刻画了变量之间依赖或者独立的相互关系。" class="headerlink" title="贝叶斯网络是一个有向无环图。图论体现的是节点之间连通或者分离的相互关系，而从概率论的角度定量的刻画了变量之间依赖或者独立的相互关系。"></a>贝叶斯网络是一个有向无环图。图论体现的是节点之间连通或者分离的相互关系，而从概率论的角度定量的刻画了变量之间依赖或者独立的相互关系。</h3><p><img src="/images/17.jpg" alt=""><br>如果X与Y之间的所有通道都被Z阻塞，那么就称Z有向分离X和Y，简称d-分离X和Y。如果Zd-分离X和Y，那么当Z中的变量全部被观测时，信息就不能在X和Y之间相互传递，因而X与Y保持相互独立。<br><img src="/images/18.jpg" alt=""></p>
+<p><img src="/images/bottom.jpg" alt=""></p>
+
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -523,23 +527,18 @@ txt读写12345678%读fid = fopen('C:/words.txt','r');txt = textscan(fid,'%s');fc
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <a id="more"></a>
+<p><img src="/images/top.jpg" alt=""></p>
+<h2 id="什么是GUI？matlab编程可以设计GUI吗？"><a href="#什么是GUI？matlab编程可以设计GUI吗？" class="headerlink" title="什么是GUI？matlab编程可以设计GUI吗？"></a>什么是GUI？matlab编程可以设计GUI吗？</h2><p>GUI定义:GUI指的是图形用户界面（Graphical User Interface，GUI），也称之为图形用户接口，GUI是用图形化方式显示的计算机操作用户界面（可视化）。<br>我们通常都是使用matlab来做计算，matlab还可以设计GUI？matlab编当然可以设计GUI！<br>那么，使用matlab到底如何设计GUI呢？往下看喽！</p>
+<h2 id="步骤一：新建GUI"><a href="#步骤一：新建GUI" class="headerlink" title="步骤一：新建GUI"></a>步骤一：新建GUI</h2><p>打开Matlab，在Command Window输入命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">guide</div></pre></td></tr></table></figure></p>
+<p>回车后打开窗口如下</p>
+<p>图1<br><img src="/images/second01.png" alt=""><br>图1中有四种GUI可选，在此选第一个“Blank GUI（Default）”空白的GUI。OK后来到如下窗口：</p>
+<p>图2<br><img src="/images/second02.png" alt=""><br>图2左侧有14个常用GUI属性可选，包括：按钮（Button），滑块（Slider），单选按钮（Radio Button），复选框（Check Box），编辑文本（Edit Text），静态文本(Static Text)，上托项目单（Pop-up Menu），列表框（Listbox），开关按钮（Toggle Button），列表（Table），坐标轴（Axes），面板（Panel），按钮组（Button Group），ActiveX控件（ActiveX Control）.<br>在此，我们先做个简单的“显示图片”的GUI看看。<br>将左侧“坐标轴（Axes）”和“按钮（Button）”各一个拖入操作区并自定义大小，如图3所示：<br>图3<br><img src="/images/second03.png" alt=""><br>保存后除了你自定义文件名的.fig文件外，还会自动生成一个与你命名相同的.m文件，到此，新建GUI完成。</p>
+<h2 id="步骤二：fig自定义"><a href="#步骤二：fig自定义" class="headerlink" title="步骤二：fig自定义"></a>步骤二：fig自定义</h2><p>在Matlab右键上面生成的.fig文件，选择“Open in GUIDE”使用GUIDE打开，双击以上添加的坐标轴或者按钮打开用户控件信息如图4所示：<br>图4<br><img src="/images/second04.png" alt=""><br>你可在图4中修改任意参数来改变控件的属性，包括：尺寸，文字，颜色等。在此就不一一介绍喽！<br>比如：我修改按钮中的FontSize为：15.0，将String改为：选择图片，就会出现如图5所示效果：<br>图5<br><img src="/images/second05.png" alt=""><br>到此，就可得到你想要的GUI界面喽！</p>
+<h2 id="步骤三：程序编辑"><a href="#步骤三：程序编辑" class="headerlink" title="步骤三：程序编辑"></a>步骤三：程序编辑</h2><p>双击打开上面生成的.m文件，在pushbutton1_Callback(hObject, eventdata, handles)函数处编写如下代码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">% --- Executes on button press <span class="keyword">in</span> pushbutton1.</div><div class="line"><span class="keyword">function</span> pushbutton1_Callback(hObject, eventdata, handles)</div><div class="line">% hObject    handle to pushbutton1 (see GCBO)</div><div class="line">% eventdata  reserved - to be defined <span class="keyword">in</span> a future version of MATLAB</div><div class="line">% handles    structure with handles and user data (see GUIDATA)</div><div class="line">[filename,filepath] = uigetfile(&#123;<span class="string">'*.bmp;*.jpg;*.png;*.jpeg;*.tif'</span>,...</div><div class="line">    <span class="string">'文件类型 (*.bmp,*.jpg,*.png,*.jpeg,*.tif)'</span>;<span class="string">'*.*'</span>, <span class="string">'所有文件(*.*)'</span>&#125;,...</div><div class="line">    <span class="string">'Pick an image'</span>);</div><div class="line">file = strcat(filepath,filename);</div><div class="line"><span class="keyword">in</span> = imread(file);</div><div class="line">axes(handles.axes1);</div><div class="line">imshow(<span class="keyword">in</span>);</div></pre></td></tr></table></figure></p>
+<p>F5运行后就可看到如下效果：<br>图6<br><img src="/images/second06.png" alt=""><br>点击“选择图片”按钮进入图7选择图片文件窗口：<br>图7<br><img src="/images/second07.png" alt=""><br>选择图片后就可显示出来，如图8所示：<br>图8<br><img src="/images/second08.png" alt=""></p>
+<h2 id="怎么样！开心吧！我的第一个GUI完成了！"><a href="#怎么样！开心吧！我的第一个GUI完成了！" class="headerlink" title="怎么样！开心吧！我的第一个GUI完成了！"></a>怎么样！开心吧！我的第一个GUI完成了！</h2><h3 id="后续还将会进一步学习！"><a href="#后续还将会进一步学习！" class="headerlink" title="后续还将会进一步学习！"></a>后续还将会进一步学习！</h3><p><img src="/images/bottom.jpg" alt=""></p>
 
-          
-            <div class="entry-summary" style="margin-left:0;">
-            
-什么是GUI？matlab编程可以设计GUI吗？GUI定义:GUI指的是图形用户界面（Graphical User Interface，GUI），也称之为图形用户接口，GUI是用图形化方式显示的计算机操作用户界面（可视化）。我们通常都是使用matlab来做计算，matlab还可以设计GUI？matlab编当然可以设计GUI！那么，使用matlab到底如何设计GUI呢？往下看喽！
-步骤一：新建GUI打开Matlab，在Command Window输入命令：1guide
-回车后打开窗口如下
-图1图1中有四种GUI可选，在此选第一个“Blank GUI（Default）”空白的GUI。OK后来到如下窗口：
-图2图2左侧有14个常用GUI属性可选，包括：按钮（Button），滑块（Slide...
-          
-
-        
-          <p class="article-more-link">
-            <a href="/2017/12/11/TT0002/#more">阅读全文</a>
-          </p>
-        </div>
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -580,21 +579,30 @@ txt读写12345678%读fid = fopen('C:/words.txt','r');txt = textscan(fid,'%s');fc
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <a id="more"></a>
+<p><img src="/images/top.jpg" alt=""><br>当你遇到一个似曾相识的知识却突然想不起来时：你需要一个个人博客！<br>当你觉得一段经历难忘而值得分享却不知所措时：你需要一个个人博客！</p>
+<h2 id="哎呦！不错哟！"><a href="#哎呦！不错哟！" class="headerlink" title="哎呦！不错哟！"></a>哎呦！不错哟！</h2><h3 id="博主在网上搜索了多种方法，折腾了1天都没成功（都有坑），还一度想放弃搭建，但“柳暗花明又一村”的是，我综合了多篇博文，终于我成功了！在此：哈哈大笑！"><a href="#博主在网上搜索了多种方法，折腾了1天都没成功（都有坑），还一度想放弃搭建，但“柳暗花明又一村”的是，我综合了多篇博文，终于我成功了！在此：哈哈大笑！" class="headerlink" title="博主在网上搜索了多种方法，折腾了1天都没成功（都有坑），还一度想放弃搭建，但“柳暗花明又一村”的是，我综合了多篇博文，终于我成功了！在此：哈哈大笑！"></a>博主在网上搜索了多种方法，折腾了1天都没成功（都有坑），还一度想放弃搭建，但“柳暗花明又一村”的是，我综合了多篇博文，终于我成功了！在此：哈哈大笑！</h3><p>网络上的方法很多，您可以搜搜看，当然，您也可以往下看！</p>
+<h2 id="现在开始"><a href="#现在开始" class="headerlink" title="现在开始"></a>现在开始</h2><h2 id="步骤一：下载安装软件"><a href="#步骤一：下载安装软件" class="headerlink" title="步骤一：下载安装软件"></a>步骤一：下载安装软件</h2><p>到官网下载：<br>            <a href="https://nodejs.org/en/" target="_blank" rel="external">NodeJs</a><br>            <a href="https://git-scm.com/" target="_blank" rel="external">Git</a><br>            (在官网上无法下载的话，可以到“白杜云”上搜索下载)<br>安装NodeJs时按正常步骤就行，安装Git时需要注意如下：<br><img src="/images/first01.png" alt=""><br><img src="/images/first02.png" alt=""><br><img src="/images/first03.png" alt=""><br><img src="/images/first04.png" alt=""><br><img src="/images/first05.png" alt=""><br><img src="/images/first06.png" alt=""></p>
+<p>安装完成后，“win+R”打开“运行”键入“cmd”回车进入命令窗口，输入如下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">node -v</div><div class="line">git -–version</div></pre></td></tr></table></figure></p>
+<p>若返回版本信息则说明安装成功，否则就重新安装吧！</p>
+<p>安装Hexo<br>随便在电脑桌面或者任意盘内新建一个文件夹，命名为“Blog”，在该文件夹中“shift+右键”选用“Git Bash”打开命令窗口，并键入如下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo </div><div class="line">$ hexo</div></pre></td></tr></table></figure></p>
+<p>返回hexo信息则说明安装成功！<br>紧接着输入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo init hexo</div></pre></td></tr></table></figure></p>
+<h2 id="步骤二：新建仓库（New-repository）"><a href="#步骤二：新建仓库（New-repository）" class="headerlink" title="步骤二：新建仓库（New repository）"></a>步骤二：新建仓库（New repository）</h2><p>在你注册了GitHub账号后，点击“New repository”创建仓库，注意：命名时应命名为username.github.io，其中，username为你几己的GitHub用户名。</p>
+<p>到之前新建的文件夹的“hexo”文件夹下“shift+右键”选用“Git Bash”打开命令窗口，并键入如下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> C:/Users/Administrator/.ssh</div><div class="line">$ ssh-keygen -t rsa -C <span class="string">"####@163.com（注册GitHub时的邮箱）"</span></div></pre></td></tr></table></figure></p>
+<p>一直回车，和“Y”即可。<br>在你的GitHub找到“Settings”，打开左下角有个“SSH and GPG keys”，点击“New SSH key”输入标题后在地址：“C:/Users/Administrator/.ssh”找到id_rsa.pub打开将里面的内容全部复制，并粘贴到“key”里，按下“Add SSH key”即可。</p>
+<p>现在，回到之前新建的文件夹的“hexo”文件夹下“shift+右键”选用“Git Bash”打开命令窗口，并键入如下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ npm install</div><div class="line">$ hexo generate</div><div class="line">$ hexo server</div></pre></td></tr></table></figure></p>
+<p>访问：<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a><br>若出现初始化的博客，则“Ctrl+C”停止刚才的命令。</p>
+<h2 id="步骤三：网站配置"><a href="#步骤三：网站配置" class="headerlink" title="步骤三：网站配置"></a>步骤三：网站配置</h2><p>在之前新建的文件夹的“hexo”文件夹下找到_config.yml文件打开，在内容最后<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  <span class="built_in">type</span>:</div></pre></td></tr></table></figure></p>
+<p>修改为如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  <span class="built_in">type</span>: git</div><div class="line">  repository: git@github.com:**********.github.io.git <span class="comment">#SSH地址在你上面新建的GitHub仓库里点击“Clone or download”选“Use SSH”并复制到此</span></div><div class="line">  branch: master</div></pre></td></tr></table></figure>
+<h3 id="好啦！通过访问你的GitHub地址https-username-github-io即可看到属于你自己的博客喽！"><a href="#好啦！通过访问你的GitHub地址https-username-github-io即可看到属于你自己的博客喽！" class="headerlink" title="好啦！通过访问你的GitHub地址https://username.github.io即可看到属于你自己的博客喽！"></a>好啦！通过访问你的GitHub地址<a href="https://username.github.io即可看到属于你自己的博客喽！" target="_blank" rel="external">https://username.github.io即可看到属于你自己的博客喽！</a></h3><p>（注意：地址中的username更换成你几己的GitHub用户名即可）</p>
+<h2 id="步骤四：更新博客"><a href="#步骤四：更新博客" class="headerlink" title="步骤四：更新博客"></a>步骤四：更新博客</h2><h3 id="建好自己的博客后，就迫不及待的想将自己的想写的东西放在上面喽！"><a href="#建好自己的博客后，就迫不及待的想将自己的想写的东西放在上面喽！" class="headerlink" title="建好自己的博客后，就迫不及待的想将自己的想写的东西放在上面喽！"></a>建好自己的博客后，就迫不及待的想将自己的想写的东西放在上面喽！</h3><p>首先：在你建博客的文件夹目录下“shift+右键”选用“Git Bash”打开命令窗口，并键入如下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new newblog</div></pre></td></tr></table></figure></p>
+<p>（注意：newblog为你新建博客的文件名，可随意取名（没试过中文名））</p>
+<p>在你建博客的文件夹目录下的source/_post目录下找newblog.md文件，打开内容就可以按照自己意愿修改喽！</p>
+<p>然后，同样在你建博客的文件夹目录下“shift+右键”选用“Git Bash”打开命令窗口，并键入如下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$ hexo clean</div><div class="line"></div><div class="line">$ hexo g</div><div class="line"></div><div class="line">$ npm install hexo-deployer-git --save</div><div class="line"></div><div class="line">$ hexo d</div></pre></td></tr></table></figure></p>
+<p>好了，访问<a href="https://username.github.io看看吧！" target="_blank" rel="external">https://username.github.io看看吧！</a><br>（注意：如果没有显示不用担心，多刷新几遍就出来了。如果实在还是没有的话，以上操作重新来过！）</p>
+<h3 id="就写到这吧！怎么更改主题再学习吧！"><a href="#就写到这吧！怎么更改主题再学习吧！" class="headerlink" title="就写到这吧！怎么更改主题再学习吧！"></a>就写到这吧！怎么更改主题再学习吧！</h3><p><img src="/images/bottom.jpg" alt=""></p>
 
-          
-            <div class="entry-summary" style="margin-left:0;">
-            当你遇到一个似曾相识的知识却突然想不起来时：你需要一个个人博客！当你觉得一段经历难忘而值得分享却不知所措时：你需要一个个人博客！
-哎呦！不错哟！博主在网上搜索了多种方法，折腾了1天都没成功（都有坑），还一度想放弃搭建，但“柳暗花明又一村”的是，我综合了多篇博文，终于我成功了！在此：哈哈大笑！网络上的方法很多，您可以搜搜看，当然，您也可以往下看！
-现在开始步骤一：下载安装软件到官网下载：            NodeJs            Git            (在官网上无法下载的话，可以到“白杜云”上搜索下载)安装NodeJs时按正常步骤就行，安装Git时需要注意如下：
-安装完成后，“win+R”打开“运行”键入“cmd”回车进入命令窗口，输入如下命令：12node -v...
-          
-
-        
-          <p class="article-more-link">
-            <a href="/2017/11/04/TT0001/#more">阅读全文</a>
-          </p>
-        </div>
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -766,7 +774,7 @@ txt读写12345678%读fid = fopen('C:/words.txt','r');txt = textscan(fid,'%s');fc
               <div class="widget-entry-summary" style="margin: 0;">
             
 
-              <h6 style="margin: 0;"><a href="/2017/12/11/TT0004/">贝叶斯网络学习（一）</a></h6>
+              <h6 style="margin: 0;"><a href="/2017/12/11/TT0003/">一些常用Matlab代码记录</a></h6>
               <span>December 11, 2017</span>
             </div>
 
@@ -778,7 +786,7 @@ txt读写12345678%读fid = fopen('C:/words.txt','r');txt = textscan(fid,'%s');fc
               <div class="widget-entry-summary" style="margin: 0;">
             
 
-              <h6 style="margin: 0;"><a href="/2017/12/11/TT0003/">一些常用Matlab代码记录</a></h6>
+              <h6 style="margin: 0;"><a href="/2017/12/11/TT0004/">贝叶斯网络学习（一）</a></h6>
               <span>December 11, 2017</span>
             </div>
 
