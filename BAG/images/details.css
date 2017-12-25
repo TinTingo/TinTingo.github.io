@@ -1,0 +1,23 @@
+#details .shopImg {
+	width:350px;
+	float:left;
+}
+#details .shopDetails {
+	width:610px;
+	float:right;
+}
+#details .shopDetails dl dt {
+	color:#666666;
+	font-weight:bold;
+	border-bottom:1px solid #999999;
+	padding:0px 0px 10px 0;
+}
+#details .shopDetails dl dd {
+	border-bottom:1px dashed #999999;
+	padding:12px 0 8px 0;
+	text-indent:5px;
+	color:#666666;
+}
+#details .shopDetails dl dd input.count {
+	text-align:center;
+}
