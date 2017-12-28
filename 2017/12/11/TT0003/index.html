@@ -26,7 +26,7 @@
 <meta property="og:site_name" content="TinTin">
 <meta property="og:description" content="记忆力差？用过的代码老忘记？一次又一次的上网搜?好浪费时间！写在博客里方便随时查阅~~~~">
 <meta property="og:image" content="https://tintingo.github.io/images/T0003.jpg">
-<meta property="og:updated_time" content="2017-12-25T12:31:48.601Z">
+<meta property="og:updated_time" content="2017-12-28T08:30:15.040Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一些常用Matlab代码记录">
 <meta name="twitter:description" content="记忆力差？用过的代码老忘记？一次又一次的上网搜?好浪费时间！写在博客里方便随时查阅~~~~">
@@ -169,7 +169,7 @@ var themeMenus = {};
 <div class="article-gallery">
   <div class="article-gallery-photos">
     
-      <a class="article-gallery-img fancybox" href="/images/T0003.jpg" rel="gallery_cjbm7djxg000hd8z0dprqfbm3">
+      <a class="article-gallery-img fancybox" href="/images/T0003.jpg" rel="gallery_cjbq8bpvh0005c8z02xbzi44k">
         <img src="/images/T0003.jpg" itemprop="image">
       </a>
     
@@ -222,7 +222,7 @@ var themeMenus = {};
 <h1 id="画网络结构图自定义节点名"><a href="#画网络结构图自定义节点名" class="headerlink" title="画网络结构图自定义节点名"></a>画网络结构图自定义节点名</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">labels = &#123;<span class="string">'one'</span>,<span class="string">'two'</span>,<span class="string">'three'</span>,<span class="string">'four'</span>&#125;;</div><div class="line">draw_graph(dag,labels);</div></pre></td></tr></table></figure>
 <h1 id="画网络结构图的两种方式"><a href="#画网络结构图的两种方式" class="headerlink" title="画网络结构图的两种方式"></a>画网络结构图的两种方式</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">draw_graph( dag ); %dag为网络结构边的关系</div><div class="line">h = view(biograph( dag ));</div></pre></td></tr></table></figure>
 <h1 id="matlab关联-m文件（安装了matlab，但无法双击打开-m文件）"><a href="#matlab关联-m文件（安装了matlab，但无法双击打开-m文件）" class="headerlink" title="matlab关联.m文件（安装了matlab，但无法双击打开.m文件）"></a>matlab关联.m文件（安装了matlab，但无法双击打开.m文件）</h1><h2 id="法一"><a href="#法一" class="headerlink" title="法一"></a>法一</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">cwd=<span class="built_in">pwd</span>;</div><div class="line"><span class="built_in">cd</span>([matlabroot <span class="string">'\toolbox\matlab\winfun\private'</span>]);</div><div class="line">fileassoc(<span class="string">'add'</span>,&#123;<span class="string">'.m'</span>,<span class="string">'.mat'</span>,<span class="string">'.fig'</span>,<span class="string">'.p'</span>,<span class="string">'.mdl'</span>,[<span class="string">'.'</span> mexext]&#125;); </div><div class="line"><span class="built_in">cd</span>(cwd);</div></pre></td></tr></table></figure>
-<h2 id="法二"><a href="#法二" class="headerlink" title="法二"></a>法二</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">步骤1：</div><div class="line">下载文件  链接：https://pan.baidu.com/s/1boKMur9 密码：x4ui</div><div class="line">步骤2：</div><div class="line">（1）运行matlab软件 -&gt; 打开 -&gt; associateFiles.m -&gt; F5运行 </div><div class="line">（2）运行完毕后文件夹中会生成一个.reg文件，双击该文件，完成即可</div><div class="line">（3）找一个.m文件,右键 -&gt; 打开方式，若有matlab选项，说明关联成功</div></pre></td></tr></table></figure>
+<h2 id="法二"><a href="#法二" class="headerlink" title="法二"></a>法二</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">步骤1：</div><div class="line">到本站下载页下载标题为“matlab关联.m文件”的文件</div><div class="line">步骤2：</div><div class="line">（1）解压后，运行matlab软件 -&gt; 打开 -&gt; associateFiles.m -&gt; F5运行 </div><div class="line">（2）运行完毕后文件夹中会生成一个.reg文件，双击该文件，完成即可</div><div class="line">（3）找一个.m文件,右键 -&gt; 打开方式，若有matlab选项，说明关联成功</div></pre></td></tr></table></figure>
 <h1 id="生成‘ABCDE’这5个字母的随机组合"><a href="#生成‘ABCDE’这5个字母的随机组合" class="headerlink" title="生成‘ABCDE’这5个字母的随机组合"></a>生成‘ABCDE’这5个字母的随机组合</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">s = perms(<span class="string">'ABCDE'</span>); %随机生成Cnn种组合</div></pre></td></tr></table></figure>
 <h1 id="同一figure显示多个图"><a href="#同一figure显示多个图" class="headerlink" title="同一figure显示多个图"></a>同一figure显示多个图</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">subplot(n,m,i) %一个figure分为n行，m列。i表示第i个图。</div></pre></td></tr></table></figure>
 <h1 id="22-给一个数列（矩阵）里的数排序（从大到小）"><a href="#22-给一个数列（矩阵）里的数排序（从大到小）" class="headerlink" title="22.给一个数列（矩阵）里的数排序（从大到小）"></a>22.给一个数列（矩阵）里的数排序（从大到小）</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[a b]=sort(A(:)); %从小到大排序</div><div class="line">a = fliplr(a<span class="string">'); %取倒序</span></div><div class="line"><span class="string">b = fliplr(b'</span>);</div></pre></td></tr></table></figure>
@@ -285,19 +285,19 @@ var a = new Donate({
     
 <nav id="article-nav">
   
-    <a href="/2017/12/11/TT0004/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/12/11/TT0005/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">上一篇</strong>
       <div class="article-nav-title">
         
-          贝叶斯网络学习
+          音乐|视频更新
         
       </div>
     </a>
   
   
-    <a href="/2017/12/11/TT0002/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2017/12/11/TT0004/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">下一篇</strong>
-      <div class="article-nav-title">如何用Matlab设计GUI？</div>
+      <div class="article-nav-title">贝叶斯网络学习</div>
     </a>
   
 </nav>
