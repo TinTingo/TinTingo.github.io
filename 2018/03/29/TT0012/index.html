@@ -26,7 +26,7 @@
 <meta property="og:site_name" content="TinTin">
 <meta property="og:description" content="制作一个小软件的方法很多，比如说c++的MFC，本站在之前的第一个MFC文章里就提到过；matlab的GUIDE，在之前的如何用Matlab设计GUI？ 文章也提到过。而现在，本文将使用matlab GUI来制作一个可安装到电脑的小软件。">
 <meta property="og:image" content="https://tintingo.github.io/images/T0012.jpg">
-<meta property="og:updated_time" content="2018-03-29T03:14:02.180Z">
+<meta property="og:updated_time" content="2018-03-29T07:27:45.857Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何用matlab制作一个小软件">
 <meta name="twitter:description" content="制作一个小软件的方法很多，比如说c++的MFC，本站在之前的第一个MFC文章里就提到过；matlab的GUIDE，在之前的如何用Matlab设计GUI？ 文章也提到过。而现在，本文将使用matlab GUI来制作一个可安装到电脑的小软件。">
@@ -169,7 +169,7 @@ var themeMenus = {};
 <div class="article-gallery">
   <div class="article-gallery-photos">
     
-      <a class="article-gallery-img fancybox" href="/images/T0012.jpg" rel="gallery_cjfby3han000gwwz0jste5tqb">
+      <a class="article-gallery-img fancybox" href="/images/T0012.jpg" rel="gallery_cjfc762gl000hzcz0uhfjcfit">
         <img src="/images/T0012.jpg" itemprop="image">
       </a>
     
@@ -202,7 +202,37 @@ var themeMenus = {};
     <div class="article-entry" itemprop="articleBody">
       
         <p><img src="/images/top.jpg" alt=""><br>制作一个小软件的方法很多，比如说c++的MFC，本站在之前的<a href="https://tintingo.github.io/2017/12/11/TT0008/">第一个MFC</a>文章里就提到过；matlab的GUIDE，在之前的<a href="https://tintingo.github.io/2017/12/11/TT0002/">如何用Matlab设计GUI？</a> 文章也提到过。而现在，本文将使用matlab GUI来制作一个可安装到电脑的小软件。<br><a id="more"></a></p>
-<h2 id="等待内容更新。。。"><a href="#等待内容更新。。。" class="headerlink" title="等待内容更新。。。"></a>等待内容更新。。。</h2><p><img src="/images/bottom.jpg" alt=""></p>
+<p><font color="#00ffff" size="50">提示：软件安装包请到本站<a href="https://tintingo.github.io/download">下载中心</a>下载</font></p>
+<h2 id="首先，描述一下软件需求"><a href="#首先，描述一下软件需求" class="headerlink" title="首先，描述一下软件需求"></a>首先，描述一下软件需求</h2><p>作者想制作一个可以为自己记录计划的软件，该软件应当包含以下功能：<br>1.增加新计划，并保存计划；<br>2.删除已有计划，更改当前计划；<br>3.查看历史计划；<br>4.显示当月日历，浏览其他日历（比如说查看学校校历等）；</p>
+<h2 id="其次，matlab-GUI设计软件界面"><a href="#其次，matlab-GUI设计软件界面" class="headerlink" title="其次，matlab GUI设计软件界面"></a>其次，matlab GUI设计软件界面</h2><p>在本站前面内容已经提到过如何设计matlab GUI，在此就不做详细描述了。<br>如下图所示，使用matlab GUI设计如下界面。<br><img src="/images/TT0012_01.png" alt=""><br>其中，红圈区域为主要功能区，其余部分可不设计。</p>
+<h2 id="然后，matlab-程序编写"><a href="#然后，matlab-程序编写" class="headerlink" title="然后，matlab 程序编写"></a>然后，matlab 程序编写</h2><ol>
+<li><p>访问日历网页（比如说查看学校校历等）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">txt = get(handles.edit1,<span class="string">'string'</span>);</div><div class="line"><span class="built_in">eval</span>([<span class="string">'web'</span>,<span class="string">' '</span>,txt])</div></pre></td></tr></table></figure>
+</li>
+<li><p>初始化当月计划</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">set</span>(handles.uitable1,<span class="string">'data'</span>,[]);</div></pre></td></tr></table></figure>
+</li>
+<li><p>添加计划</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">content1 = get(handles.edit4,<span class="string">'string'</span>);</div><div class="line">content2 = get(handles.edit5,<span class="string">'string'</span>);</div><div class="line">content3 = get(handles.edit6,<span class="string">'string'</span>);</div><div class="line">uitabledata = get(handles.uitable1,<span class="string">'data'</span>);</div><div class="line">handles.uitabledata = uitabledata;</div><div class="line">guidata(hObject,handles);</div><div class="line">olddata = uitabledata;</div><div class="line">newrow = &#123;content1 content2 content3&#125;;</div><div class="line">newdata = [olddata;newrow];</div><div class="line"><span class="built_in">set</span>(handles.uitable1,<span class="string">'data'</span>,newdata);</div></pre></td></tr></table></figure>
+</li>
+<li><p>删除计划</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">uitabledata = get(handles.uitable1,<span class="string">'data'</span>);</div><div class="line">handles.uitabledata = uitabledata;</div><div class="line">guidata(hObject,handles);</div><div class="line">olddata = uitabledata;</div><div class="line">[a,~] = size(olddata);</div><div class="line">olddata(a,:) = [];</div><div class="line">newdata = olddata;</div><div class="line"><span class="built_in">set</span>(handles.uitable1,<span class="string">'data'</span>,newdata);</div></pre></td></tr></table></figure>
+</li>
+<li><p>保存计划</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">uitabledata = get(handles.uitable1,<span class="string">'data'</span>);</div><div class="line">%写</div><div class="line">txt = get(handles.edit3,<span class="string">'string'</span>);</div><div class="line">filename = [txt(1:4),<span class="string">'_'</span>,txt(8:9),<span class="string">'.xls'</span>];</div><div class="line">delete(filename)</div><div class="line">mytxt = xlswrite(filename,uitabledata);</div></pre></td></tr></table></figure>
+</li>
+<li><p>查看以往计划</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">[pname,adrname] = uigetfile(<span class="string">'*.xls'</span>);</div><div class="line">%读</div><div class="line">filename = [adrname pname];</div><div class="line">[~,~,rawdata] = xlsread(filename);</div><div class="line"><span class="built_in">set</span>(handles.uitable1,<span class="string">'data'</span>,rawdata);</div></pre></td></tr></table></figure>
+</li>
+<li><p>显示当月日历</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">dayunm = calendar(year(now),month(now));</div><div class="line">myday = num2cell(dayunm);</div><div class="line">myW1 = &#123;<span class="string">'日'</span> <span class="string">'一'</span> <span class="string">'二'</span> <span class="string">'三'</span> <span class="string">'四'</span> <span class="string">'五'</span> <span class="string">'六'</span>&#125;;</div><div class="line">myW2 = &#123;<span class="string">'一'</span>;<span class="string">'二'</span>;<span class="string">'三'</span>;<span class="string">'四'</span>;<span class="string">'五'</span>;<span class="string">'六'</span>&#125;;</div><div class="line">[a,b] = find(dayunm==day(now));</div><div class="line">myday&#123;a,b&#125; = [<span class="string">'&lt;html&gt;&lt;FONT color=#ff0000"&gt;'</span> num2str(myday&#123;a,b&#125;) <span class="string">'&lt;/Font&gt;&lt;/html&gt;'</span>];</div><div class="line">[aa,bb] = find(dayunm==0);</div><div class="line"><span class="keyword">for</span> i=1:size(aa)</div><div class="line">    myday&#123;aa(i),bb(i)&#125; = [<span class="string">'&lt;html&gt;&lt;FONT color=#000000"&gt;'</span> num2str(myday&#123;aa(i),bb(i)&#125;) <span class="string">'&lt;/Font&gt;&lt;/html&gt;'</span>];</div><div class="line">end</div><div class="line"><span class="built_in">set</span>(handles.uitable2,<span class="string">'data'</span>,myday);</div><div class="line"><span class="built_in">set</span>(handles.uitable3,<span class="string">'data'</span>,myW1);</div><div class="line"><span class="built_in">set</span>(handles.uitable4,<span class="string">'data'</span>,myW2);</div></pre></td></tr></table></figure>
+</li>
+<li><p>显示当月计划</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">filename = [num2str(year(now)),<span class="string">'_'</span>,datestr(date,<span class="string">'mm'</span>),<span class="string">'.xls'</span>];</div><div class="line"><span class="keyword">if</span> exist(filename,<span class="string">'file'</span>) == 0</div><div class="line">    uitabledata = &#123;<span class="string">'无计划'</span> <span class="string">'无计划'</span> <span class="string">'无计划'</span>&#125;;</div><div class="line">    mytxt = xlswrite(filename,uitabledata);</div><div class="line">    %读</div><div class="line">    [~,~,rawdata] = xlsread(filename);</div><div class="line">    <span class="built_in">set</span>(handles.uitable1,<span class="string">'data'</span>,rawdata);</div><div class="line"><span class="keyword">else</span></div><div class="line">    %读</div><div class="line">    [~,~,rawdata] = xlsread(filename);</div><div class="line">    <span class="built_in">set</span>(handles.uitable1,<span class="string">'data'</span>,rawdata);</div><div class="line">end</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="最后，软件打包"><a href="#最后，软件打包" class="headerlink" title="最后，软件打包"></a>最后，软件打包</h2><p>在matlab命令行窗口输入deploytool，添加自己的文件后打包即可。（方法在百度上一搜索一大把！我就懒得说了！）</p>
+<h2 id="附录：源代码"><a href="#附录：源代码" class="headerlink" title="附录：源代码"></a>附录：源代码</h2><p><font color="#00ffff" size="50"><a href="/images/main.m">源码在这里</a></font><br><img src="/images/bottom.jpg" alt=""></p>
 
       
     </div>
@@ -273,7 +303,7 @@ var a = new Donate({
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
     
-      <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#等待内容更新。。。"><span class="nav-number">1.</span> <span class="nav-text">等待内容更新。。。</span></a></li></ol>
+      <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#首先，描述一下软件需求"><span class="nav-number">1.</span> <span class="nav-text">首先，描述一下软件需求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其次，matlab-GUI设计软件界面"><span class="nav-number">2.</span> <span class="nav-text">其次，matlab GUI设计软件界面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#然后，matlab-程序编写"><span class="nav-number">3.</span> <span class="nav-text">然后，matlab 程序编写</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最后，软件打包"><span class="nav-number">4.</span> <span class="nav-text">最后，软件打包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#附录：源代码"><span class="nav-number">5.</span> <span class="nav-text">附录：源代码</span></a></li></ol>
     
     </div>
   </aside>
