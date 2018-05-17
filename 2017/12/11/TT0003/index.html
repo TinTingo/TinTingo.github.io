@@ -19,17 +19,17 @@
   
   
   
-  <meta name="description" content="记忆力差？用过的代码老忘记？一次又一次的上网搜?好浪费时间！写在博客里方便随时查阅~~~~">
+  <meta name="description" content="(function(){    var bp = document.createElement(‘script’);    var curProtocol = window.location.protocol.split(‘:’)[0];    if (curProtocol === ‘https’){   bp.src = ‘https://zz.bdstatic.com/linksubmit/">
 <meta property="og:type" content="article">
 <meta property="og:title" content="一些常用Matlab代码记录">
 <meta property="og:url" content="https://tintingo.github.io/2017/12/11/TT0003/index.html">
 <meta property="og:site_name" content="TinTin">
-<meta property="og:description" content="记忆力差？用过的代码老忘记？一次又一次的上网搜?好浪费时间！写在博客里方便随时查阅~~~~">
+<meta property="og:description" content="(function(){    var bp = document.createElement(‘script’);    var curProtocol = window.location.protocol.split(‘:’)[0];    if (curProtocol === ‘https’){   bp.src = ‘https://zz.bdstatic.com/linksubmit/">
 <meta property="og:image" content="https://tintingo.github.io/images/T0003.jpg">
-<meta property="og:updated_time" content="2018-04-28T09:07:12.144Z">
+<meta property="og:updated_time" content="2018-05-17T08:12:24.747Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一些常用Matlab代码记录">
-<meta name="twitter:description" content="记忆力差？用过的代码老忘记？一次又一次的上网搜?好浪费时间！写在博客里方便随时查阅~~~~">
+<meta name="twitter:description" content="(function(){    var bp = document.createElement(‘script’);    var curProtocol = window.location.protocol.split(‘:’)[0];    if (curProtocol === ‘https’){   bp.src = ‘https://zz.bdstatic.com/linksubmit/">
 <meta name="twitter:image" content="https://tintingo.github.io/images/T0003.jpg">
   
     <link rel="alternate" href="/atom.xml" title="TinTin" type="application/atom+xml">
@@ -169,7 +169,7 @@ var themeMenus = {};
 <div class="article-gallery">
   <div class="article-gallery-photos">
     
-      <a class="article-gallery-img fancybox" href="/images/T0003.jpg" rel="gallery_cjha8qbmo000hv0eu1x5k5qe8">
+      <a class="article-gallery-img fancybox" href="/images/T0003.jpg" rel="gallery_cjha9c4tv0006jweutsvfku30">
         <img src="/images/T0003.jpg" itemprop="image">
       </a>
     
@@ -201,7 +201,7 @@ var themeMenus = {};
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="/images/top.jpg" alt=""></p>
+        <p><script><br>(function(){<br>    var bp = document.createElement(‘script’);<br>    var curProtocol = window.location.protocol.split(‘:’)[0];<br>    if (curProtocol === ‘https’){<br>   bp.src = ‘<a href="https://zz.bdstatic.com/linksubmit/push.js">https://zz.bdstatic.com/linksubmit/push.js</a>‘;<br>  }<br>  else{<br>  bp.src = ‘<a href="http://push.zhanzhang.baidu.com/push.js">http://push.zhanzhang.baidu.com/push.js</a>‘;<br>  }<br>    var s = document.getElementsByTagName(“script”)[0];<br>    s.parentNode.insertBefore(bp, s);<br>})();<br></script><br><img src="/images/top.jpg" alt=""></p>
 <p>记忆力差？<br>用过的代码老忘记？<br>一次又一次的上网搜?<br>好浪费时间！<br>写在博客里方便随时查阅~~~~<br><a id="more"></a></p>
 <h1 id="常用读写方式"><a href="#常用读写方式" class="headerlink" title="常用读写方式"></a>常用读写方式</h1><h2 id="Excel读写（xlsread、xlswrite）"><a href="#Excel读写（xlsread、xlswrite）" class="headerlink" title="Excel读写（xlsread、xlswrite）"></a>Excel读写（xlsread、xlswrite）</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">%读</div><div class="line">mytxt = xlsread(<span class="string">'C:/filename.xls'</span>)</div><div class="line"></div><div class="line">%写</div><div class="line">txt = [<span class="string">'a'</span> <span class="string">'s'</span> <span class="string">'d'</span> <span class="string">'f'</span> <span class="string">'g'</span> <span class="string">'h'</span>];</div><div class="line">mytxt = xlswrite(<span class="string">'C:/filename.xls'</span>,txt)</div></pre></td></tr></table></figure>
 <h2 id="txt读写"><a href="#txt读写" class="headerlink" title="txt读写"></a>txt读写</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">%读</div><div class="line">fid = fopen(<span class="string">'C:/words.txt'</span>,<span class="string">'r'</span>);</div><div class="line">txt = textscan(fid,<span class="string">'%s'</span>);</div><div class="line">fclose(fid);</div><div class="line"></div><div class="line">%写</div><div class="line">txt = [<span class="string">'a'</span> <span class="string">'s'</span> <span class="string">'d'</span> <span class="string">'f'</span> <span class="string">'g'</span> <span class="string">'h'</span>];</div><div class="line">dlmwrite(<span class="string">'C:/myfile.txt'</span>, txt, <span class="string">'delimiter'</span>, <span class="string">'\t'</span>)</div></pre></td></tr></table></figure>
