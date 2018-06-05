@@ -26,7 +26,7 @@
 <meta property="og:site_name" content="TinTin">
 <meta property="og:description" content="悄悄记录下用过的一些python代码，以后再次用到时我就到这来找。嗯！不错！边学习边记录是个好习惯哦！不管啦！现在就要写。开始记录吧~~~~">
 <meta property="og:image" content="https://tintingo.github.io/images/T0013.jpg">
-<meta property="og:updated_time" content="2018-06-05T08:11:04.566Z">
+<meta property="og:updated_time" content="2018-06-05T08:52:15.496Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python常用代码记录">
 <meta name="twitter:description" content="悄悄记录下用过的一些python代码，以后再次用到时我就到这来找。嗯！不错！边学习边记录是个好习惯哦！不管啦！现在就要写。开始记录吧~~~~">
@@ -169,7 +169,7 @@ var themeMenus = {};
 <div class="article-gallery">
   <div class="article-gallery-photos">
     
-      <a class="article-gallery-img fancybox" href="/images/T0013.jpg" rel="gallery_cji1f7k4u0009m4eua25ykjot">
+      <a class="article-gallery-img fancybox" href="/images/T0013.jpg" rel="gallery_cji1g4m29000eloeujxdv9bx2">
         <img src="/images/T0013.jpg" itemprop="image">
       </a>
     
@@ -202,8 +202,7 @@ var themeMenus = {};
     <div class="article-entry" itemprop="articleBody">
       
         <p><img src="/images/top.jpg" alt=""><br>悄悄记录下用过的一些python代码，以后再次用到时我就到这来找。<br>嗯！不错！<br>边学习边记录是个好习惯哦！<br>不管啦！现在就要写。<br>开始记录吧~~~~<br><a id="more"></a></p>
-<h1 id="Matplotlib库"><a href="#Matplotlib库" class="headerlink" title="Matplotlib库"></a><a href="https://matplotlib.org/api/animation_api.html" target="_blank" rel="external">Matplotlib库</a></h1><h2 id="Matplotlib是一个Python-2D绘图库。"><a href="#Matplotlib是一个Python-2D绘图库。" class="headerlink" title="Matplotlib是一个Python 2D绘图库。"></a>Matplotlib是一个Python 2D绘图库。</h2><p>###1.画正、余弦函数</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 导入matplotlib库的所有内容，</span></div><div class="line">from pylab import np</div><div class="line"><span class="comment"># 创建图</span></div><div class="line">figure(figsize=(8,6), dpi=80)</div><div class="line"><span class="comment"># 创建新子图</span></div><div class="line">subplot(1,1,1)</div><div class="line"><span class="comment"># 定义正、余弦函数</span></div><div class="line">X = np.linspace(-np.pi, np.pi, 256,endpoint=True)</div><div class="line">C,S = np.cos(X), np.sin(X)</div><div class="line"><span class="comment"># 绘制正弦曲线</span></div><div class="line">plot(X, C, color=<span class="string">"blue"</span>, linewidth=10, linestyle=<span class="string">"-"</span>)</div><div class="line">plot(X, S, color=<span class="string">"red"</span>, linewidth=10, linestyle=<span class="string">"-"</span>)</div><div class="line"><span class="comment"># 设置x，y轴界限</span></div><div class="line">xlim(-4.0,4.0)</div><div class="line">ylim(-1.0,1.0)</div><div class="line"><span class="comment"># 设置x，y轴标号</span></div><div class="line">xticks(np.linspace(-4,4,9,endpoint=True))</div><div class="line">yticks(np.linspace(-1,1,5,endpoint=True))</div><div class="line"><span class="comment"># 显示</span></div><div class="line">show()</div></pre></td></tr></table></figure>
+<h1 id="Matplotlib库"><a href="#Matplotlib库" class="headerlink" title="Matplotlib库"></a><a href="https://matplotlib.org/api/animation_api.html" target="_blank" rel="external">Matplotlib库</a></h1><h3 id="Matplotlib是一个Python-2D绘图库。"><a href="#Matplotlib是一个Python-2D绘图库。" class="headerlink" title="Matplotlib是一个Python 2D绘图库。"></a>Matplotlib是一个Python 2D绘图库。</h3><h2 id="1-画正、余弦函数"><a href="#1-画正、余弦函数" class="headerlink" title="1.画正、余弦函数"></a>1.画正、余弦函数</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 导入matplotlib库的所有内容，</span></div><div class="line">from pylab import np</div><div class="line"><span class="comment"># 创建图</span></div><div class="line">figure(figsize=(8,6), dpi=80)</div><div class="line"><span class="comment"># 创建新子图</span></div><div class="line">subplot(1,1,1)</div><div class="line"><span class="comment"># 定义正、余弦函数</span></div><div class="line">X = np.linspace(-np.pi, np.pi, 256,endpoint=True)</div><div class="line">C,S = np.cos(X), np.sin(X)</div><div class="line"><span class="comment"># 绘制正弦曲线</span></div><div class="line">plot(X, C, color=<span class="string">"blue"</span>, linewidth=10, linestyle=<span class="string">"-"</span>)</div><div class="line">plot(X, S, color=<span class="string">"red"</span>, linewidth=10, linestyle=<span class="string">"-"</span>)</div><div class="line"><span class="comment"># 设置x，y轴界限</span></div><div class="line">xlim(-4.0,4.0)</div><div class="line">ylim(-1.0,1.0)</div><div class="line"><span class="comment"># 设置x，y轴标号</span></div><div class="line">xticks(np.linspace(-4,4,9,endpoint=True))</div><div class="line">yticks(np.linspace(-1,1,5,endpoint=True))</div><div class="line"><span class="comment"># 显示</span></div><div class="line">show()</div></pre></td></tr></table></figure>
 <p><img src="/images/bottom.jpg" alt=""></p>
 
       
@@ -275,7 +274,7 @@ var a = new Donate({
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
     
-      <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Matplotlib库"><span class="nav-number">1.</span> <span class="nav-text">Matplotlib库</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Matplotlib是一个Python-2D绘图库。"><span class="nav-number">1.1.</span> <span class="nav-text">Matplotlib是一个Python 2D绘图库。</span></a></li></ol></li></ol>
+      <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Matplotlib库"><span class="nav-number">1.</span> <span class="nav-text">Matplotlib库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Matplotlib是一个Python-2D绘图库。"><span class="nav-number">1.0.1.</span> <span class="nav-text">Matplotlib是一个Python 2D绘图库。</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-画正、余弦函数"><span class="nav-number">1.1.</span> <span class="nav-text">1.画正、余弦函数</span></a></li></ol></li></ol>
     
     </div>
   </aside>
