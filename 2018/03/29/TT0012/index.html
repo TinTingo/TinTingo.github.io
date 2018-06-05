@@ -19,17 +19,17 @@
   
   
   
-  <meta name="description" content="(function(){    var bp = document.createElement(‘script’);    var curProtocol = window.location.protocol.split(‘:’)[0];    if (curProtocol === ‘https’){   bp.src = ‘https://zz.bdstatic.com/linksubmit/">
+  <meta name="description" content="制作一个小软件的方法很多，比如说c++的MFC，本站在之前的第一个MFC文章里就提到过；matlab的GUIDE，在之前的如何用Matlab设计GUI？ 文章也提到过。而现在，本文将使用matlab GUI来制作一个可安装到电脑的小软件。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何用matlab制作一个小软件">
 <meta property="og:url" content="https://tintingo.github.io/2018/03/29/TT0012/index.html">
 <meta property="og:site_name" content="TinTin">
-<meta property="og:description" content="(function(){    var bp = document.createElement(‘script’);    var curProtocol = window.location.protocol.split(‘:’)[0];    if (curProtocol === ‘https’){   bp.src = ‘https://zz.bdstatic.com/linksubmit/">
+<meta property="og:description" content="制作一个小软件的方法很多，比如说c++的MFC，本站在之前的第一个MFC文章里就提到过；matlab的GUIDE，在之前的如何用Matlab设计GUI？ 文章也提到过。而现在，本文将使用matlab GUI来制作一个可安装到电脑的小软件。">
 <meta property="og:image" content="https://tintingo.github.io/images/T0012.jpg">
-<meta property="og:updated_time" content="2018-05-17T08:11:57.397Z">
+<meta property="og:updated_time" content="2018-06-05T07:03:05.752Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何用matlab制作一个小软件">
-<meta name="twitter:description" content="(function(){    var bp = document.createElement(‘script’);    var curProtocol = window.location.protocol.split(‘:’)[0];    if (curProtocol === ‘https’){   bp.src = ‘https://zz.bdstatic.com/linksubmit/">
+<meta name="twitter:description" content="制作一个小软件的方法很多，比如说c++的MFC，本站在之前的第一个MFC文章里就提到过；matlab的GUIDE，在之前的如何用Matlab设计GUI？ 文章也提到过。而现在，本文将使用matlab GUI来制作一个可安装到电脑的小软件。">
 <meta name="twitter:image" content="https://tintingo.github.io/images/T0012.jpg">
   
     <link rel="alternate" href="/atom.xml" title="TinTin" type="application/atom+xml">
@@ -169,7 +169,7 @@ var themeMenus = {};
 <div class="article-gallery">
   <div class="article-gallery-photos">
     
-      <a class="article-gallery-img fancybox" href="/images/T0012.jpg" rel="gallery_cji13dew7000drkeu1dd0rd3b">
+      <a class="article-gallery-img fancybox" href="/images/T0012.jpg" rel="gallery_cji1d48zh000f7geud5qhhlzl">
         <img src="/images/T0012.jpg" itemprop="image">
       </a>
     
@@ -201,7 +201,7 @@ var themeMenus = {};
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p><script><br>(function(){<br>    var bp = document.createElement(‘script’);<br>    var curProtocol = window.location.protocol.split(‘:’)[0];<br>    if (curProtocol === ‘https’){<br>   bp.src = ‘<a href="https://zz.bdstatic.com/linksubmit/push.js">https://zz.bdstatic.com/linksubmit/push.js</a>‘;<br>  }<br>  else{<br>  bp.src = ‘<a href="http://push.zhanzhang.baidu.com/push.js">http://push.zhanzhang.baidu.com/push.js</a>‘;<br>  }<br>    var s = document.getElementsByTagName(“script”)[0];<br>    s.parentNode.insertBefore(bp, s);<br>})();<br></script><br><img src="/images/top.jpg" alt=""><br>制作一个小软件的方法很多，比如说c++的MFC，本站在之前的<a href="https://tintingo.github.io/2017/12/11/TT0008/">第一个MFC</a>文章里就提到过；matlab的GUIDE，在之前的<a href="https://tintingo.github.io/2017/12/11/TT0002/">如何用Matlab设计GUI？</a> 文章也提到过。而现在，本文将使用matlab GUI来制作一个可安装到电脑的小软件。<br><a id="more"></a></p>
+        <p><img src="/images/top.jpg" alt=""><br>制作一个小软件的方法很多，比如说c++的MFC，本站在之前的<a href="https://tintingo.github.io/2017/12/11/TT0008/">第一个MFC</a>文章里就提到过；matlab的GUIDE，在之前的<a href="https://tintingo.github.io/2017/12/11/TT0002/">如何用Matlab设计GUI？</a> 文章也提到过。而现在，本文将使用matlab GUI来制作一个可安装到电脑的小软件。<br><a id="more"></a></p>
 <p><font color="#00ffff" size="3">提示：软件安装包请到本站<a href="https://tintingo.github.io/download">下载中心</a>下载</font></p>
 <h2 id="首先，描述一下软件需求"><a href="#首先，描述一下软件需求" class="headerlink" title="首先，描述一下软件需求"></a>首先，描述一下软件需求</h2><p>作者想制作一个可以为自己记录计划的软件，该软件应当包含以下功能：<br>1.增加新计划，并保存计划；<br>2.删除已有计划，更改当前计划；<br>3.查看历史计划；<br>4.显示当月日历，浏览其他日历（比如说查看学校校历等）；</p>
 <h2 id="其次，matlab-GUI设计软件界面"><a href="#其次，matlab-GUI设计软件界面" class="headerlink" title="其次，matlab GUI设计软件界面"></a>其次，matlab GUI设计软件界面</h2><p>在本站前面内容已经提到过如何设计matlab GUI，在此就不做详细描述了。<br>如下图所示，使用matlab GUI设计如下界面。<br><img src="/images/TT0012_01.png" alt=""><br>其中，红色区域为主要功能区，其余部分可不设计。</p>
@@ -285,6 +285,15 @@ var a = new Donate({
   
     
 <nav id="article-nav">
+  
+    <a href="/2018/06/05/TT0013/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">
+        
+          python常用代码记录
+        
+      </div>
+    </a>
   
   
     <a href="/2018/03/23/TT0011/" id="article-nav-older" class="article-nav-link-wrap">
