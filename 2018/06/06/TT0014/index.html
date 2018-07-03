@@ -26,7 +26,7 @@
 <meta property="og:site_name" content="TinTin">
 <meta property="og:description" content="贝叶斯网络是一种概率网络，它是基于概率推理的图形化网络，而贝叶斯公式则是这个概率网络的基础。贝叶斯网络是基于概率推理的数学模型，所谓概率推理就是通过一些变量的信息来获取其他的概率信息的过程，基于概率推理的贝叶斯网络(Bayesian network)是为了解决不定性和不完整性问题而提出的，它对于解决复杂设备不确定性和关联性引起的故障有很大的优势，在多个领域中获得广泛应用。【来源：百度百科】">
 <meta property="og:image" content="https://tintingo.github.io/images/T0014.jpg">
-<meta property="og:updated_time" content="2018-07-03T07:20:28.951Z">
+<meta property="og:updated_time" content="2018-07-03T07:53:20.934Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="贝叶斯网络学习">
 <meta name="twitter:description" content="贝叶斯网络是一种概率网络，它是基于概率推理的图形化网络，而贝叶斯公式则是这个概率网络的基础。贝叶斯网络是基于概率推理的数学模型，所谓概率推理就是通过一些变量的信息来获取其他的概率信息的过程，基于概率推理的贝叶斯网络(Bayesian network)是为了解决不定性和不完整性问题而提出的，它对于解决复杂设备不确定性和关联性引起的故障有很大的优势，在多个领域中获得广泛应用。【来源：百度百科】">
@@ -169,7 +169,7 @@ var themeMenus = {};
 <div class="article-gallery">
   <div class="article-gallery-photos">
     
-      <a class="article-gallery-img fancybox" href="/images/T0014.jpg" rel="gallery_cjj5do6ox000d7oeu4jqm25is">
+      <a class="article-gallery-img fancybox" href="/images/T0014.jpg" rel="gallery_cjj5ecn5o000b48eu6v03lh3l">
         <img src="/images/T0014.jpg" itemprop="image">
       </a>
     
@@ -208,7 +208,7 @@ var themeMenus = {};
 <h2 id="首先：构建网络、生成数据。"><a href="#首先：构建网络、生成数据。" class="headerlink" title="首先：构建网络、生成数据。"></a>首先：构建网络、生成数据。</h2><p>是窃贼还是地震？<br>福尔摩斯先生在他的办公室工作时接到了他邻居华生的电话。华生告诉他：他的家里可能进了窃贼，因为他家的警铃响了。<br>被告知有窃贼闯入，福尔摩斯迅速开车回家。在路上，他听广播得知他家那里发生了地震。地震也有可能引起警报。这样，请问福尔摩斯先生应该回家抓贼还是迅速撤离该地区以躲避地震？<br><img src="/images/BYSWL001.png" alt=""><br>该贝叶斯网络为“是窃贼还是地震”模型，其中节点E表示地震（Earthquake）, 节点B表示盗贼（Burglary）, 节点R表示广播（Radio）, 节点A表示警铃（Alarm）, 节点C表示打电话（Call）<br>其实就是我们对已知网络进行手动构建，一是为网络添加包括节点、边和方向的网络结构，二是为网络添加包括参数，即条件概率表（包括节点出现的先验概率和条件概率）。<br>采用贝叶斯工具箱（BNT）中的sample_bnet函数对已知贝叶斯网络bnet进行随机采样，生成实验数据。</p>
 <h2 id="其次：结构学习"><a href="#其次：结构学习" class="headerlink" title="其次：结构学习"></a>其次：结构学习</h2><p>采用K2算法对实验数据进行结构学习，贝叶斯工具箱（BNT）中的K2结构学习函数需要输入数据（data）, 节点可能的取值个数（ns）, 节点序（order）和最大父节点个数（max_fan_in）。从下图可以看出，经过结构学习后的结构和已知结构完全相同（该结构比较简单，且我们已知了节点序order（专家知识），所以拟合的比较好，但针对复杂结构可能就没那么好的效果了），说明该结构学习算法对数据拟合的比较好。<br><img src="/images/BYSWL002.png" alt=""></p>
 <h2 id="然后：参数学习"><a href="#然后：参数学习" class="headerlink" title="然后：参数学习"></a>然后：参数学习</h2><p>采用最大似然估计算法对实验数据进行参数学习，先用第三部分结构学习后的网络结构生成一个bnet结构（bnet2 = mk_bnet(dag2, ns);），然后初始化bnet2的CPD，最后采用BNT工具箱中的参数学习行数对数据进行参数学习（bnet3 = learn_params(bnet2, data);）。学习结果如下表所示，从表中可以看，学习后的概率与预设概率接近。<br><img src="/images/BYSWL003.png" alt=""></p>
-<h2 id="最后：推理"><a href="#最后：推理" class="headerlink" title="最后：推理"></a>最后：推理</h2><p>采用贝叶斯工具箱（BNT）中的联合树推理引擎，先是用jtree_inf_engine函数生成联合树推理引擎，然后用enter_evidence函数向网络添加证据（证据需放入cell中，放在矩阵中会出错，这是enter_evidence函数的输入格式要求），最后用marginal_nodes函数计算对应节点的边缘概率。<br>计算出节点E和节点B的边缘概率mE.T(1)，即P(E|C,R)和mB.T(1)，即P(B|C,R)，并由P(E)和P(B)判断是地震还是窃贼。<br><img src="/images/BYSWL004.png" alt=""><br>如图所示，推理结果为：P(E|C,R)=0.96081、P(B|C,R)=0.0033339，即在接到邻居华生的电话和听到广播得知他家那里发生了地震的情况下，他家发生地震的概率更大，福尔摩斯先生应迅速撤离该地区以躲避地震而不是回家抓贼。<br><img src="/images/bottom.jpg" alt=""></p>
+<h2 id="最后：推理"><a href="#最后：推理" class="headerlink" title="最后：推理"></a>最后：推理</h2><p>采用贝叶斯工具箱（BNT）中的联合树推理引擎，先是用jtree_inf_engine函数生成联合树推理引擎，然后用enter_evidence函数向网络添加证据（证据需放入cell中，放在矩阵中会出错，这是enter_evidence函数的输入格式要求），最后用marginal_nodes函数计算对应节点的边缘概率。<br>计算出节点E和节点B的边缘概率mE.T(1)，即P(E|C,R)和mB.T(1)，即P(B|C,R)（虽然计算出来的是边缘概率P(E)和P(B)，但是在提供证据C,R出现的情况下推算出来的，所以也可看作后验概率P(E|C,R)和P(B|C,R)），并由P(E|C,R)和P(B|C,R)判断是地震还是窃贼。<br><img src="/images/BYSWL004.png" alt=""><br>如图所示，推理结果为：P(E|C,R)=0.96081、P(B|C,R)=0.0033339，即在接到邻居华生的电话和听到广播得知他家那里发生了地震的情况下，他家发生地震的概率更大，福尔摩斯先生应迅速撤离该地区以躲避地震而不是回家抓贼。<br><img src="/images/bottom.jpg" alt=""></p>
 
       
     </div>
