@@ -26,7 +26,7 @@
 <meta property="og:site_name" content="TinTin">
 <meta property="og:description" content="记忆力差？用过的代码老忘记？一次又一次的上网搜?好浪费时间！写在博客里方便随时查阅~~~~">
 <meta property="og:image" content="https://tintingo.github.io/images/T0003.jpg">
-<meta property="og:updated_time" content="2018-08-17T09:13:56.845Z">
+<meta property="og:updated_time" content="2018-08-17T09:17:20.021Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一些常用Matlab代码记录">
 <meta name="twitter:description" content="记忆力差？用过的代码老忘记？一次又一次的上网搜?好浪费时间！写在博客里方便随时查阅~~~~">
@@ -169,7 +169,7 @@ var themeMenus = {};
 <div class="article-gallery">
   <div class="article-gallery-photos">
     
-      <a class="article-gallery-img fancybox" href="/images/T0003.jpg" rel="gallery_cjkxs1qsy00047geugowsy9k1">
+      <a class="article-gallery-img fancybox" href="/images/T0003.jpg" rel="gallery_cjkxs5v4o0005vweusttyh4ux">
         <img src="/images/T0003.jpg" itemprop="image">
       </a>
     
@@ -242,7 +242,7 @@ var themeMenus = {};
 <h1 id="判断某路径下某文件是否存在"><a href="#判断某路径下某文件是否存在" class="headerlink" title="判断某路径下某文件是否存在"></a>判断某路径下某文件是否存在</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">~exist(<span class="string">'C:\TEST\test.m'</span>,<span class="string">'file'</span>) %为0表示路径C:\TEST下文件test.m存在，为1则无。</div></pre></td></tr></table></figure>
 <h1 id="Solve函数求解多输入等式解，获取解的值-X-1-2-3-4-5-Y-5-4-3-2-1-求等式：X-i-w-Y-i-的w值"><a href="#Solve函数求解多输入等式解，获取解的值-X-1-2-3-4-5-Y-5-4-3-2-1-求等式：X-i-w-Y-i-的w值" class="headerlink" title="Solve函数求解多输入等式解，获取解的值(X = [1 2 3 4 5];Y = [5 4 3 2 1];求等式：X(i)*w=Y(i)的w值)"></a>Solve函数求解多输入等式解，获取解的值(X = [1 2 3 4 5];Y = [5 4 3 2 1];求等式：X(i)*w=Y(i)的w值)</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> i=1:size(input,2)</div><div class="line"><span class="built_in">eval</span>([<span class="string">'W(i) = solve('</span>,<span class="string">''</span><span class="string">''</span>,num2str(X(i)),<span class="string">'*w='</span>,num2str(Y(i)),<span class="string">''</span><span class="string">''</span>,<span class="string">','</span>,<span class="string">''</span><span class="string">''</span>,<span class="string">'w'</span>,<span class="string">''</span><span class="string">''</span>,<span class="string">');'</span>])</div><div class="line">end</div><div class="line">W = double(W);</div></pre></td></tr></table></figure>
 <h1 id="对数列排序时，出现相同大小的数，如何获取让排序位置不重复"><a href="#对数列排序时，出现相同大小的数，如何获取让排序位置不重复" class="headerlink" title="对数列排序时，出现相同大小的数，如何获取让排序位置不重复"></a>对数列排序时，出现相同大小的数，如何获取让排序位置不重复</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">a = [1 2 8 5 6 4 3 4 2 5 1 9];</div><div class="line">b = a+rand(1,size(a,2))*0.001;% 将数列统一加上一个极小的随机数</div><div class="line">c = sort(b,<span class="string">'descend'</span>);</div><div class="line">index = arrayfun(@(x) find(b(x)==c),1:numel(b),<span class="string">'un'</span>,0);</div></pre></td></tr></table></figure>
-<h1 id="GUIDE最大最小化"><a href="#GUIDE最大最小化" class="headerlink" title="GUIDE最大最小化"></a>GUIDE最大最小化</h1><p><img src="/images/www000.jpg" alt=""><br><img src="/images/www001.jpg" alt=""></p>
+<h1 id="GUIDE最大最小化"><a href="#GUIDE最大最小化" class="headerlink" title="GUIDE最大最小化"></a>GUIDE最大最小化</h1><p><img src="/images/www000.png" alt=""><br><img src="/images/www001.png" alt=""></p>
 <p><img src="/images/bottom.jpg" alt=""></p>
 
       
